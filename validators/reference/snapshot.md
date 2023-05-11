@@ -16,10 +16,14 @@ rm -rf $HOME/.cascadiad/data
 
 {% code overflow="wrap" %}
 ```
-curl -L <snapshot_link>latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.cascadiad
+curl -L <snapshot>.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.cascadiad
 mv $HOME/.cascadiad/priv_validator_state.json.backup $HOME/.cascadiad/data/priv_validator_state.json
 ```
 {% endcode %}
+
+{% hint style="info" %}
+Various `<snapshot>` can be found in our [Directory](https://www.notion.so/cascadiafoundation/a560ef5f506847b2886148bd06428ca0?v=8d4e9324743949b5a3674d1675a609ae).&#x20;
+{% endhint %}
 
 
 
