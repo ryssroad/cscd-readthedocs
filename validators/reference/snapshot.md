@@ -16,7 +16,7 @@ rm -rf $HOME/.cascadiad/data
 
 {% code overflow="wrap" %}
 ```
-curl -L http://142.44.143.93/snapshots/cascadia/cascadia_6102-1_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.cascadiad
+curl -L <snapshot_link>latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.cascadiad
 mv $HOME/.cascadiad/priv_validator_state.json.backup $HOME/.cascadiad/data/priv_validator_state.json
 ```
 {% endcode %}
