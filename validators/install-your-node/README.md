@@ -235,7 +235,7 @@ WantedBy=multi-user.target
 {% endcode %}
 
 {% hint style="info" %}
-Press Ctrl + S to save then Ctrl + X to exit.
+Press ctrl + s to save, then ctrl + x to exit.
 {% endhint %}
 
 
