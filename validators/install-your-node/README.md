@@ -72,6 +72,10 @@ curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.2/
 ```
 {% endcode %}
 
+{% hint style="info" %}
+The latest `cascadiad` binary release can also be found on [GitHub](https://github.com/cascadiafoundation/cascadia/releases).
+{% endhint %}
+
 ```javascript
 sudo chmod u+x cascadiad
 ```
@@ -82,11 +86,6 @@ sudo cp cascadiad /usr/local/bin/cascadiad
 ```
 {% endcode %}
 
-{% hint style="info" %}
-The latest `cascadiad` binary release can be found on [GitHub](https://github.com/cascadiafoundation/cascadia/releases).
-{% endhint %}
-
-\
 Below, replace `<username>` with your own account name.
 
 {% code overflow="wrap" %}
@@ -123,10 +122,9 @@ cascadiad init [moniker] --chain-id cascadia_6102-1
 ```
 {% endcode %}
 
-Moniker will be the displayed id of your node when connected to Cascadia.  When providing a moniker name, drop the square brackets.\
+Moniker will be the displayed id of your node when connected to Cascadia.  When providing a moniker name, drop the square brackets.
 
-
-**For example:**
+For example:
 
 {% code overflow="wrap" %}
 ```javascript
@@ -210,7 +208,7 @@ WantedBy=multi-user.target
 ```
 {% endcode %}
 
-**In the following examle,** our`<username>` is `ubuntu`:
+In the following example, our`<username>` is `ubuntu`:
 
 {% code overflow="wrap" %}
 ```javascript
