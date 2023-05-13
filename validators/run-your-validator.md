@@ -3,8 +3,10 @@
 Before following the steps below, first set up a node as per the instructions provided [here.](https://cascadia.gitbook.io/gitbook/validators/install-your-node)
 
 {% hint style="info" %}
-To resume typing while your node is running, press **Ctrl-C**.
+To resume typing while your node is running, press **ctrl-c**.
 {% endhint %}
+
+
 
 **Step 1: Verify that your node is fully synced.**
 
