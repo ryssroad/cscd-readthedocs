@@ -26,7 +26,7 @@ sudo tar -C /usr/local -xzf go1.19.2.linux-amd64.tar.gz
 ```
 {% endcode %}
 
-For non-standard config, utilize the `.profile` user's home folder (i.e. `~/`).
+For non-standard configuration, utilize the `.profile` user's home folder (i.e. `~/`).
 
 {% hint style="info" %}
 Go can also be downloaded [here](https://golang.org/doc/install).  Please install **Go v1.19.2** or the latest version.
@@ -208,7 +208,7 @@ WantedBy=multi-user.target
 ```
 {% endcode %}
 
-In the following example, our`<username>` is `ubuntu`:
+In the following example, our `<username>` is `ubuntu`:
 
 {% code overflow="wrap" %}
 ```javascript
