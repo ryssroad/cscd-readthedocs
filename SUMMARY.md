@@ -33,7 +33,7 @@
   * [Redelegate](delegation/redelegate.md)
   * [Undelegate](delegation/undelegate.md)
 * [Governance](governance.md)
-  * [Alignment Process](governance/alignment-process.md)
+  * [Alignment](governance/alignment.md)
 * [Developers](developers/README.md)
   * [Contract Addresses](developers/contract-addresses.md)
   * [Contract Deployment](developers/contract-deployment.md)

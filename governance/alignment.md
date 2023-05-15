@@ -1,6 +1,6 @@
-# Alignment Process
+# Alignment
 
-As an aligned CC holder, you hold governance authority in the Cascadia blockchain. This means you have the right to vote on proposals and influence the direction of them.
+As an aligned CC holder, you hold governance authority in the Cascadia ecosystem. This means you have the right to vote on proposals and influence protocol development.
 
 
 
