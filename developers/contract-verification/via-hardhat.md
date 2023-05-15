@@ -23,7 +23,7 @@ yarn instructions:
 
 {% code overflow="wrap" %}
 ```javascript
-add --dev hardhat
+yarn add --dev hardhat
 ```
 {% endcode %}
 
@@ -31,19 +31,19 @@ add --dev hardhat
 
 **Step 2:** Install the [Hardhat plugin](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan) (requires v3.0.0+). Use either the `npm` or `yarn` commands:&#x20;
 
-npm
+npm instructions:
 
 {% code overflow="wrap" %}
 ```javascript
-install --save-dev @nomiclabs/hardhat-etherscan
+npm install --save-dev @nomiclabs/hardhat-etherscan
 ```
 {% endcode %}
 
-yarn
+yarn instructions:
 
 {% code overflow="wrap" %}
 ```javascript
-add --dev @nomiclabs/hardhat-etherscan
+yarn add --dev @nomiclabs/hardhat-etherscan
 ```
 {% endcode %}
 
@@ -104,7 +104,7 @@ The entire code should appear as follows:
 
 {% code overflow="wrap" %}
 ```js
-jsCopy coderequire("@nomicfoundation/hardhat-toolbox");
+require("@nomicfoundation/hardhat-toolbox");
 require("@nomiclabs/hardhat-etherscan");
 require('dotenv').config()
 const private_key = process.env.PRIVATE_KEY
@@ -141,7 +141,7 @@ module.exports = {
 
 {% code overflow="wrap" %}
 ```javascript
-bashCopy codenpx hardhat verify --list-networks
+npx hardhat verify --list-networks
 ```
 {% endcode %}
 
@@ -151,7 +151,7 @@ bashCopy codenpx hardhat verify --list-networks
 
 {% code overflow="wrap" %}
 ```javascript
-bashCopy codenpx hardhat verify --network <network_name> DEPLOYED_CONTRACT_ADDRESS “Constructor argument 1”
+npx hardhat verify --network <network_name> DEPLOYED_CONTRACT_ADDRESS “Constructor argument 1”
 ```
 {% endcode %}
 
@@ -159,7 +159,7 @@ bashCopy codenpx hardhat verify --network <network_name> DEPLOYED_CONTRACT_ADDRE
 
 {% code overflow="wrap" %}
 ```javascript
-bashCopy codenpx hardhat verify –network Cascadia 0x856C336cD8eBDCE7B5Bb3F2DEB1bf3160B176880 31536000
+npx hardhat verify –network Cascadia 0x856C336cD8eBDCE7B5Bb3F2DEB1bf3160B176880 31536000
 ```
 {% endcode %}
 
