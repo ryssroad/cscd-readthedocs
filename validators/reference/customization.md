@@ -20,6 +20,6 @@ cascadiad tx staking edit-validator --identity=<keybase_identity> --chain-id cas
 ```
 {% endcode %}
 
-`<keybase_identity>`: This is your Keybase username.
+`<keybase_identity>`: This is your Keybase 64-bit public key [16 alpha numeric].
 
 `<wallet_name>`: This is the name of your Cascadia wallet.
