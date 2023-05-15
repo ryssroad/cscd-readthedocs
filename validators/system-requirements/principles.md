@@ -1,6 +1,6 @@
 # Principles
 
-Being a validator requires more than merely adhering to instructions; it presents a challenging yet rewarding opportunity.  It's vital to have a firm grasp of network administration and the ability to resolve any technical issues that may arise.
+Being a validator requires more than adhering to instructions; it presents a challenging yet rewarding opportunity to explore decentralization.  It's vital to have a firm understanding of network administration and the ability to resolve technical issues that may arise.
 
 
 
