@@ -9,20 +9,23 @@ description: A comprehensive list of contract addresses deployed within Cascadia
 | Wrapped Test Cascadia | 0x91d128e27BdC2E9597098efBd1798D86d96A04c2 |
 | --------------------- | ------------------------------------------ |
 
-### Validators
+\
+**Validators**
 
 | Faucet      | cascadia1zmmdax5jth3r6t7qqddjnw0xrhwczzp6afn4c9 |
 | ----------- | ----------------------------------------------- |
 | Validator 1 | cascadia1zmmdax5jth3r6t7qqddjnw0xrhwczzp6afn4c9 |
 | Validator 2 | cascadia1fgqm7r0f5jhhrfdf3rgx3kecqynqg0jasy07jm |
 
-### Vote-Escrowed
+\
+**Vote-Escrowed**
 
 | veCC           | 0xD1028648d2b3906981882F0dEB0a83A94c27d4D4 |
 | -------------- | ------------------------------------------ |
 | FeeDistributor | 0xF3c9258E502896Be2633B48B8edF1DC004571B08 |
 
-### SafeGlobal
+\
+**SafeGlobal**
 
 | SimulateTxAccessor           | 0x3b8F8591a3a8143b98F2a684F64cFACD1529AfB9 |
 | ---------------------------- | ------------------------------------------ |
@@ -36,14 +39,16 @@ description: A comprehensive list of contract addresses deployed within Cascadia
 | SafeL2                       | 0x0D179CE98e0122D265805Cf5848dfB9D79ed285d |
 | Safe                         | 0x0CF9477f3683A20C801705DCA97cB5EDc49A44E3 |
 
-### Uniswap
+\
+**Uniswap**
 
 | Factory   | 0xE8D630EB3138d7dF1a0a668D4F58F373DB6197C3 |
 | --------- | ------------------------------------------ |
 | Perip     | 0xBA8DE0DCb6bCc2c95827Cc87DfE42652C85B3004 |
 | Multicall | 0x728989819bAD588F193563008E0a03E8cD6a3e4a |
 
-
+\
+**Bond Contracts**
 
 | Description   | Contract Address                           |
 | ------------- | ------------------------------------------ |
