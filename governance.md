@@ -4,6 +4,12 @@ This guide provides an overview of Cascadia's on-chain governance system, focusi
 
 
 
+{% hint style="info" %}
+In Cascadia, "locking" is more aptly referred to as "alignment". This terminology better reflects the nature of the process within the Cascadia ecosystem.
+{% endhint %}
+
+
+
 **Participation Requirements**&#x20;
 
 To engage in Cascadia's on-chain governance, an account must hold bCC. \
