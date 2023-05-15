@@ -8,7 +8,7 @@
 
 **Step 2: Click the “Manage” button of the validator you would like to undelegate your tokens.**
 
-<figure><img src="../.gitbook/assets/Redelegate3 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Redelegate3 (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

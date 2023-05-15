@@ -6,13 +6,13 @@ Redelegation allows a user to move delegated tokens between validators without b
 
 **Step 1: Navigate to** [**https://validator.cascadia.foundation/validators**](https://validator.cascadia.foundation/validators) **and connect your wallet.**
 
-<figure><img src="../.gitbook/assets/Redelegate2 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Redelegate2 (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
 **Step 2: Click the “Manage” button of the validator you would like to redelegate your tokens.**
 
-<figure><img src="../.gitbook/assets/Redelegate3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Redelegate3 (2).png" alt=""><figcaption></figcaption></figure>
 
 
 

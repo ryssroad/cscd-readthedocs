@@ -6,9 +6,8 @@ description: A comprehensive list of contract addresses deployed within Cascadia
 
 
 
-| Description           | Contract Address                             |
-| --------------------- | -------------------------------------------- |
 | Wrapped Test Cascadia | `0x91d128e27BdC2E9597098efBd1798D86d96A04c2` |
+| --------------------- | -------------------------------------------- |
 
 ### Validators
 
@@ -21,16 +20,14 @@ description: A comprehensive list of contract addresses deployed within Cascadia
 
 ### Vote-Escrowed
 
-| Description    | Contract Address                             |
-| -------------- | -------------------------------------------- |
 | veCC           | `0xD1028648d2b3906981882F0dEB0a83A94c27d4D4` |
+| -------------- | -------------------------------------------- |
 | FeeDistributor | `0xF3c9258E502896Be2633B48B8edF1DC004571B08` |
 
 ### SafeGlobal
 
-| Description                  | Contract Address                             |
-| ---------------------------- | -------------------------------------------- |
 | SimulateTxAccessor           | `0x3b8F8591a3a8143b98F2a684F64cFACD1529AfB9` |
+| ---------------------------- | -------------------------------------------- |
 | SafeProxyFactory             | `0x9de305bBC84C1A25CF750569F99b4D91e369D7F5` |
 | TokenCallbackHandler         | `0x26788816c7Ed36FB9a7D391dc5bac3D2256f7327` |
 | CompatibilityFallbackHandler | `0xC529Ffba7ca6D474cB58bC37E94927AE90d00efE` |
@@ -43,11 +40,10 @@ description: A comprehensive list of contract addresses deployed within Cascadia
 
 ### Uniswap
 
-| Description | Contract Address                             |
-| ----------- | -------------------------------------------- |
-| Factory     | `0xE8D630EB3138d7dF1a0a668D4F58F373DB6197C3` |
-| Perip       | `0xBA8DE0DCb6bCc2c95827Cc87DfE42652C85B3004` |
-| Multicall   | `0x728989819bAD588F193563008E0a03E8cD6a3e4a` |
+| Factory   | `0xE8D630EB3138d7dF1a0a668D4F58F373DB6197C3` |
+| --------- | -------------------------------------------- |
+| Perip     | `0xBA8DE0DCb6bCc2c95827Cc87DfE42652C85B3004` |
+| Multicall | `0x728989819bAD588F193563008E0a03E8cD6a3e4a` |
 
 ***
 
