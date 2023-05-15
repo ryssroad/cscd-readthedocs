@@ -53,7 +53,7 @@ add --dev @nomiclabs/hardhat-etherscan
 
 {% code overflow="wrap" %}
 ```js
-jsCopy coderequire("@nomiclabs/hardhat-etherscan");
+require("@nomiclabs/hardhat-etherscan");
 ```
 {% endcode %}
 
@@ -61,7 +61,7 @@ For TypeScript, add the following line to `hardhat.config.ts`:
 
 {% code overflow="wrap" %}
 ```javascript
-tsCopy codeimport "@nomiclabs/hardhat-etherscan";
+import "@nomiclabs/hardhat-etherscan";
 ```
 {% endcode %}
 
