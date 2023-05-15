@@ -1,11 +1,12 @@
 # Via Hardhat
 
-These are the steps for verifying smart contracts via [Hardhat](https://hardhat.org/). The Hardhat plugin is a comprehensive development environment that facilitates contract compilation, deployment, and authentication. It provides the ability to verify contracts through the block explorer.&#x20;
+These are the steps for verifying smart contracts via [Hardhat](https://hardhat.org/). The Hardhat plugin is a comprehensive development environment that facilitates contract compilation, deployment, and authentication. It provides the ability to verify contracts through the block explorer.
 
-The subsequent steps outline the process of verifying smart contracts using Hardhat:\
+The following steps outline the process of verifying smart contracts using Hardhat:
 
 
-#### **Step 1: Install Hardhat.**
+
+**Step 1: Install Hardhat.**
 
 {% hint style="info" %}
 If creating a new npm project from scratch, navigate to an empty directory and execute the command `npm init`. Follow the instructions provided, and it is recommended to use npm 7 or a later version. Once the project is ready, use either the `npm` or `yarn` command below.
@@ -29,7 +30,7 @@ yarn add --dev hardhat
 
 
 
-**Step 2:** Install the [Hardhat plugin](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan) (requires v3.0.0+). Use either the `npm` or `yarn` commands:&#x20;
+**Step 2:** Install the [Hardhat plugin](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan) (requires v3.0.0+). Use either the `npm` or `yarn` commands:
 
 npm instructions:
 
@@ -47,7 +48,7 @@ yarn add --dev @nomiclabs/hardhat-etherscan
 ```
 {% endcode %}
 
-
+####
 
 #### **Step 3: For `hardhat.config.js`, add the following statement:**
 
