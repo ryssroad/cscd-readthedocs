@@ -18,6 +18,4 @@ Cascadia utilizes _a_ to signify micro-level transactions, promoting increased p
 
 **The Mathematical Point:** 'Atto-' is a unit prefix in the metric system. It denotes a factor of 10^-18, or one quintillionth. This means that 1 CC can be divided into 1 quintillion (1,000,000,000,000,000,000) aCC.
 
-**Why it matters:** The use of 'atto-' allows for a high degree of precision in transactions. The decision to use _a_ in aCC for Cascadia may be rooted in the desire for an exceptionally high level of precision and flexibility in managing and conducting transactions.
-
-The 'atto-' prefix, denoting a factor of 10^-18, allows for transactions to be conducted at an extremely small scale, even smaller than what 'micro-', with its factor of 10^-6, allows.
+**Why it matters:** The use of 'atto-' allows for a high degree of precision in transactions involving CC. This precision is essential, where certain applications might require operations with minuscule amounts of tokens.
