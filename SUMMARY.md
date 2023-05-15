@@ -5,6 +5,7 @@
   * [Brand Guidelines](welcome-to-cascadia/brand-guidelines.md)
   * [Official Links](welcome-to-cascadia/official-links.md)
 * [Network](network/README.md)
+  * [Token Terminology](network/token-terminology.md)
   * [ChainID & Address Prefix](network/chainid-and-address-prefix.md)
   * [Configuration](network/configuration.md)
   * [Faucet](network/faucet.md)
