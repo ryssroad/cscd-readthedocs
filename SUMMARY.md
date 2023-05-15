@@ -31,7 +31,7 @@
   * [Manual Delegation](delegation/manual-delegation.md)
   * [Redelegate](delegation/redelegate.md)
   * [Undelegate](delegation/undelegate.md)
-* [Governance](governance/README.md)
+* [Governance](governance.md)
   * [Alignment Process](governance/alignment-process.md)
 * [Developers](developers/README.md)
   * [Contract Addresses](developers/contract-addresses.md)
