@@ -1,6 +1,6 @@
 # Customization
 
-To personalize your validator on our explorer, such as changing your avatar, follow these steps:
+To personalize your validator, such as changing your avatar, follow these steps:
 
 
 
@@ -8,11 +8,11 @@ To personalize your validator on our explorer, such as changing your avatar, fol
 
 
 
-**Step 2: Upload your preferred avatar to your Keybase profile.**
+**Step 2: Upload your avatar to your Keybase profile.**
 
 
 
-**Step 3: Use the following command to link your Validator ID to your Keybase identity:**
+**Step 3: Link your Validator ID to your Keybase identity.**
 
 {% code overflow="wrap" %}
 ```javascript
