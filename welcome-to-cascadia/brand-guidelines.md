@@ -8,7 +8,7 @@ These branding assets are an integral part of Cascadia's visual identity that en
 
 **Logo**
 
-<div>
+<div align="left">
 
 <figure><img src="../.gitbook/assets/cascadia_logo_blue.png" alt=""><figcaption></figcaption></figure>
 

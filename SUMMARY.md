@@ -5,7 +5,7 @@
   * [Brand Guidelines](welcome-to-cascadia/brand-guidelines.md)
   * [Official Links](welcome-to-cascadia/official-links.md)
 * [Network](network/README.md)
-  * [ChainID & Address Format](network/chainid-and-address-format.md)
+  * [ChainID & Address Prefix](network/chainid-and-address-prefix.md)
   * [Configuration](network/configuration.md)
   * [Faucet](network/faucet.md)
   * [Modules](network/modules.md)
