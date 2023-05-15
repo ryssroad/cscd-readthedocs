@@ -22,7 +22,7 @@ bCC holders can vote on proposals on a 1 token, 1 vote basis. The current module
 
 **Governance Parameters**&#x20;
 
-The voting period spans 14 days, and a quorum is achieved when at least 40% of the voting power participates. The pass threshold is 50% of participating voting power, while the veto threshold is 33.40% of participating voting power.  Participants can choose from 'Yes,' 'No,' 'Abstain,' or 'NoWithVeto' voting options during the voting period, and may change their vote before the period ends.
+The voting period spans 14 days, and a quorum is achieved when at least 40% of the voting power participates. The pass threshold is 50% of participating voting power, while the veto threshold is 33.40% of participating voting power. Participants can choose from 'Yes,' 'No,' 'Abstain,' or 'NoWithVeto' voting options during the voting period, and may change their vote before the period ends.
 
 
 
