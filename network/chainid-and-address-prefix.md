@@ -1,4 +1,4 @@
-# ChainID & Address Format
+# ChainID & Address Prefix
 
 ChainID is a number that identifies a specific blockchain. This number is used to ensure that transactions are processed on the correct blockchain, and not confused with transactions on another with a similar format. ChainID also prevents replay attacks, where a transaction is broadcast on multiple blockchains to trick users into accepting the same transaction on different chains.
 
@@ -18,7 +18,7 @@ The ChainID for Cascadia's devnet is `cascadia_6102-1`.
 
 BIP-0173 introduces a new format for segregated witness output addresses. With regard to the respective network type, Cascadia has many address prefixes, including:
 
-| Devnet | `cascadia` |
-| ------ | ---------- |
+| Testnet | `cascadia` |
+| ------- | ---------- |
 
 Cascadia employs the Bech32 address format. Bech32 encoding offers reliable data integrity checks. The human-readable component offers contextual cues, helping UI designers clear error messages.
