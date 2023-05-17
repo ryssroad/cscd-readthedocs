@@ -1,10 +1,4 @@
----
-description: A comprehensive list of contract addresses deployed within Cascadia.
----
-
 # Contract Addresses
-
-
 
 | Wrapped Test Cascadia | 0x91d128e27BdC2E9597098efBd1798D86d96A04c2 |
 | --------------------- | ------------------------------------------ |
@@ -18,9 +12,9 @@ description: A comprehensive list of contract addresses deployed within Cascadia
 | Validator 2 | cascadia1fgqm7r0f5jhhrfdf3rgx3kecqynqg0jasy07jm |
 
 \
-**Vote-Escrowed**
+**Aligment**
 
-| veCC           | 0xD1028648d2b3906981882F0dEB0a83A94c27d4D4 |
+| bCC            | 0xD1028648d2b3906981882F0dEB0a83A94c27d4D4 |
 | -------------- | ------------------------------------------ |
 | FeeDistributor | 0xF3c9258E502896Be2633B48B8edF1DC004571B08 |
 
@@ -59,4 +53,3 @@ description: A comprehensive list of contract addresses deployed within Cascadia
 | BondFixedSDA  | 0x8981308AD9B2f47a2125f9016e523Ab1934186EE |
 | ERC20Test1    | 0x5C3b13305C78024f52746ca3Eb2e2cbA50D41d18 |
 | ERC20Test2    | 0xE069991bb7CBc7182176209F17232809C187aC7A |
-

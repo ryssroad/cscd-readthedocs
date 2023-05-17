@@ -21,7 +21,7 @@ npx hardhat init
 **Step 3: Make `.env` and input your private key.**
 
 ```javascript
-PRIVATE_KEY=<your private key>
+PRIVATE_KEY=<your_private_key>
 ```
 
 

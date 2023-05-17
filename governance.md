@@ -4,20 +4,18 @@ This guide provides an overview of Cascadia's on-chain governance system, focusi
 
 
 
-{% hint style="info" %}
-In Cascadia, "locking" is more aptly referred to as "alignment". This terminology better reflects the nature of the process within the Cascadia ecosystem.
-{% endhint %}
-
-
-
 **Participation Requirements**&#x20;
 
 To engage in Cascadia's on-chain governance, an account must hold bCC. \
 bCC is a unique ERC20 implementation that defines an account's voting power. It is non-transferable and can only be acquired by locking CC.
 
+{% hint style="info" %}
+In Cascadia, "locking" is more aptly referred to as "alignment".  This terminology better reflects the nature of the process within the Cascadia ecosystem.
+{% endhint %}
 
 
-**Governance System Features**&#x20;
+
+**Governance Features**&#x20;
 
 bCC holders can vote on proposals on a 1 token, 1 vote basis. The current module supports these features:
 
@@ -48,5 +46,5 @@ Four factors determine the outcome of a governance proposal.
 Voting power, whether supporting 'Yes,' 'Abstain,' 'No,' or 'NoWithVeto,' contributes to the quorum.  A quorum is necessary for a governance proposal to be approved.
 
 {% hint style="info" %}
-Cascadia's on-chain governance is designed to evolve over time. While the parameters above are the initial settings, they may be updated as part of our ongoing governance process.
+Cascadia's on-chain governance is designed to evolve over time. The parameters above are initial settings, and may be updated as part of our evolving governance process.
 {% endhint %}
