@@ -2,7 +2,7 @@
 
 **CC** is Cascadia's native. It serves as the principal medium of account and an essential element of our blockchain structure.  It's only function is to express governance authority.
 
-**tCC** is Cascdia's testnet token, utilized to ensure Cascadia's robustness and reliability through various testing processes prior to mainnet operations.
+**tCC** is Cascadia's testnet token, utilized to ensure Cascadia's robustness and reliability through various testing processes prior to mainnet operations.
 
 **aCC** is the smallest denomination of Cascadia's native token.&#x20;
 
