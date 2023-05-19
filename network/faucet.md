@@ -1,12 +1,12 @@
 # Faucet
 
-**Step 1: Sign in to your MetaMask account, and visit the** [**Faucet Page**](https://www.cascadia.foundation/faucet) **to request testnet tokens.**
+**Step 1: Visit the** [**Faucet Page**](https://www.cascadia.foundation/faucet) **to request testnet tokens.**
 
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 
 
-**Step 2: Insert your EVM wallet address and hit the ''Claim'' button to receive the tokens.**
+**Step 2: Insert your EVM wallet address and hit the ''Claim'' button to receive tokens.**
 
 {% hint style="info" %}
 You can utilize the faucet once every 24 hours.
@@ -14,7 +14,7 @@ You can utilize the faucet once every 24 hours.
 
 
 
-Alternatively, you can use the following commands in the **#faucet** channel on Cascadia's [Discord](https://discord.gg/cascadia):
+**Alternatively, use the following commands in the #faucet channel on Cascadia's** [**Discord**](https://discord.gg/cascadia)**:**
 
 | $request \<evm\_address>           | Use this command to request tokens.             |
 | ---------------------------------- | ----------------------------------------------- |
