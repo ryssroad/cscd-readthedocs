@@ -26,6 +26,7 @@
     * [Customization](validators/reference/customization.md)
     * [Snapshot](validators/reference/snapshot.md)
     * [State Sync](validators/reference/state-sync.md)
+    * [Peers](validators/reference/peers.md)
 * [Delegation](delegation/README.md)
   * [Delegate](delegation/delegate.md)
   * [Claim Rewards](delegation/claim-rewards.md)
