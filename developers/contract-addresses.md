@@ -6,20 +6,19 @@
 \
 **Validators**
 
-| Faucet      | cascadia1zmmdax5jth3r6t7qqddjnw0xrhwczzp6afn4c9 |
-| ----------- | ----------------------------------------------- |
 | Validator 1 | cascadia1zmmdax5jth3r6t7qqddjnw0xrhwczzp6afn4c9 |
+| ----------- | ----------------------------------------------- |
 | Validator 2 | cascadia1fgqm7r0f5jhhrfdf3rgx3kecqynqg0jasy07jm |
 
 \
-**Aligment**
+**Alignment**
 
 | bCC            | 0xD1028648d2b3906981882F0dEB0a83A94c27d4D4 |
 | -------------- | ------------------------------------------ |
 | FeeDistributor | 0xF3c9258E502896Be2633B48B8edF1DC004571B08 |
 
 \
-**SafeGlobal**
+**Multisig**
 
 | SimulateTxAccessor           | 0x3b8F8591a3a8143b98F2a684F64cFACD1529AfB9 |
 | ---------------------------- | ------------------------------------------ |
@@ -34,7 +33,7 @@
 | Safe                         | 0x0CF9477f3683A20C801705DCA97cB5EDc49A44E3 |
 
 \
-**Uniswap**
+**Exchange**
 
 | Factory   | 0xE8D630EB3138d7dF1a0a668D4F58F373DB6197C3 |
 | --------- | ------------------------------------------ |
@@ -44,9 +43,8 @@
 \
 **Bond Contracts**
 
-| Description   | Contract Address                           |
-| ------------- | ------------------------------------------ |
 | Authority     | 0xb28e067eeB98eeB45565c67ACFE52014cc7427e6 |
+| ------------- | ------------------------------------------ |
 | Aggregator    | 0x4A2B61Bbf5B1fA892745058A1F8d454f49f81B23 |
 | BondTreasury  | 0x044f386742c426bC7757F56f3361FE47F7153fF6 |
 | BondFixedTerm | 0x88f696e6E385Ba98FdF22A5dCa3A81122127c6F0 |

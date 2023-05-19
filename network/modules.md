@@ -1,20 +1,19 @@
 # Modules
 
-A module refers to a set of components performing specific network functions. These modules work together to ensure the proper functioning and security of the Cascadia blockchain
+A module refers to a set of components performing specific network functions.  These modules work together to ensure the proper functioning and security of the Cascadia blockchain.
 
 Here are the production-grade modules that can be used in Cascadia applications:
 
-| Module              | Description                                                                              |
-| ------------------- | ---------------------------------------------------------------------------------------- |
 | abci                | Manages the ABCI protocol communication.                                                 |
+| ------------------- | ---------------------------------------------------------------------------------------- |
 | api                 | Facilitates the creation of APIs for interacting with the server.                        |
-| auth                | Manages authentication operations, including accounts and signatures.                    |
+| auth                | Manages authentication operations, accounts, and signatures.                             |
 | authkeeper          | Handles the storage and retrieval of authentication data.                                |
 | authsims            | Supports simulations within the authentication module.                                   |
 | authz               | Provides support for granting and revoking authorization.                                |
 | authzkeeper         | Handles the storage and retrieval of authorization data.                                 |
 | authzmodule         | Provides module interfaces for authorization operations.                                 |
-| authtx              | Manages transaction-related operations within the authentication module.                 |
+| authtx              | Manages transaction operations within the authentication module.                         |
 | authtypes           | Contains type definitions for authentication operations.                                 |
 | baseapp             | A foundational structure upon which the  application is built.                           |
 | bank                | Manages token transfer and balance tracking operations.                                  |
@@ -51,8 +50,8 @@ Here are the production-grade modules that can be used in Cascadia applications:
 | govclient           | Provides client-side interactions for the governance module.                             |
 | govkeeper           | Handles the storage and retrieval of governance data.                                    |
 | govtypes            | Contains type definitions for governance operations.                                     |
-| govv1               | Contains governance-related types and functions for version 1.                           |
-| govv1beta1          | Contains governance-related types and functions for version 1 beta 1.                    |
+| govv1               | Contains governance-related types and functions for v1.                                  |
+| govv1beta1          | Contains governance-related types and functions for v1 beta 1.                           |
 | ica                 | Manages operations for interchain accounts.                                              |
 | icacontrollerkeeper | Handles the storage and retrieval of ICA controller data.                                |
 | icacontrollertypes  | Contains type definitions for ICA controller operations.                                 |
