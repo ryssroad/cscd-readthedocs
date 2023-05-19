@@ -2,6 +2,10 @@
 
 Cascadia has a well-defined set of parameters that outline rules for validators, ensuring a fair and efficient system for block production and decision-making.
 
+{% hint style="info" %}
+These parameters are also described on our [validator explorer](https://validator.cascadia.foundation/parameters).
+{% endhint %}
+
 
 
 **Staking**
@@ -38,9 +42,3 @@ Cascadia has a well-defined set of parameters that outline rules for validators,
 | Threshold      | 50%    | To pass a proposal in Cascadia's governance model, a minimum percentage of favorable votes is required.                            |
 | Veto Threshold | 33%    | In Cascadia's governance model, a proposal can be vetoed if a minimum percentage of "no" votes is reached.                         |
 | Voting Period  | 2 Days | The duration of the voting period for a governance proposal in Cascadia is set at 2 days.                                          |
-
-
-
-{% hint style="info" %}
-These parameters can be found [here](https://validator.cascadia.foundation/parameters).
-{% endhint %}
