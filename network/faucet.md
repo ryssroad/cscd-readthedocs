@@ -16,12 +16,7 @@ You can utilize the faucet once every 24 hours.
 
 **Alternatively, use the following commands in the #faucet channel on Cascadia's** [**Discord**](https://discord.gg/cascadia)**:**
 
-| $request \<evm\_address>           | Use this command to request tokens.             |
-| ---------------------------------- | ----------------------------------------------- |
-| $faucet\_status                    | Query the status of the faucet and the node.    |
-| $faucet\_address                   | Request the address of the faucet.              |
-| $tx\_info \<transaction\_hash\_ID> | Request information for a specific transaction. |
-| $balance \<evm\_address>           | Request the balance of a specific address.      |
+<table data-header-hidden><thead><tr><th width="296">Command</th><th>Description</th></tr></thead><tbody><tr><td>$request &#x3C;evm_address></td><td>Use this command to request tokens.</td></tr><tr><td>$faucet_status</td><td>Query the status of the faucet and the node.</td></tr><tr><td>$faucet_address</td><td>Request the address of the faucet.</td></tr><tr><td>$tx_info &#x3C;transaction_hash_ID></td><td>Request information for a specific transaction.</td></tr><tr><td>$balance &#x3C;evm_address></td><td>Request the balance of a specific address.</td></tr></tbody></table>
 
 {% hint style="info" %}
 Remember to change \<evm\_address> and \<transaction\_hash\_ID> with your details.

@@ -4,7 +4,4 @@ In the dApp ecosystem built around a blockchain, smart contracts are crucial com
 
 The following demonstrates the deployment/verification of a Solidity smart contract to Cascadia.
 
-| [Contract Deployment](https://cascadia.gitbook.io/gitbook/developers/contract-deployment)                         | This section is for developers looking to deploy smart contracts. |
-| ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| [Block Explorer Guide](https://cascadia.gitbook.io/gitbook/developers/contract-verification/block-explorer-guide) | Verify smart contracts via Cascadia's block explorer.             |
-| [Hardhat Integration](https://cascadia.gitbook.io/gitbook/developers/contract-verification/hardhat-integration)   | Verify smart contracts via Hardhat plugin.                        |
+<table data-header-hidden><thead><tr><th width="220"></th><th></th></tr></thead><tbody><tr><td><a href="https://cascadia.gitbook.io/gitbook/developers/contract-deployment">Contract Deployment</a></td><td>This section is for developers looking to deploy smart contracts.</td></tr><tr><td><a href="https://cascadia.gitbook.io/gitbook/developers/contract-verification/block-explorer-guide">Block Explorer Guide</a></td><td>Verify smart contracts via Cascadia's block explorer.</td></tr><tr><td><a href="https://cascadia.gitbook.io/gitbook/developers/contract-verification/hardhat-integration">Hardhat Integration</a></td><td>Verify smart contracts via Hardhat plugin.</td></tr></tbody></table>

@@ -16,11 +16,7 @@ cascadiad tx staking delegate cascadiavaloper1zec8f7faf880q7l9s8dehz2054lnavfsuu
 ```
 {% endcode %}
 
-| `<validator_address>`  | The address of the validator you want to delegate tokens. |
-| ---------------------- | --------------------------------------------------------- |
-| `<amount>`             | The amount of tokens you want to delegate.                |
-| `--from <wallet_name>` | Specifies the wallet you want to use for delegation.      |
-| `--gas-prices`         | Sets the gas price for the transaction.                   |
+<table data-header-hidden><thead><tr><th width="260">Command</th><th>Description</th></tr></thead><tbody><tr><td><code>&#x3C;validator_address></code></td><td>The address of the validator you want to delegate tokens.</td></tr><tr><td><code>&#x3C;amount></code></td><td>The amount of tokens you want to delegate.</td></tr><tr><td><code>--from &#x3C;wallet_name></code></td><td>Specifies the wallet you want to use for delegation.</td></tr><tr><td><code>--gas-prices</code></td><td>Sets the gas price for the transaction.</td></tr></tbody></table>
 
 
 

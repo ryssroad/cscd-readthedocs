@@ -18,7 +18,6 @@ The ChainID for Cascadia's devnet is `cascadia_6102-1`.
 
 BIP-0173 introduces a new format for segregated witness output addresses. With regard to the respective network type, Cascadia has many address prefixes, including:
 
-| Testnet | `cascadia` |
-| ------- | ---------- |
+<table data-header-hidden><thead><tr><th width="308.3333333333333"></th><th></th></tr></thead><tbody><tr><td>Testnet</td><td><code>cascadia</code></td></tr></tbody></table>
 
 Cascadia employs the Bech32 address format. Bech32 encoding offers reliable data integrity checks. The human-readable component offers contextual cues, helping UI designers clear error messages.

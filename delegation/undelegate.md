@@ -2,19 +2,19 @@
 
 #### Step 1: Navigate to [https://validator.cascadia.foundation/validators](https://validator.cascadia.foundation/validators) and connect your wallet.
 
-<figure><img src="../.gitbook/assets/Redelegate2 (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Redelegate2 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 **Step 2: Click the “Manage” button of the validator you would like to undelegate your tokens.**
 
-<figure><img src="../.gitbook/assets/Redelegate3 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Redelegate3 (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
 **Step 3: On the pop-up window, click on the "Undelegate" button.**
 
-<figure><img src="../.gitbook/assets/Undelegate1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Undelegate1 (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

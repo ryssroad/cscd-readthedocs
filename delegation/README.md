@@ -2,12 +2,7 @@
 
 Delegation refers to locking up your tokens for a period of time to contribute to Cascadia's network security.
 
-| [Delegate](https://cascadia.gitbook.io/gitbook/delegation-process/delegate)                   | This guide shows how to **delegate** tokens.                                  |
-| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| [Claim Rewards](https://cascadia.gitbook.io/gitbook/delegation-process/claiming-rewards)      | This guide shows how to **claim rewards** (from delegated tokens).            |
-| [Manual Delegation](https://cascadia.gitbook.io/gitbook/delegation-process/manual-delegation) | This guide shows you how to delegate tokens directly from the command prompt. |
-| [Redelegate](https://cascadia.gitbook.io/gitbook/delegation-process/redelegate)               | This guide shows how to **redelegate** tokens.                                |
-| [Undelegate](https://cascadia.gitbook.io/gitbook/delegation-process/undelegate)               | This guide shows how to **undelegate** tokens.                                |
+<table data-header-hidden><thead><tr><th width="220"></th><th></th></tr></thead><tbody><tr><td><a href="https://cascadia.gitbook.io/gitbook/delegation-process/delegate">Delegate</a></td><td>This guide shows how to <strong>delegate</strong> tokens.</td></tr><tr><td><a href="https://cascadia.gitbook.io/gitbook/delegation-process/claiming-rewards">Claim Rewards</a></td><td>This guide shows how to <strong>claim rewards</strong> (from delegated tokens).</td></tr><tr><td><a href="https://cascadia.gitbook.io/gitbook/delegation-process/manual-delegation">Manual Delegation</a></td><td>This guide shows you how to delegate tokens directly from the command prompt.</td></tr><tr><td><a href="https://cascadia.gitbook.io/gitbook/delegation-process/redelegate">Redelegate</a></td><td>This guide shows how to <strong>redelegate</strong> tokens.</td></tr><tr><td><a href="https://cascadia.gitbook.io/gitbook/delegation-process/undelegate">Undelegate</a></td><td>This guide shows how to <strong>undelegate</strong> tokens.</td></tr></tbody></table>
 
 
 
