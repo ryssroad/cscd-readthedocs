@@ -2,7 +2,7 @@
 
 To personalize your validator, such as changing your avatar, follow these steps:
 
-**Step 1: Sign up for an account on** [**Keybase.io**](https://t.me/c/1779849967/2119)**.**
+**Step 1: Sign up for an account on** [**Keybase.io**](https://keybase.io)**.**
 
 **Step 2: Upload your avatar to your Keybase profile.**
 
