@@ -6,11 +6,10 @@ This guide provides an overview of Cascadia's on-chain governance system, focusi
 
 **Participation Requirements**&#x20;
 
-To engage in Cascadia's on-chain governance, an account must hold bCC. \
-bCC is a unique ERC20 implementation that defines an account's voting power. It is non-transferable and can only be acquired by locking CC.
+To engage in Cascadia's on-chain governance, an account must hold bCC, an unique ERC20 implementation that defines an account's voting power.  It is non-transferable and can only be acquired by locking CC.
 
 {% hint style="info" %}
-In Cascadia, "locking" is more aptly referred to as "alignment".  This terminology better reflects the nature of the process within the Cascadia ecosystem.
+In Cascadia, "locking" is more aptly referred to as "alignment".  This terminology better reflects the nature of the locking process within the Cascadia ecosystem.
 {% endhint %}
 
 
