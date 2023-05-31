@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Welcome to Cascadia](README.md)
-  * [Table of Contents](welcome-to-cascadia/table-of-contents.md)
-  * [Brand Guidelines](welcome-to-cascadia/brand-guidelines.md)
-  * [Official Links](welcome-to-cascadia/official-links.md)
+  * [Table of Contents](readme/table-of-contents.md)
+  * [Brand Guidelines](readme/brand-guidelines.md)
+  * [Official Links](readme/official-links.md)
 * [Network](network/README.md)
   * [ChainID & Address Prefix](network/chainid-and-address-prefix.md)
   * [Configuration](network/configuration.md)
@@ -33,7 +33,7 @@
   * [Manual Delegation](delegation/manual-delegation.md)
   * [Redelegate](delegation/redelegate.md)
   * [Undelegate](delegation/undelegate.md)
-* [Governance](governance.md)
+* [Governance](governance/README.md)
   * [Alignment](governance/alignment.md)
 * [Developers](developers/README.md)
   * [Contract Addresses](developers/contract-addresses.md)
