@@ -113,7 +113,7 @@ module.exports = {
   solidity: "0.8.17",
   networks: {
     cascadia: {
-      url: "https://devnet.cascadia.foundation",
+      url: "https://testnet.cascadia.foundation",
       accounts: [private_key]
     }
   },
