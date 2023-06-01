@@ -24,7 +24,7 @@ WARNING: The private key will be exported as an unarmored hexadecimal string. US
 ```
 answer **y** and input your **keyring passphrase** when requested.
 
-Finally, copy the private key. It is a 64 char alphanumeric string.
+Finally, copy the private key. It is a 64 char alphanumeric string. 
 
 &#x20;
 
@@ -39,11 +39,11 @@ Click the circle icon at the top right corner of your MetaMask pop-up next to th
 
 ![image](https://github.com/barolosan/docs/assets/118662233/93a50f95-f99a-4f17-831c-68b665a2f858)
 
-Paste your private key in the text box and click import
+Paste your private key in the text box and click **import**
 
 ![image](https://github.com/barolosan/docs/assets/118662233/4bbd8c6a-734a-45ca-8c14-34d0972871af)
 
-Well Done! You imported your validator wallet on Metamask!
+**Well Done! You imported your validator wallet on Metamask!**
 
 ![image](https://github.com/barolosan/docs/assets/118662233/3a2c595e-c58f-4a46-96b9-23f871ae1c92)
 
