@@ -3,7 +3,7 @@
 #### Step 1: Install Hardhat.
 
 ```javascript
-npm install –g hardhat
+npm install -g hardhat
 ```
 
 
@@ -47,13 +47,13 @@ const private_key = process.env.PRIVATE_KEY
 
 **Step 6: Establish endpoint settings.**
 
-By default, the script will be using your local host `"127.0.0.1"` - If you are not running a localhost, you may leverage the public endpoint `https://devnet.cascadia.foundation/` by making changes to `networks` in `hardhat-config.js`, for example:
+By default, the script will be using your local host `"127.0.0.1"` - If you are not running a localhost, you may leverage the public endpoint `https://testnet.cascadia.foundation/` by making changes to `networks` in `hardhat-config.js`, for example:
 
 {% code overflow="wrap" %}
 ```javascript
 networks: {
     cascadia: {
-      url: "https://devnet.cascadia.foundation",
+      url: "https://testnet.cascadia.foundation",
       accounts: [private_key]
     }
   },
@@ -71,7 +71,7 @@ module.exports = {
   solidity: "0.8.17",
   networks: {
     cascadia: {
-      url: "https://devnet.cascadia.foundation",
+      url: "https://testnet.cascadia.foundation",
       accounts: [private_key]
     }
   }
