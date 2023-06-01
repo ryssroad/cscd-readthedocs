@@ -84,8 +84,8 @@ module.exports = {
 **Step 7: Deploy Contract.**
 
 {% code overflow="wrap" %}
-```
-npx hardhat run –network cascadia scripts/deploy.js
+```javascript
+npx hardhat run -network cascadia scripts/deploy.js
 ```
 {% endcode %}
 
