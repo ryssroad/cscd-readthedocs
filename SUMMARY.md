@@ -37,6 +37,7 @@
   * [Alignment](governance/alignment.md)
 * [Developers](developers/README.md)
   * [Contract Addresses](developers/contract-addresses.md)
+  * [Alignment Functions](developers/alignment-functions.md)
   * [Contract Deployment](developers/contract-deployment.md)
   * [Contract Verification](developers/contract-verification/README.md)
     * [Via Block Explorer](developers/contract-verification/via-block-explorer.md)
