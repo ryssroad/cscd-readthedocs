@@ -1,6 +1,4 @@
-# Vote-Escrowed Model
-
-**Overview**
+# Overview
 
 Ve-tokenomics, standing for "voting escrowed tokenomics," is a mechanism introduced by CurveDAO. The system incentivizes users to lock or in Cascadia's case, "align" their tokens for a specified duration. During this alignment process, regular tokens like Cascadia's native CC tokens transform into a special kind of token, in this case, bCC.
 
