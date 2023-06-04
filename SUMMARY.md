@@ -34,6 +34,7 @@
   * [Redelegate](delegation/redelegate.md)
   * [Undelegate](delegation/undelegate.md)
 * [Governance](governance/README.md)
+  * [Vote-Escrowed Model](governance/vote-escrowed-model.md)
   * [Alignment](governance/alignment.md)
 * [Developers](developers/README.md)
   * [Contract Addresses](developers/contract-addresses.md)
