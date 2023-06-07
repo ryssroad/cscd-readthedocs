@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Welcome to Cascadia](README.md)
-  * [Table of Contents](readme/table-of-contents.md)
+  * [Contents](readme/table-of-contents.md)
   * [Brand Guidelines](readme/brand-guidelines.md)
   * [Official Links](readme/official-links.md)
 * [Network](network/README.md)
@@ -11,7 +11,6 @@
   * [Faucet](network/faucet.md)
   * [Modules](network/modules.md)
   * [Parameters](network/parameters.md)
-  * [aCC Cooldown](network/acc-cooldown.md)
 * [Validators](validators/README.md)
   * [System Requirements](validators/system-requirements/README.md)
     * [Principles](validators/system-requirements/principles.md)
@@ -37,6 +36,7 @@
 * [Governance](governance/README.md)
   * [VeTokenomics](governance/vetokenomics.md)
   * [Alignment](governance/alignment/README.md)
+    * [Cooldown Period](governance/alignment/cooldown-period.md)
     * [Functions](governance/alignment/functions.md)
 * [Developers](developers/README.md)
   * [Contract Addresses](developers/contract-addresses.md)
