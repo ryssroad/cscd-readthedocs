@@ -85,7 +85,7 @@ module.exports = {
 
 {% code overflow="wrap" %}
 ```javascript
-npx hardhat run -network cascadia scripts/deploy.js
+npx hardhat run -netork cascadia scripts/deploy.js
 ```
 {% endcode %}
 

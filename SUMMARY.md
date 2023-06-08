@@ -35,7 +35,7 @@
   * [Undelegate](delegation/undelegate.md)
 * [Governance](governance/README.md)
   * [VeTokenomics](governance/vetokenomics.md)
-  * [Alignment](governance/alignment/README.md)
+  * [Alignment](governance/alignment.md)
     * [Cooldown Period](governance/alignment/cooldown-period.md)
     * [Functions](governance/alignment/functions.md)
 * [Developers](developers/README.md)
