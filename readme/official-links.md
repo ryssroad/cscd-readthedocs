@@ -8,14 +8,7 @@ Applications
 
 Community
 
-| Coordinape            | [https://app.coordinape.com/circles/5118](https://app.coordinape.com/circles/5118) |
-| --------------------- | ---------------------------------------------------------------------------------- |
-| Discord               | [https://discord.gg/cascadia](https://discord.gg/cascadia)                         |
-| Guild                 | [https://guild.xyz/cascadia](https://guild.xyz/cascadia)                           |
-| Telegram (Public)     | [https://t.me/CascadiaFoundation](https://t.me/CascadiaFoundation)                 |
-| Telegram (Validators) | [https://t.me/+Tf6pQQSA7IkxNmU5](https://t.me/+Tf6pQQSA7IkxNmU5)                   |
-| Twitter               | [https://twitter.com/CascadiaSystems](https://twitter.com/CascadiaSystems)         |
-| Zealy                 | [https://zealy.io/c/cascadia](https://zealy.io/c/cascadia)                         |
+<table data-header-hidden><thead><tr><th width="227"></th><th></th></tr></thead><tbody><tr><td>Coordinape</td><td><a href="https://app.coordinape.com/circles/5118">https://app.coordinape.com/circles/5118</a></td></tr><tr><td>Discord</td><td><a href="https://discord.gg/cascadia">https://discord.gg/cascadia</a></td></tr><tr><td>Guild</td><td><a href="https://guild.xyz/cascadia">https://guild.xyz/cascadia</a></td></tr><tr><td>Telegram (Public)</td><td><a href="https://t.me/CascadiaFoundation">https://t.me/CascadiaFoundation</a></td></tr><tr><td>Telegram (Validators)</td><td><a href="https://t.me/+Tf6pQQSA7IkxNmU5">https://t.me/+Tf6pQQSA7IkxNmU5</a></td></tr><tr><td>Twitter</td><td><a href="https://twitter.com/CascadiaSystems">https://twitter.com/CascadiaSystems</a></td></tr><tr><td>Zealy</td><td><a href="https://zealy.io/c/cascadia">https://zealy.io/c/cascadia</a></td></tr></tbody></table>
 
 
 
