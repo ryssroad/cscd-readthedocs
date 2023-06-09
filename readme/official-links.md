@@ -2,11 +2,7 @@
 
 Applications
 
-| Alignment          | [http://align.cascadia.foundation/](http://align.cascadia.foundation/)           |
-| ------------------ | -------------------------------------------------------------------------------- |
-| Block Explorer     | [https://explorer.cascadia.foundation](https://explorer.cascadia.foundation/)    |
-| Faucet             | [https://www.cascadia.foundation/faucet](https://www.cascadia.foundation/faucet) |
-| Validator Explorer | [https://validator.cascadia.foundation](https://validator.cascadia.foundation/)  |
+<table data-header-hidden><thead><tr><th width="222"></th><th></th></tr></thead><tbody><tr><td>Alignment</td><td><a href="http://align.cascadia.foundation/">http://align.cascadia.foundation/</a></td></tr><tr><td>Block Explorer</td><td><a href="https://explorer.cascadia.foundation/">https://explorer.cascadia.foundation</a></td></tr><tr><td>Faucet</td><td><a href="https://www.cascadia.foundation/faucet">https://www.cascadia.foundation/faucet</a></td></tr><tr><td>Validator Explorer</td><td><a href="https://validator.cascadia.foundation/">https://validator.cascadia.foundation</a></td></tr></tbody></table>
 
 
 
@@ -25,21 +21,10 @@ Community
 
 Developers
 
-| Directory   | [https://www.notion.so/cascadiafoundation/a560ef5f506847b2886148bd06428ca0?v=8d4e9324743949b5a3674d1675a609ae](https://www.notion.so/cascadiafoundation/a560ef5f506847b2886148bd06428ca0?v=8d4e9324743949b5a3674d1675a609ae) |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Gitbook     | [https://cascadia.gitbook.io/gitbook](https://cascadia.gitbook.io/gitbook/)                                                                                                                                                  |
-| Github      | [https://github.com/CascadiaFoundation](https://github.com/CascadiaFoundation)                                                                                                                                               |
-| Snapshots   | [ http://185.209.223.64:8999/snapshots](http://185.209.223.64:8999/snapshots)                                                                                                                                                |
-| UptimeRobot | [https://stats.uptimerobot.com/1v00Yi6PZA](https://stats.uptimerobot.com/1v00Yi6PZA)                                                                                                                                         |
+<table data-header-hidden><thead><tr><th width="232"></th><th></th></tr></thead><tbody><tr><td>Directory</td><td><a href="https://www.notion.so/cascadiafoundation/a560ef5f506847b2886148bd06428ca0?v=8d4e9324743949b5a3674d1675a609ae">https://www.notion.so/cascadiafoundation/a560ef5f506847b2886148bd06428ca0?v=8d4e9324743949b5a3674d1675a609ae</a></td></tr><tr><td>Gitbook</td><td><a href="https://cascadia.gitbook.io/gitbook/">https://cascadia.gitbook.io/gitbook</a></td></tr><tr><td>Github</td><td><a href="https://github.com/CascadiaFoundation">https://github.com/CascadiaFoundation</a></td></tr><tr><td>Snapshots</td><td><a href="http://185.209.223.64:8999/snapshots"> http://185.209.223.64:8999/snapshots</a></td></tr><tr><td>UptimeRobot</td><td><a href="https://stats.uptimerobot.com/1v00Yi6PZA">https://stats.uptimerobot.com/1v00Yi6PZA</a></td></tr></tbody></table>
 
 
 
 Information
 
-| Coingecko  | [https://www.coingecko.com/en/coins/cascadia](https://www.coingecko.com/en/coins/cascadia)                                                 |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Deck       | [https://drive.google.com/file/d/1XCNn21bKuSegMZ7HhyYzpWlN7LG\_V6Xy](https://drive.google.com/file/d/1XCNn21bKuSegMZ7HhyYzpWlN7LG\_V6Xy)   |
-| LinkedIn   | [https://www.linkedin.com/company/cascadiafoundation](https://www.linkedin.com/company/cascadiafoundation)                                 |
-| Medium     | [https://medium.com/@CascadiaFoundation](https://medium.com/@CascadiaFoundation)                                                           |
-| Website    | [https://cascadia.foundation](https://cascadia.foundation/)                                                                                |
-| Whitepaper | [https://drive.google.com/file/d/1t\_s9tc04Ewr\_CzHEWochzwZzVL7Vh3bz](https://drive.google.com/file/d/1t\_s9tc04Ewr\_CzHEWochzwZzVL7Vh3bz) |
+<table data-header-hidden><thead><tr><th width="233"></th><th></th></tr></thead><tbody><tr><td>Coingecko</td><td><a href="https://www.coingecko.com/en/coins/cascadia">https://www.coingecko.com/en/coins/cascadia</a></td></tr><tr><td>Deck</td><td><a href="https://drive.google.com/file/d/1XCNn21bKuSegMZ7HhyYzpWlN7LG_V6Xy">https://drive.google.com/file/d/1XCNn21bKuSegMZ7HhyYzpWlN7LG_V6Xy</a></td></tr><tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/company/cascadiafoundation">https://www.linkedin.com/company/cascadiafoundation</a></td></tr><tr><td>Medium</td><td><a href="https://medium.com/@CascadiaFoundation">https://medium.com/@CascadiaFoundation</a></td></tr><tr><td>Website</td><td><a href="https://cascadia.foundation/">https://cascadia.foundation</a></td></tr><tr><td>Whitepaper</td><td><a href="https://drive.google.com/file/d/1t_s9tc04Ewr_CzHEWochzwZzVL7Vh3bz">https://drive.google.com/file/d/1t_s9tc04Ewr_CzHEWochzwZzVL7Vh3bz</a></td></tr></tbody></table>
