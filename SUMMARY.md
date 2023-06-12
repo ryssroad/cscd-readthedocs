@@ -44,7 +44,6 @@
   * [Contract Verification](developers/contract-verification/README.md)
     * [Via Block Explorer](developers/contract-verification/via-block-explorer.md)
     * [Via Hardhat](developers/contract-verification/via-hardhat.md)
-  * [State Queries](developers/state-queries.md)
 * [Security](security/README.md)
   * [Disclosure Policy](security/disclosure-policy.md)
 * [Legal](legal/README.md)
