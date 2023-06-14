@@ -14,10 +14,16 @@ Community
 
 Developers
 
-<table data-header-hidden><thead><tr><th width="232"></th><th></th></tr></thead><tbody><tr><td>Directory</td><td><a href="https://www.notion.so/cascadiafoundation/a560ef5f506847b2886148bd06428ca0?v=8d4e9324743949b5a3674d1675a609ae">https://www.notion.so/cascadiafoundation/a560ef5f506847b2886148bd06428ca0?v=8d4e9324743949b5a3674d1675a609ae</a></td></tr><tr><td>Gitbook</td><td><a href="https://cascadia.gitbook.io/gitbook/">https://cascadia.gitbook.io/gitbook</a></td></tr><tr><td>Github</td><td><a href="https://github.com/CascadiaFoundation">https://github.com/CascadiaFoundation</a></td></tr><tr><td>Snapshots</td><td><a href="http://185.209.223.64:8999/snapshots"> http://185.209.223.64:8999/snapshots</a></td></tr><tr><td>UptimeRobot</td><td><a href="https://stats.uptimerobot.com/1v00Yi6PZA">https://stats.uptimerobot.com/1v00Yi6PZA</a></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="232"></th><th></th></tr></thead><tbody><tr><td>Directory</td><td><a href="https://www.notion.so/cascadiafoundation/a560ef5f506847b2886148bd06428ca0?v=8d4e9324743949b5a3674d1675a609ae">https://www.notion.so/cascadiafoundation/a560ef5f506847b2886148bd06428ca0?v=8d4e9324743949b5a3674d1675a609ae</a></td></tr><tr><td>Gitbook</td><td><a href="https://cascadia.gitbook.io/gitbook/">https://cascadia.gitbook.io/gitbook</a></td></tr><tr><td>Github</td><td><a href="https://github.com/CascadiaFoundation">https://github.com/CascadiaFoundation</a></td></tr><tr><td>Snapshots</td><td><a href="http://185.209.223.64:8999/snapshots">http://185.209.223.64:8999/snapshots</a></td></tr><tr><td>UptimeRobot</td><td><a href="https://stats.uptimerobot.com/1v00Yi6PZA">https://stats.uptimerobot.com/1v00Yi6PZA</a></td></tr></tbody></table>
 
 
 
 Information
 
 <table data-header-hidden><thead><tr><th width="233"></th><th></th></tr></thead><tbody><tr><td>Coingecko</td><td><a href="https://www.coingecko.com/en/coins/cascadia">https://www.coingecko.com/en/coins/cascadia</a></td></tr><tr><td>Deck</td><td><a href="https://drive.google.com/file/d/150l2-dq3Te6a1iQrEwnre1rpAzozw9by/view?usp=sharing">https://drive.google.com/file/d/150l2-dq3Te6a1iQrEwnre1rpAzozw9by</a></td></tr><tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/company/cascadiafoundation">https://www.linkedin.com/company/cascadiafoundation</a></td></tr><tr><td>Medium</td><td><a href="https://medium.com/@CascadiaFoundation">https://medium.com/@CascadiaFoundation</a></td></tr><tr><td>Website</td><td><a href="https://cascadia.foundation/">https://cascadia.foundation</a></td></tr><tr><td>Whitepaper</td><td><a href="https://drive.google.com/file/d/1t_s9tc04Ewr_CzHEWochzwZzVL7Vh3bz">https://drive.google.com/file/d/1t_s9tc04Ewr_CzHEWochzwZzVL7Vh3bz</a></td></tr></tbody></table>
+
+
+
+International
+
+<table data-header-hidden><thead><tr><th width="235"></th><th></th></tr></thead><tbody><tr><td>Turkey</td><td><a href="https://t.me/CascadiaTR">https://t.me/CascadiaTR</a></td></tr></tbody></table>
