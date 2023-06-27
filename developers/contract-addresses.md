@@ -1,11 +1,13 @@
 # Contract Addresses
 
-<table data-header-hidden><thead><tr><th width="254">Description</th><th>Contract Address</th></tr></thead><tbody><tr><td>Wrapped Test Cascadia</td><td>0x91d128e27BdC2E9597098efBd1798D86d96A04c2</td></tr></tbody></table>
+**Core Functions**
+
+<table data-header-hidden><thead><tr><th width="252">Description</th><th>Contract Address</th></tr></thead><tbody><tr><td>Wrapped Test Cascadia</td><td>0x91d128e27BdC2E9597098efBd1798D86d96A04c2</td></tr></tbody></table>
 
 \
-**Validators**
+**Internal Validators**
 
-<table data-header-hidden><thead><tr><th width="251">Description</th><th>Contract Address</th></tr></thead><tbody><tr><td>Validator 1</td><td>cascadia1zmmdax5jth3r6t7qqddjnw0xrhwczzp6afn4c9</td></tr><tr><td>Validator 2</td><td>cascadia1fgqm7r0f5jhhrfdf3rgx3kecqynqg0jasy07jm</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="255">Description</th><th>Contract Address</th></tr></thead><tbody><tr><td>Validator 1</td><td>cascadia1zmmdax5jth3r6t7qqddjnw0xrhwczzp6afn4c9</td></tr><tr><td>Validator 2</td><td>cascadia1fgqm7r0f5jhhrfdf3rgx3kecqynqg0jasy07jm</td></tr></tbody></table>
 
 \
 **Alignment**
