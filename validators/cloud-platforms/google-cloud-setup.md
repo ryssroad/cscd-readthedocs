@@ -1,8 +1,8 @@
-# Google Cloud Setup
+# Google Cloud Platform
 
 **Step 1: Create a Google Cloud Services Account**
 
-To begin, establish a Google Cloud Services account if you do not already have one. Sign up for a free account at [https://console.cloud.google.com/freetrial](https://console.cloud.google.com/freetrial).
+To begin, create a Google account if you do not already have one. Sign up for a free account at [https://console.cloud.google.com/freetrial](https://console.cloud.google.com/freetrial).
 
 {% hint style="info" %}
 **"Enable"** the API if the Cloud account is freshly set up.
@@ -12,7 +12,7 @@ To begin, establish a Google Cloud Services account if you do not already have o
 
 **Step 2: Create a Virtual Machine**
 
-After creating an account, create a virtual machine (VM) to execute your node. Proceed to the Google Cloud Services console and select the **"Compute Engine"** tab. Then, opt for **"Create Instance"** to produce a new VM instance.&#x20;
+After creating an account, create a virtual machine (VM) to execute your node. Proceed to the Google Cloud console and select the **"Compute Engine"** tab. Then, opt for **"Create Instance"** to produce a new VM instance.&#x20;
 
 While setting up the VM, you must select the following:
 

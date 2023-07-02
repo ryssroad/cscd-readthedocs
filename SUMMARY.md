@@ -28,7 +28,7 @@
 * [Validators](validators/README.md)
   * [Cloud Platforms](validators/cloud-platforms/README.md)
     * [Amazon Web Services](validators/cloud-platforms/aws-setup.md)
-    * [Google Cloud](validators/cloud-platforms/google-cloud-setup.md)
+    * [Google Cloud Platform](validators/cloud-platforms/google-cloud-setup.md)
   * [Installation (Node)](validators/install-your-node/README.md)
     * [CLI Setup](validators/install-your-node/cli-setup.md)
     * [Concurrent Installation](validators/install-your-node/alongside-other-nodes.md)
