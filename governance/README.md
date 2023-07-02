@@ -1,6 +1,6 @@
 # Governance
 
-This guide provides an overview of Cascadia's on-chain governance system, focusing on the role of vote-escrowed CC as the determining factor for each account's voting power. This section covers various aspects of the governance system, such as proposal submission, voting periods, quorum requirements, pass thresholds, and veto thresholds. Additionally, it clarifies the voting options available and the criteria for determining the outcome of a governance proposal.
+This guide provides an overview of Cascadia's on-chain governance system, focusing on vote-escrowed CC as the determining factor for each account's voting power. This section covers various aspects of the governance system, such as proposal submission, voting periods, quorum requirements, pass thresholds, and veto thresholds. Additionally, it clarifies the voting options available and the criteria for determining the outcome of a governance proposal.
 
 
 

@@ -1,7 +1,9 @@
 # Developers
 
-In the dApp ecosystem built around a blockchain, smart contracts are crucial components. Making sure things function as intended and continue to be as safe as feasible is essential. Needless losses can be avoided with complete and well-designed smart contracts, which also contribute to the project's security. &#x20;
+Verifying smart contracts is a critical process which ensures the legitimacy, safety, and proper functioning of these digital agreements.  By applying verification, you ensure that your contracts are not only well-structured but also secure from potential vulnerabilities.
 
-The following demonstrates the deployment/verification of a Solidity smart contract to Cascadia.
+We will outline two prominent methods for this verification: using the [Cascadia Block Explorer](https://explorer.cascadia.foundation/) and the [Hardhat](https://hardhat.org/) development environment.
 
-<table data-header-hidden><thead><tr><th width="220"></th><th></th></tr></thead><tbody><tr><td><a href="https://cascadia.gitbook.io/gitbook/developers/contract-deployment">Contract Deployment</a></td><td>This section is for developers looking to deploy smart contracts.</td></tr><tr><td><a href="https://cascadia.gitbook.io/gitbook/developers/contract-verification/block-explorer-guide">Block Explorer Guide</a></td><td>Verify smart contracts via Cascadia's block explorer.</td></tr><tr><td><a href="https://cascadia.gitbook.io/gitbook/developers/contract-verification/hardhat-integration">Hardhat Integration</a></td><td>Verify smart contracts via Hardhat plugin.</td></tr></tbody></table>
+Our Block Explorer is an intuitive online tool that allows for quick and easy verification of smart contracts.  It's user-friendly interface and streamlined design ensures accessibility even for those new to smart contracts.
+
+In contrast, Hardhat provides a more comprehensive platform for smart contract creation and verification.  As an Ethereum-based environment, it offers robust tools and integrations, favoring users seeking a more customizable approach.
