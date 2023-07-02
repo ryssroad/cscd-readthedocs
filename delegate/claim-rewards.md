@@ -1,4 +1,4 @@
-# Claim Rewards
+# Claim
 
 **Step 1: Navigate to** [**https://validator.cascadia.foundation/validators**](https://validator.cascadia.foundation/validators) **and connect your wallet.**
 
@@ -6,22 +6,18 @@
 
 
 
-**Step 2: Click the “Manage” button of the validator to claim your delegation rewards.**
+**Step 2: Click the “Manage” button of the validator to whom you have delegated.**
 
 <figure><img src="../.gitbook/assets/Redelegate3 (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
-**Step 3: On the pop-up window, click on the "Claim Reward" button.**
+**Step 3: On the pop-up window, click on the "Claim" button.**
 
 <figure><img src="../.gitbook/assets/ClaimReward1 (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-**Step 4: Make sure the information is correct, click on the ''Claim Reward'' button, and confirm your transaction in your wallet.**
-
-{% hint style="info" %}
-You can claim rewards together by clicking the **''Claim''** button for validators you have delegated to.
-{% endhint %}
+**Step 4: To Claim all, click the ''Claim'' button on the** [**Validators** ](https://validator.cascadia.foundation/validators)**page, and confirm your transaction in your wallet.**
 
 <figure><img src="../.gitbook/assets/Claimewards2.png" alt=""><figcaption></figcaption></figure>

@@ -4,7 +4,7 @@
   * [Brand Guidelines](readme/brand-guidelines.md)
   * [Official Links](readme/official-links.md)
 * [Delegation](delegate/README.md)
-  * [Claim Rewards](delegate/claim-rewards.md)
+  * [Claim](delegate/claim-rewards.md)
   * [Manual Delegation](delegate/manual-delegation.md)
   * [Redelegate](delegate/redelegate.md)
   * [Undelegate](delegate/undelegate.md)
