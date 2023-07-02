@@ -1,4 +1,4 @@
-# Upgrade your Node
+# Upgrade
 
 Follow these steps to update your Cascadia node to the latest version.\
 
@@ -53,5 +53,5 @@ sudo systemctl restart cascadiad
 
 
 {% hint style="info" %}
-Node snapshots can be found in the Directory: [https://www.notion.so/cascadiafoundation/a560ef5f506847b2886148bd06428ca0?v=8d4e9324743949b5a3674d1675a609ae](https://www.notion.so/cascadiafoundation/a560ef5f506847b2886148bd06428ca0?v=8d4e9324743949b5a3674d1675a609ae)
+Snapshots can be found in the [Community Directory](https://www.askclu.com/index.php/Community\_Directory).  [https://www.askclu.com/index.php/Community\_Directory:\_Snapshot](https://www.askclu.com/index.php/Community\_Directory:\_Snapshot)
 {% endhint %}
