@@ -26,4 +26,4 @@ Information
 
 International
 
-<table data-header-hidden><thead><tr><th width="235"></th><th></th></tr></thead><tbody><tr><td>Turkey</td><td><a href="https://t.me/CascadiaTR">https://t.me/CascadiaTR</a></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="235"></th><th></th></tr></thead><tbody><tr><td>India</td><td><a href="https://t.me/CascadiaIN">https://t.me/CascadiaIN</a></td></tr><tr><td>Turkey</td><td><a href="https://t.me/CascadiaTR">https://t.me/CascadiaTR</a></td></tr></tbody></table>
