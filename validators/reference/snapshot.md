@@ -1,36 +1,98 @@
 # Snapshot
 
-#### **Step 1: Stop service, reset data.**
+We take a node snapshot every day. We then delete all the previous snapshots to free up the space on the file server.
+
+The snapshot is designed for node operators to run an efficient validator service on the Cascadia chain. To make the snapshot as small as possible while still viable as a validator, we use the following setting to save disk space. We suggest you make the same adjustment on your node too. Please notice that your node will have very limited functionality beyond signing blocks with efficient disk space utilization. For example, your node will not be able to serve as an RPC endpoint (which is not suggested to run on a validator node anyway).
+
+Since we periodically state-sync our snapshot nodes, you might notice that sometimes the size of our snapshot is surprisingly small.
+
+**app.toml**
+
+```
+# Prune Type
+pruning = "custom"
+
+# Prune Strategy
+pruning-keep-recent = "100"
+pruning-keep-every = "0"
+pruning-interval = "10"
+```
+
+**config.toml**
+
+```
+indexer = "null"
+```
+
+
+
+**How To Process Cascadia Snapshot**
+
+Install lz4 if needed:
+
+```
+sudo apt update
+sudo apt install snapd -y
+sudo snap install lz4
+```
+
+\
+Download the snapshot, for example:
 
 {% code overflow="wrap" %}
+```
+wget -O cascadia_latest.tar.lz4 https://snapshot.cascadia.foundation/snapshots/null --inet4-only
+```
+{% endcode %}
+
+\
+Stop your node
+
 ```
 sudo systemctl stop cascadiad
-cp $HOME/.cascadiad/data/priv_validator_state.json $HOME/.cascadiad/priv_validator_state.json.backup
-rm -rf $HOME/.cascadiad/data
 ```
-{% endcode %}
 
+\
+Reset your node. **WARNING**: This will erase your node database. If you are already running validator, be sure you backed up your **`` `priv_validator_key.json` ``** before running the command. The command does not wipe the file. However, you should already have a backup of it in a safe location.
 
+```
+cascadiad tendermint unsafe-reset-all --home $HOME/.cascadiad --keep-addr-book
+```
 
-**Step 2: Download latest snapshot.**
+\
+Decompress the snapshot to your database location. Your database location will be something to the effect of **`` `~/.cascadiad` ``** depending on your node implementation.
+
+```javascript
+lz4 -c -d cascadia_latest.tar.lz4 | tar -x -C $HOME/.cascadiad data
+```
+
+\
+If everything is good, now restart your node
+
+```javascript
+sudo systemctl start cascadiad
+```
+
+\
+Remove the downloaded snapshot to free up space
+
+```javascript
+rm -v cascadia_latest.tar.lz4
+```
+
+\
+Make sure that your node is running
+
+```javascript
+sudo systemctl status cascadiad
+sudo journalctl -u cascadiad -f
+```
+
+\
+**ADVANCED ROUTE**: The above solution requires you to download the compressed file, uncompressed it and then delete the original file. This requires extra storage space on your server. You can run the following combo command to stream the snapshot into your database location. For advanced users only:
 
 {% code overflow="wrap" %}
-```
-curl -L <snapshot>.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.cascadiad
-mv $HOME/.cascadiad/priv_validator_state.json.backup $HOME/.cascadiad/data/priv_validator_state.json
-```
-{% endcode %}
-
-{% hint style="info" %}
-Community`<snapshot>` can be found in our [Directory](https://www.notion.so/cascadiafoundation/a560ef5f506847b2886148bd06428ca0?v=8d4e9324743949b5a3674d1675a609ae).&#x20;
-{% endhint %}
-
-
-
-**Step 3: Restart service, check logs.**
-
-{% code overflow="wrap" %}
-```
-sudo systemctl start cascadiad && sudo journalctl -u cascadiad -fn 100 -o cat
+```javascript
+curl -o - -L https://snapshot.cascadia.foundation/snapshots/$(curl -s https://snapshot.cascadia.foundation/snapshots/cascadia/info | jq -r .filename) | lz4 -c -d - | tar -x -C $HOME/.cascadiad data
 ```
 {% endcode %}
