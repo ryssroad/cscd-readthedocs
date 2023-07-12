@@ -1,9 +1,9 @@
 # Upgrade
 
-Follow these steps to update your Cascadia node to the latest version.\
+Follow these steps to upgrade your Cascadia node.\
 
 
-**Step 1: Stop the cascadiad service.**
+**Step 1: Stop the `cascadiad` service.**
 
 ```javascript
 sudo systemctl stop cascadiad
@@ -37,21 +37,15 @@ chmod +x cascadiad
 ```
 
 \
-**Step 5: Replace the existing Cascadia binary with the new one.**
+**Step 5: Replace the existing Cascadia binary with the latest version.**
 
 ```javascript
 sudo mv cascadiad $(which cascadiad)
 ```
 
 \
-**Step 6: Restart the Cascadia service.**
+**Step 6: Restart the `cascadiad` service.**
 
 ```javascript
 sudo systemctl restart cascadiad
 ```
-
-
-
-{% hint style="info" %}
-Snapshots can be found in the [Community Directory](https://www.askclu.com/index.php/Community\_Directory).  [https://www.askclu.com/index.php/Community\_Directory:\_Snapshot](https://www.askclu.com/index.php/Community\_Directory:\_Snapshot)
-{% endhint %}

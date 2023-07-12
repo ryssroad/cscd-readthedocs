@@ -1,10 +1,10 @@
-# Alongside other Nodes
+# Concurrent Installation
 
-This guide explains how to install a Cascadia node on a server that already has a Cosmos node installed.  By changing default ports, it's possible to run two Cosmos nodes without conflict.
+This guide explains how to install a Cascadia node on a server that already has a node installed.  By changing default ports, it's possible to run two nodes without conflict.
 
 
 
-**Step 1: Check ports used by the existing Cosmos node.**
+**Step 1: Check ports used by the existing node.**
 
 Run the following command:
 

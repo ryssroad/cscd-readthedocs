@@ -1,5 +1,9 @@
 # Snapshot
 
+{% hint style="info" %}
+Snapshots can be found in the [Community Directory](https://www.askclu.com/index.php/Community\_Directory:\_Snapshot).
+{% endhint %}
+
 \
 **Step 1: Install lz4 if needed**
 
