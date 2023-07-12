@@ -21,7 +21,7 @@ cd $HOME
 
 {% code overflow="wrap" %}
 ```javascript
-curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.2/cascadiad-v0.1.2-linux-amd64 -o cascadiad
+curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.3/cascadiad-v0.1.3-linux-amd64 -o cascadiad
 ```
 {% endcode %}
 
