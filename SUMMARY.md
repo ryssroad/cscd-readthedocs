@@ -32,7 +32,7 @@
   * [Installation (Node)](validators/install-your-node/README.md)
     * [CLI Setup](validators/install-your-node/cli-setup.md)
     * [Concurrent Installation](validators/install-your-node/alongside-other-nodes.md)
-    * [Upgrade](validators/install-your-node/upgrade-your-node.md)
+    * [Upgrade](validators/install-your-node/upgrade.md)
   * [Installation (Validator)](validators/run-your-validator.md)
   * [Reference](validators/reference/README.md)
     * [Customization](validators/reference/customization.md)
