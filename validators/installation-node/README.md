@@ -1,4 +1,4 @@
-# Install your Node
+# Installation (Node)
 
 Once your instance is created on [Google Cloud](https://cascadia.gitbook.io/gitbook/validators/virtual-machine/google-cloud-setup), click the **"SSH"** button to open the terminal window.  For [AWS](https://cascadia.gitbook.io/gitbook/validators/virtual-machine/aws-setup), click the **"EC2 Instance Connect''** button.
 
@@ -264,4 +264,4 @@ journalctl -u cascadiad -f
 
 Congratulations, you've successfully set up a Cascadia node!
 
-Next, we'll move on to [running a validator](../run-your-validator.md).
+Next, we'll move on to running a [validator](../installation-validator.md).

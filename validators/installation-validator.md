@@ -1,4 +1,4 @@
-# Run your Validator
+# Installation (Validator)
 
 Before following the steps below, first set up a node as per the instructions provided [here.](https://cascadia.gitbook.io/gitbook/validators/install-your-node)
 

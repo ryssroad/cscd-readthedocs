@@ -3,7 +3,7 @@
 CLI stands for Command Line Interface. It's a way to interact with a computer program by typing commands into a terminal or console. Running a program in CLI mode means that it is being executed through a terminal, rather than through a graphical user interface.
 
 {% hint style="info" %}
-CLI is a different approach to node setup than [Install your Node](./).  Minimum requirement is **Python 3.8.**
+CLI is a different approach to node setup than [Install your Node](broken-reference).  Minimum requirement is **Python 3.8.**
 {% endhint %}
 
 
