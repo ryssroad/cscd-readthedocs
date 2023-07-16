@@ -1,8 +1,5 @@
 # Upgrade
 
-Follow these steps to upgrade your Cascadia node.\
-
-
 **Step 1: Stop the `cascadiad` service.**
 
 ```javascript
