@@ -1,6 +1,6 @@
 # System Requirements
 
-Validators are encouraged to use a reputable cloud provider or set up a secure physical operation with limited access to key management.  They should prepare their data center location with backup storage, good connectivity, redundant power, and multiple networking boxes.
+Validators are encouraged to use a reputable cloud provider or set up a secure physical operation with limited access to key management.  Prepare your data center location with good connectivity, backup storage, redundant power, and multiple networking boxes.
 
 In Cascadia's early development stages, we expect initial network requirements to be low.  As the network expands, more bandwidth, CPU, and memory may be needed.
 
@@ -26,7 +26,7 @@ windows/x86_64
 
 To run validator nodes on Cascadia, we suggest the following:
 
-* 2 x dedicated/physical CPUs with`SSE4.1` and `SSE4.2` flags (use [lscpu](https://manpages.ubuntu.com/manpages/trusty/man1/lscpu.1.html) to verify)
+* 2 x dedicated/physical CPUs with`SSE4.1` and `SSE4.2` flags (verify using [lscpu](https://manpages.ubuntu.com/manpages/trusty/man1/lscpu.1.html))
 * 8 GB RAM
 * 200 GB SSD
 * 100 Mbit/s always-on internet connection with 4 TB/month data plan
