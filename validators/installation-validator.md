@@ -1,6 +1,6 @@
 # Installation (Validator)
 
-Before following the steps below, first set up a node as per the instructions provided [here.](https://cascadia.gitbook.io/gitbook/validators/install-your-node)
+Before following the steps below, first set up a node.  Instructions are available [here](installation-node/)[.](https://cascadia.gitbook.io/gitbook/validators/install-your-node)
 
 {% hint style="info" %}
 To resume typing while your node is running, press **ctrl-c**.
@@ -149,7 +149,7 @@ cascadiad tx staking create-validator \
 Enter the passphrase you created in step 2, then confirm the transaction.
 
 {% hint style="info" %}
-You can verify the success of your validator status by checking whether your validator address appears on [Cascadia's validator explorer](https://validator.cascadia.foundation/validators).
+You can verify the success of your validator status by checking whether your validator address appears on Cascadia's [validator explorer](https://validator.cascadia.foundation/validators).
 {% endhint %}
 
 
