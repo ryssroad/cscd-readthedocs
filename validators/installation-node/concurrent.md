@@ -1,4 +1,4 @@
-# Concurrent Installation
+# Concurrent
 
 This guide explains how to install a Cascadia node on a server that already has a node installed.  By changing default ports, it's possible to run two nodes without conflict.
 

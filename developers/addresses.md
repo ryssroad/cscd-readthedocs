@@ -1,4 +1,4 @@
-# Canonical Addresses
+# Addresses
 
 **Core Functions**
 

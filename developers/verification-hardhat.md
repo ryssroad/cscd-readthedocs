@@ -1,8 +1,6 @@
-# Via Hardhat
+# Verification (Hardhat)
 
-These are the steps for verifying smart contracts via [Hardhat](https://hardhat.org/). The Hardhat plugin is a comprehensive development environment that facilitates contract compilation, deployment, and authentication. It provides the ability to verify contracts through the block explorer.
-
-The following steps outline the process of verifying smart contracts using Hardhat:
+These are the steps for verifying smart contracts via [Hardhat](https://hardhat.org/). Hardhat is a comprehensive development environment that facilitates contract compilation, deployment, and authentication.
 
 
 
@@ -168,4 +166,4 @@ npx hardhat verify –network Cascadia 0x856C336cD8eBDCE7B5Bb3F2DEB1bf3160B17688
 
 **Step 7: Contract verification can be confirmed via the console:**
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>

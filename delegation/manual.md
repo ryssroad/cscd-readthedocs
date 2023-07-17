@@ -1,4 +1,4 @@
-# Manual Delegation
+# Manual
 
 To delegate tokens using the **`cascadiad`** command, follow the structure below:
 
@@ -20,7 +20,7 @@ cascadiad tx staking delegate cascadiavaloper1zec8f7faf880q7l9s8dehz2054lnavfsuu
 
 
 
-You can get more information by running the following command:
+Get more information by running the following command:
 
 {% code overflow="wrap" %}
 ```javascript

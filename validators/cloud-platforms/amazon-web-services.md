@@ -1,4 +1,4 @@
-# AWS Setup
+# Amazon Web Services
 
 **Step 1: Sign up for an AWS account.**
 
