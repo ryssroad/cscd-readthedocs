@@ -2,7 +2,7 @@
 
 **Information Collection and Use**
 
-**Cascadia Foundation** is the sole owner of the information collected on this site. We will not sell, share, or rent this information to others in ways different from what is disclosed in this statement. **Cascadia Foundation** collects information from our users at several different points on our Web site.
+Cascadia is the sole owner of the information collected on this site. We will not sell, share, or rent this information to others in ways different from what is disclosed in this statement. Cascadia collects information from our users at several different points on our Web site.
 
 
 
@@ -14,7 +14,7 @@ In order to use some features of this Web site, users must first complete the re
 
 **Cookies**
 
-**Cascadia Foundation** may use cookies to remember if users have logged in while on our site. This allows website users to avoid logging in more than once, thereby saving time. Users have the option of disabling or not accepting cookies by changing the preferences on their browsers. If users opt to disable cookies, they will still be able to use our Web site. However, they will not be able to use some functionality or post to the message boards. No personally identifiable information (e-mail address, name, etc.) is collected with the cookies that we set. Accepting cookies while on the Cascadia Foundation site will not put the user at risk for marketing to other sites. Different browsers have different cookie settings. With Netscape, you can ask the browser to allow, warn you, or completely disable cookies. Internet Explorer has an additional feature where you can specify different settings for different security zones. You can choose to allow Web sites to create cookies for you in your "trusted sites" (like **Cascadia Foundation**), to warn you before you create them in your local Intranet zone, and to give you an option to never allow them in a "restricted zone." See the "Help" section of your particular browser for more information on working with cookies.
+Cascadia may use cookies to remember if users have logged in while on our site. This allows website users to avoid logging in more than once, thereby saving time. Users have the option of disabling or not accepting cookies by changing the preferences on their browsers. If users opt to disable cookies, they will still be able to use our Web site. However, they will not be able to use some functionality or post to the message boards. No personally identifiable information (e-mail address, name, etc.) is collected with the cookies that we set. Accepting cookies while on the Cascadia site will not put the user at risk for marketing to other sites. Different browsers have different cookie settings. With Netscape, you can ask the browser to allow, warn you, or completely disable cookies. Internet Explorer has an additional feature where you can specify different settings for different security zones. You can choose to allow Web sites to create cookies for you in your trusted sites, to warn you before you create them in your local Intranet zone, and to give you an option to never allow them in a restricted zone.
 
 
 
@@ -32,7 +32,7 @@ We will share aggregated demographic information with our partners, sponsors, an
 
 **Links**
 
-This Web site contains links to other sites. Please be aware that **Cascadia Foundation** does not claim any responsibility for the privacy practices of such other sites. We encourage our users to be aware when they leave our site and to read the privacy statements of each and every Web site that collects personally identifiable information. This privacy statement applies solely to information collected by this Web site.
+This Web site contains links to other sites. Please be aware that Cascadia does not claim any responsibility for the privacy practices of such other sites. We encourage our users to be aware when they leave our site and to read the privacy statements of each and every Web site that collects personally identifiable information. This privacy statement applies solely to information collected by this Web site.
 
 
 
