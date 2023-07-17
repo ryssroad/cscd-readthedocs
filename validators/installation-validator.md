@@ -149,7 +149,7 @@ cascadiad tx staking create-validator \
 Enter the passphrase you created in step 2, then confirm the transaction.
 
 {% hint style="info" %}
-You can verify the success of your validator status by checking whether your validator address appears on Cascadia's [validator explorer](https://validator.cascadia.foundation/validators).
+Verify your validator's status by checking your address on Cascadia's [validator explorer](https://validator.cascadia.foundation/validators).
 {% endhint %}
 
 
