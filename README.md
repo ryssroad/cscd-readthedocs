@@ -1,5 +1,9 @@
 # Welcome to Cascadia
 
+Amazon’s first principle is Customer Obsession, which states that leaders start with the customer and work backwards. Working backwards is a mental model that keeps customers at the center of everything Amazon does, ensuring that they’re not building technology for its own sake.
+
+At Cascadia, we embrace the concept of working backwards. By understanding the context and background behind each individual’s needs — what drives them, what motivates them — we’re better able to craft products that will serve our users.
+
 <figure><img src=".gitbook/assets/Cascadia Deck_Page_01.jpg" alt=""><figcaption></figcaption></figure>
 
 Cascadia is a hybrid, layer-1 blockchain building an incentive layer for distributed networks. The incentive layer is one of the most, if not the most, fundamentally important DLT components, affecting all elements of the blockstack.  However, this subject has largely been ignored to date, given the difficulty of tackling this subject matter.  Proper incentive design requires a fundamental re-examination of blockchain architecture from first principles.
