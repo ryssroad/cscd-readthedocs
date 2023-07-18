@@ -3,12 +3,12 @@
 CLI stands for Command Line Interface. It's a way to interact with a computer program by typing commands into a terminal or console. Running a program in CLI mode means that it is being executed through a terminal, rather than through a graphical user interface.
 
 {% hint style="info" %}
-CLI is a different approach to node setup than [Install your Node](broken-reference).  Minimum requirement is **Python 3.8.**
+CLI is a different approach to [node setup](./).  Minimum requirement is **Python 3.8.**
 {% endhint %}
 
 
 
-**Step 1: Initiate CLI, and choose a Node type.**
+**Step 1: Initiate CLI, and choose a node type.**
 
 <pre class="language-javascript" data-overflow="wrap"><code class="lang-javascript"><strong>curl https://raw.githubusercontent.com/CascadiaFoundation/chain-configuration/master/cascadia-installer.py > i.py &#x26;&#x26; python3 i.py
 </strong></code></pre>
