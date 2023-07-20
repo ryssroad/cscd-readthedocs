@@ -48,5 +48,13 @@
 * [Security](security/README.md)
   * [Disclosure Policy](security/disclosure-policy.md)
 * [Tokenomics](tokenomics.md)
-* [Legal](legal/README.md)
-  * [Privacy Policy](legal/privacy-policy.md)
+
+## Community
+
+* [Discord](https://discord.gg/cascadia)
+* [Twitter](https://twitter.com/CascadiaSystems)
+
+## Legal
+
+* [Privacy Policy](legal/privacy-policy.md)
+* [Terms & Conditions](legal/terms-and-conditions.md)

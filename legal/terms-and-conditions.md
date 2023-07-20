@@ -1,4 +1,4 @@
-# Legal
+# Terms & Conditions
 
 Welcome to Cascadia. This "Site" is comprised of various web pages operated by Cascadia is offered to you conditioned on your acceptance without modification of the terms, conditions, and notices contained herein (the "Terms"). Your use of Cascadia constitutes your agreement to all such Terms. Please read these terms carefully, and keep a copy of them for your reference.
 
