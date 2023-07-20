@@ -47,11 +47,11 @@
     * [Principles](validators/system-requirements/principles.md)
 * [Security](security/README.md)
   * [Disclosure Policy](security/disclosure-policy.md)
-* [Tokenomics](tokenomics.md)
 
 ## Community
 
 * [Discord](https://discord.gg/cascadia)
+* [Telegram](https://t.me/CascadiaFoundation)
 * [Twitter](https://twitter.com/CascadiaSystems)
 
 ## Legal
