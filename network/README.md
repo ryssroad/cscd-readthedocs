@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Network
 
 This section serves as a comprehensive guide providing information and step-by-step guides for users to navigate and interact with the Cascadia blockchain. The section is divided into five subpages, each dedicated to a specific aspect of the network.

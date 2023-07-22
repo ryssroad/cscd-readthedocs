@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Security
 
 Ensuring the safety and security of our users is a top priority. We're committed to providing a reliable and secure platform to interact with. In this section, we will outline the various measures we have taken to ensure the highest level of security for our users.

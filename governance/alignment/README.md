@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Alignment
 
 As an aligned CC holder, you hold governance authority in the Cascadia ecosystem. This means you have the right to vote on proposals and influence protocol development.

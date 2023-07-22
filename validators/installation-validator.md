@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Installation (Validator)
 
 Before following the steps below, first set up a node.  Instructions are available [here](installation-node/)[.](https://cascadia.gitbook.io/gitbook/validators/install-your-node)

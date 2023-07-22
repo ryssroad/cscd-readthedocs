@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Disclosure Policy
 
 Cascadia's security practices are based on the National Cyber Security Centre's Vulnerability Disclosure Toolkit for public organizations. This vulnerability disclosure policy applies to any vulnerabilities you are considering reporting to Cascadia.&#x20;

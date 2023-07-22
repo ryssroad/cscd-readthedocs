@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Principles
 
 Being a validator requires more than adhering to instructions.  It presents a challenging yet rewarding opportunity to explore decentralization.  It's vital to have a firm understanding of network administration and the ability to resolve technical issues that may arise.

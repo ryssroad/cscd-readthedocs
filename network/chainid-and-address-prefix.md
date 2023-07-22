@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # ChainID & Address Prefix
 
 ChainID is a number that identifies a specific blockchain. This number is used to ensure that transactions are processed on the correct blockchain, and not confused with transactions on another with a similar format. ChainID also prevents replay attacks, where a transaction is broadcast on multiple blockchains to trick users into accepting the same transaction on different chains.

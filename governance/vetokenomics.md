@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # VeTokenomics
 
 VeTokenomics, stands for voting escrowed tokenomics, a mechanism introduced by CurveDAO.  Users are incentivized to lock or align their tokens for a specified duration.  During the alignment process, regular tokens like Cascadia's native CC tokens transform into a special kind of token, in this case, bCC.

@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Welcome to Cascadia
 
 Amazon’s first principle is Customer Obsession, which states that leaders start with the customer and work backwards. Working backwards is a mental model that keeps customers at the center of everything Amazon does, ensuring that they’re not building technology for its own sake.

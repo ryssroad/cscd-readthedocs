@@ -3,6 +3,7 @@
 * [Welcome to Cascadia](README.md)
   * [Brand Guidelines](readme/brand-guidelines.md)
   * [Official Links](readme/official-links.md)
+* [Cybernetics](cybernetics.md)
 * [Developers](developers/README.md)
   * [Addresses](developers/addresses.md)
   * [Deployment](developers/contract-deployment.md)

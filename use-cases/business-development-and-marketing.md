@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Business Development and Marketing
 
 <figure><img src="../.gitbook/assets/Cascadia Deck_Page_14.jpg" alt=""><figcaption></figcaption></figure>

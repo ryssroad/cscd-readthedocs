@@ -1,10 +1,30 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Customization
 
 To personalize your validator, such as changing your avatar, follow these steps:
 
+
+
 **Step 1: Sign up for an account on** [**Keybase.io**](https://keybase.io)**.**
 
+
+
 **Step 2: Upload your avatar to your Keybase profile.**
+
+
 
 **Step 3: Link your Validator ID to your Keybase identity.**
 

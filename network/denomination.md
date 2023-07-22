@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Denomination
 
 **CC** is Cascadia's native. It serves as the principal medium of account and an essential element of our blockchain structure. It's only function is to express governance authority.

@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Modules
 
 A module refers to a set of components performing specific network functions.  These modules work together to ensure the proper functioning and security of the Cascadia blockchain.

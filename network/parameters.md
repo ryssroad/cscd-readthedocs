@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Parameters
 
 Cascadia has a well-defined set of parameters that outline rules for validators, ensuring a fair and efficient system for block production and decision-making.

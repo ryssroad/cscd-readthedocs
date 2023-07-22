@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Faucet
 
 **Step 1: Visit the** [**Faucet Page**](https://www.cascadia.foundation/faucet) **to request testnet tokens.**

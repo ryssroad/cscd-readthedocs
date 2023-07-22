@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # System Requirements
 
 Validators are encouraged to use a reputable cloud provider or set up a secure physical operation with limited access to key management.  Prepare your data center location with good connectivity, backup storage, redundant power, and multiple networking boxes.

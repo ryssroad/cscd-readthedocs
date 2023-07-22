@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Developers
 
 Verifying smart contracts is a critical process which ensures the legitimacy, safety, and proper functioning of these digital agreements.  By applying verification, you ensure that your contracts are not only well-structured but also secure from potential vulnerabilities.

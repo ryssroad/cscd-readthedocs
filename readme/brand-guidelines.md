@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Brand Guidelines
 
 The Cascadia logo features an isometric letter "C" located within the negative space formed by three facets of a symbolic blockchain "block." This configuration signifies the blockchain trilemma, while the two front facets delineate the letter "V," subtly alluding to Cascadia's unique ve-tokenomics structure.

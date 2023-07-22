@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Verification (Block Explorer)
 
 These are the steps for verifying smart contracts via Cascadia's [block explorer](https://explorer.cascadia.foundation/).
