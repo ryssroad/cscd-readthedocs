@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# Requirements
+# Process
 
 The information requirements of Cascadia’s cybernetic systems are variable, given the decisions on what to control.&#x20;
 
@@ -23,4 +23,3 @@ The information requirements of Cascadia’s cybernetic systems are variable, gi
 * Fifth, the difference between the two is passed on to the decision process, which, if significant enough, detects it.
 * Sixth, the system sends a signal to the effectors (the agents that confirm and implement the decision), which prompts the operating system to take action to correct the deviation or any changes from the norm.  These effectors can be the control system (eventually) or various agents (contributors) who apply the action plan when a decision is made.
 * Last, if the control system is properly set up by the decision-making process, it can choose between many actions and more information. The effectors must be given instructions on what action(s) to take by means of built-in or derived criteria like consciousness, memory, or recombination.&#x20;
-
