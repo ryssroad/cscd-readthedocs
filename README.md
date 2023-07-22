@@ -20,7 +20,7 @@ At Cascadia, we embrace the concept of working backwards. By understanding the c
 
 <figure><img src=".gitbook/assets/Cascadia Deck_Page_01.jpg" alt=""><figcaption></figcaption></figure>
 
-Cascadia is a hybrid, layer-1 blockchain building an incentive layer for distributed networks. The incentive layer is one of the most fundamentally important DLT components, affecting all elements of the blockstack.  However, this subject has largely been ignored to date, given the difficulty of tackling this subject matter.  Proper incentive design requires a fundamental re-examination of blockchain architecture from first principles.
+Cascadia is a hybrid, layer-1 blockchain building an [incentive](governance/incentives.md) layer for distributed networks. The incentive layer is one of the most fundamentally important DLT components, affecting all elements of the blockstack.  However, this subject has largely been ignored to date, given the difficulty of tackling this subject matter.  Proper incentive design requires a fundamental re-examination of blockchain architecture from first principles.
 
 <figure><img src=".gitbook/assets/Cascadia Deck_Page_04 (1).jpg" alt=""><figcaption></figcaption></figure>
 

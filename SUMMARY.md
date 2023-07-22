@@ -15,6 +15,7 @@
   * [Alignment](governance/alignment/README.md)
     * [Cooldown Period](governance/alignment/cooldown-period.md)
     * [Functions](governance/alignment/functions.md)
+  * [Incentives](governance/incentives.md)
   * [VeTokenomics](governance/vetokenomics/README.md)
     * [Checkpointing](governance/vetokenomics/checkpointing.md)
     * [Model](governance/vetokenomics/model.md)
