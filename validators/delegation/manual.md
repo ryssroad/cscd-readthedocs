@@ -14,7 +14,7 @@ layout:
 
 # Manual
 
-To delegate tokens using the **`cascadiad`** command, follow the structure below:
+To manually delegate tokens using **`cascadiad`**, follow the instructions below:
 
 {% code overflow="wrap" %}
 ```javascript
