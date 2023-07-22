@@ -24,7 +24,7 @@ Cascadia is a hybrid, layer-1 blockchain building an [incentive](governance/ince
 
 <figure><img src=".gitbook/assets/Cascadia Deck_Page_04 (1).jpg" alt=""><figcaption></figcaption></figure>
 
-Cascadia is EVM-compatible network optimized for fairness, speed, and security.  We've adopted the Tendermint DPoS consensus algorithm due to its flexibility and ease of customization.  As trailblazers of the neo-cybernetic movement, we're committed to developing innovative solutions to web3's problems via social and artificial intelligence.  Cascadia seeks to create a unique value proposition by diving deeper than the consensus layer, to explore emergent behaviors and incentive alignment within complex adaptive systems.
+Cascadia is EVM-compatible network optimized for fairness, speed, and security.  We've adopted the Tendermint DPoS consensus algorithm due to its flexibility and ease of customization.  As trailblazers of the neo-cybernetic movement, we're committed to developing innovative solutions to web3's problems via social and artificial intelligence.  Cascadia seeks to create a unique value proposition by diving deeper than the consensus layer, to explore incentive alignment within distributed systems.
 
 <figure><img src=".gitbook/assets/Cascadia Deck_Page_17 (2).jpg" alt=""><figcaption></figcaption></figure>
 
