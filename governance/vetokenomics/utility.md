@@ -21,7 +21,7 @@ A blockchain’s economic activity is shaped by three main groups:
 
 Token holders, in exchange for a share of the benefits from the economy’s performance, assume the risks involved in managing Cascadia’s resources.
 
-Holding veCC grants holders the right to:
+Holding bCC grants holders the right to:
 
 * Receive network gas fees;
 * Receive token emissions;

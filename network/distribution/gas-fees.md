@@ -14,7 +14,7 @@ layout:
 
 # Gas Fees
 
-Cascadia’s native token (CC) is used to pay for transactions and emitted as block rewards to validators.  CC can be locked into a vote-escrow contract in return for veCC.  On the Cascadia blockchain, gas rewards are initially split and distributed evenly by 1/3 between 3 parties: nProtocols, Validators, and veCC lockers that hold the vote-escrowed token (Figure 2).
+Cascadia’s native token (CC) is used to pay for transactions and emitted as block rewards to validators.  CC can be locked into a vote-escrow contract in return for bCC.  On the Cascadia blockchain, gas rewards are initially split and distributed evenly by 1/3 between 3 parties: nProtocols, Validators, and bCC lockers that hold the vote-escrowed token (Figure 2).
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
