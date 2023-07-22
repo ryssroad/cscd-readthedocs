@@ -14,7 +14,15 @@ layout:
 
 # Consensus
 
-Although there are several consensus algorithms that could result in the same ordering of transactions, DPoS has been demonstrated to be trustworthy, safe, and efficient over the course of years of operation on various blockchains.  Cascadia is built on the foundations of Cosmos SDK architecture, thus inheriting the same traits as its predecessor.
+Cascadia introduces a novel consensus algorithm based on Byzantine Fault Tolerant Delegated Proof of Stake (BFT DPoS) to achieve decentralization, efficiency, and security.  This section explores the underlying mechanisms of BFT DPoS consensus, its advantages over traditional consensus mechanisms, and its application on the Cascadia blockchain.
+
+
+
+**Introduction**
+
+In recent years, blockchain technology has emerged as a promising solution for a wide range of applications, from financial services to supply chain management. However, the consensus mechanisms that underpin these systems have significant limitations, such as high energy consumption, slow transaction processing, and limited scalability.  To address these challenges, Cascadia adopts the BFT DPoS consensus algorithm, which combines the strengths of both Byzantine Fault Tolerance (BFT) and Delegated Proof of Stake (DPoS).
+
+DPoS has been demonstrated to be trustworthy, safe, and efficient over the course of years of operation on various blockchains.  Cascadia is built on the foundations of Cosmos SDK architecture, thus inheriting the same traits as its predecessor.
 
 The goal of DPoS is to reduce communication costs between nodes by indirectly participating in the consensus process.  In the DPoS consensus mechanism, the number of validators is fixed to lower the cost of communication among the validators.  An administrator chooses an algorithm that determines how to complete blocks with a limited number of validators when using the DPoS consensus mechanism.&#x20;
 
@@ -24,61 +32,65 @@ In contrast to PoW and PoS systems, Cascadia validators are not in direct compet
 
 
 
-**Phases**
+**Delegation and Validator Selection**
 
-The two phases of the DPoS algorithm are scheduling production and selecting a group of block producers.  The election process ensures that stakeholders hold the reins of power because they stand to lose the most if the network is not functioning properly.  On a minute-by-minute level, elections have no bearing on how consensus is reached.
+Token holders delegate their voting rights to a set of validators, who are responsible for validating transactions and maintaining the integrity of the blockchain.  The delegation process allows for a more decentralized network, while still ensuring efficient and secure consensus.  Validators are chosen based on the stake they hold or have delegated to them, with the top-ranked validators selected to participate in the consensus process.  This selection mechanism ensures that validators have the incentive to act honestly and maintain the security of the network.
+
+Let n be the total number of validators in the network, and let `s_i` be the stake of validator `i`, where `i = 1, 2,..., n`.  Validators are ranked based on their stake, and the top m validators are selected to participate in the consensus process, where `m < n`.  The probability of being selected as a validator, `P(i)`, is proportional to the stake of validator i, such that:
+
+`P(i) = s_i / Σ (s_j), for j = 1, 2,..., n`
+
+The maximum number of active validators in the network is 100. This parameter ensures a balance between decentralization and efficiency in the consensus process.
 
 
 
-**Regular Operation**
+**Byzantine Fault Tolerance**
 
-Block makers typically alternate manufacturing a block every few seconds.  This will result in the longest chain conceivable.  A block producer cannot generate a block during a different time period than the one they are scheduled for.
+The network can tolerate up to 1/3 of the participating validators being faulty or malicious.  As long as less than 1/3 of the validators are Byzantine, the network can reach consensus and maintain its security.  This property ensures the resilience of the blockchain against potential attacks or network failures.
+
+Given the selected m validators, the network can tolerate f Byzantine validators, where f = floor(m/3).  Therefore, the network can withstand f malicious validators while still reaching consensus.
+
+
+
+**Block Proposal and Voting**
+
+Block proposal and voting involves a designated proposer creating a new block and broadcasting it to the other validators.  Validators then vote on the proposed block in two rounds: the pre-vote and the pre-commit phase.  In the pre-vote phase, validators indicate their support for the proposed block, while in the pre-commit phase, they confirm their final decision.  If a block receives at least 2/3 of the votes in both phases, it is committed to the Cascadia blockchain.
+
+Let `V_pre-vote` and `V_pre-commit` represent the sets of validators that vote for a block in the pre-vote and pre-commit phases, respectively.  A block is committed to the blockchain if and only if the following conditions are met:
+
+`|V_pre-vote| ≥ 2 * m / 3 and |V_pre-commit| ≥ 2 * m / 3`
+
+This two-phase voting process ensures that validators reach a consensus on the validity of a block before adding it to the blockchain, enhancing the security and stability of the network.
+
+
+
+**Distribution**&#x20;
+
+The base proposer reward is set at 1%, with an additional bonus proposer reward of 4%.  This encourages validators to actively participate in the block proposal process.
+
+
+
+**Incentives and Penalties**
+
+The BFT DPoS consensus incorporates incentives and penalties to encourage honest behavior and discourage malicious actions.  Validators and their delegators are rewarded for participating in the consensus process through block rewards and transaction fees.  However, if a validator is found to be maliciously or negligently acting, their stake (and the stake of their delegators) can be slashed, resulting in a loss of tokens.  This penalty system provides a strong deterrent against malicious actions and ensures the long-term security and stability of the blockchain.
+
+Let `R` be the total rewards distributed per block, and let `r_i` be the reward received by validator `i`, where `i = 1, 2,..., m`.  The reward for each validator is proportional to their stake, such that:
+
+`r_i = R * (s_i / Σ (s_j)), for j = 1, 2,..., m`
+
+In the event of malicious behavior, a slashing function can be applied to the stake of the malicious validator and their delegators.  Let `P_slash` be the slashing penalty percentage, and let `L_i` be the loss incurred by validator i due to slashing, where `i = 1, 2,..., m`.  The loss due to slashing is calculated as:
+
+`L_i = P_slash * s_i`
+
+This approach addresses the limitations of traditional consensus mechanisms, such as high energy consumption, slow transaction processing, and limited scalability, while maintaining decentralization, efficiency, and security.
+
+
+
+**Staking**
+
+At Cascadia, staking is denominated in the native token.  The unstaking time is 21 days, allowing delegators to reclaim their tokens after this period.  Delegators can have a maximum of 7 validator entries, and the system stores up to 10,000 historical entries.
 
 \
-**Minority Fork**
+**Slashing**
 
-A minority fork can be produced by up to 1⁄3 of the nodes acting maliciously or malfunctioning.  The majority fork will produce 2 blocks every X seconds, whereas the minority fork will only produce 1 block every X seconds.  The minority will never last longer than the honest 2⁄3 majority.
-
-
-
-**Double Production by Disconnected Minority**
-
-The minority can try to create an infinite number of forks, but each of them will have a shorter length than the chain of the majority because the minority can only build the chain more slowly than the majority.
-
-
-
-**Network Dispersion**
-
-The network could split, in which case no fork would have a majority of the block producers.  The greatest minority in this situation will end up with the longest chain.  Smaller minorities will inevitably gravitate toward the longest chain when network connectivity is restored, and clear consensus will be reinstated.
-
-It is possible for there to be 3 forks where the two longest forks are the same length.  When they rejoin the network, the producers from the third (smaller fork) will decide who wins the tie.  Since there are an odd number of producers, a tie cannot be sustained for very long. \
-
-
-**Minority Production**
-
-Minority B produced two or more substitute blocks during their time slot in this scenario.  Any of the alternatives developed by B may be used as a foundation by the producer (C), who is slated to come after B.  All nodes who chose B will switch forks at this point, making the chain the longest.  They will never be a part of the longest chain for more than one round, regardless of how many different blocks a small percentage of bad producers try to spread.
-
-
-
-**Final Revocable Block**
-
-It is feasible for several forks to continue to grow for a considerable amount of time in the case of network fragmentation.  The longest chain will ultimately prevail, but watchers need to be assured that a block is unquestionably a part of the chain that is expanding the fastest.  If 2⁄3 of the producers are being truthful, block B has been confirmed by C and A, which indicates 2/3 + 1 confirmation, and we can thus conclude that no other chains could possibly be longer.
-
-
-
-**Producer Rotation under Determinism**
-
-The above examples contemplate a round-robin scheduling of block producers.  For every N blocks, where N is the number of producers, the set of block producers is actually shuffled.  Because of the randomization, ties could eventually break whenever there are numerous forks with identical producer counts, and block producer B does not always disregard block producer A.
-
-
-
-**Corruption of the Majority of Producers**
-
-If the majority of producers turn corrupt, they will be able to create an infinite number of forks, each of which will seem to be moving forward with a 2⁄3  majority.  In this situation, the longest chain algorithm replaces the last irreversible block method.  The longest chain will be chosen by the majority of the remaining honest nodes, who will determine which chain to approve.  Because the stakeholders would eventually vote to replace these producers, this kind of behavior would not persist long.
-
-\
-**Delegation**
-
-The validation of the blocks is delegated to several delegates by stakeholders in Cascadia’s DPoS consensus.  These delegates, also known as witnesses, protect Cascadia on behalf of the stakeholders and are in charge of fostering network consensus when new blocks are being validated.  The delegates that will submit a specific proposal to the stakeholders in order to secure their votes are chosen by the stakeholders via a democratic voting system.  The amount of Cascadia tokens that network users have locked up in their wallets determines the voting power, but the rewards for a successful block validation are split between agents who participate in the network, as described below.
-
-As stakeholders vote based on a candidate’s reputation, DPoS enables improved block validator screening.  Stakeholders have the right to dismiss or substitute alternative witnesses at any moment for unruly or ineffective delegates.
+Validators are subject to slashing penalties for downtime and double-signing.  The downtime jail duration is 600 seconds, with a minimum signed-per-window requirement of 50% within a 100-block signing window.  The slash fraction for double-signing is 5/100, while the slash fraction for downtime is 100/10,000.
