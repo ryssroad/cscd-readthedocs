@@ -14,6 +14,8 @@ layout:
 
 # Model
 
+Token rewards for providing liquidity, active governance engagement, long-term token ownership, and protocol development are a few examples of effective incentives for participants to conduct actions associated with a project’s success.
+
 In the vote-escrowed model:
 
 * Vote: Users receive a certain number of ve-tokens based on the length of their lockup period.  Since ve tokens are used for governance, community members who lock their tokens for a longer period of time retain more influence.
