@@ -14,50 +14,40 @@ layout:
 
 # Governance
 
-This guide provides an overview of Cascadia's on-chain governance system, focusing on vote-escrowed CC as the determining factor for each account's voting power. This section covers various aspects of the governance system, such as proposal submission, voting periods, quorum requirements, pass thresholds, and veto thresholds. Additionally, it clarifies the voting options available and the criteria for determining the outcome of a governance proposal.
+Cascadia's governance model aims to be an equitable and transparent process, facilitating the inception and realisation of initiatives to improve the network's sustainability and progress. The on-chain governance system grants bCC holders the agency to influence the project's course, cultivating a vibrant ecosystem. Cascadia's governance model is designed with flexibility and adaptability at its core, ensuring it can evolve in response to the dynamic needs of the ecosystem and its participants.
 
 
 
-**Participation Requirements**&#x20;
+**The Role of bCC and the "Alignment" Process**
 
-To engage in Cascadia's on-chain governance, an account must hold bCC, a unique ERC20 implementation that defines an account's voting power.  It is non-transferable and can only be acquired by locking CC.
-
-{% hint style="info" %}
-In Cascadia, "locking" is more aptly referred to as "alignment".  This terminology better reflects the nature of the locking process within the Cascadia ecosystem.
-{% endhint %}
+bCC is a specific ERC-20 token that confers voting rights. It is non-transferable and can only be obtained through the alignment of CC. The concept of alignment extends beyond the traditional understanding of locking. In Cascadia, it represents the harmonisation of the contributor’s interests with the long-term vision of the network. By aligning CC, contributors receive bCC, which affords them voting rights in Cascadia's on-chain governance.
 
 
 
-**Governance Features**&#x20;
+**Requirements for Participation**
 
-bCC holders can vote on proposals on a 1 token, 1 vote basis. The current module supports these features:
-
-1. Proposal submission: Users with a specific bCC balance can submit proposals, initiating the voting period.&#x20;
-2. Vote: During the voting period, participants can vote on proposals.
+Cascadia's governance is open to all bCC holders. Whether you choose to propose changes, vote on decisions, or engage in on-chain and off-chain discussions is entirely up to you. The future of Cascadia is shaped by its contributors and the collective actions of those who choose to participate.
 
 
 
-**Governance Parameters**&#x20;
+**How to Acquire and Use bCC**
 
-The voting period spans 14 days, and a quorum is achieved when at least 40% of the voting power participates. The pass threshold is 50% of participating voting power, while the veto threshold is 33.40% of participating voting power. Participants can choose from 'Yes,' 'No,' 'Abstain,' or 'NoWithVeto' voting options during the voting period, and may change their vote before the period ends.
-
-
-
-**Criteria for Approving Governance Proposals**&#x20;
-
-Four factors determine the outcome of a governance proposal.
-
-1. A quorum requires at least 40% of the network's total voting power (based on bCC balances) to participate;
-2. Over 50% of participating voting power must support the 'Yes' vote by the end of the 14-day voting period;
-3. Under 33.4% of participating voting power should back 'NoWithVeto' by the end of the 14-day voting period; and
-4. The same criteria apply to submit and determine the outcome of all proposal types.
+To acquire bCC, users have to align a specified quantity of CC for a set duration. Upon completion of the alignment process, users receive bCC, denoting their voting power in governance matters. bCC can be used to submit governance proposals and vote on existing proposals.
 
 
 
-**Establishing Quorum**&#x20;
+**Voting Rights and Restrictions**
 
-Voting power, whether supporting 'Yes,' 'Abstain,' 'No,' or 'NoWithVeto,' contributes to the quorum.  A quorum is necessary for a governance proposal to be approved.
+The voting power of each account is proportional to its bCC balance, ensuring a fair representation of all participant’s interests. Voting rights have certain restrictions. bCC are non-transferable and serve no other purpose than voting. This approach discourages short-term speculation and nurtures an environment where users vote with the long-term health and growth of Cascadia in mind.
 
-{% hint style="info" %}
-Cascadia's on-chain governance is designed to evolve over time. The parameters above are initial settings, and may be updated as part of our evolving governance process.
-{% endhint %}
+
+
+**Continuous Development**
+
+Cascadia's governance model is designed to be adaptive and flexible, fostering a truly decentralized decision-making process. As the needs and conditions of the network evolve over time, so too will the governance model, mirroring the changes within the community and Cascadia’s broader ecosystem.
+
+
+
+**Community's Role**
+
+The foundation for governance as a growing sector lies in societal trends, particularly with growing interdependencies at many different levels and in many different directions. These broad social patterns may be seen as a manifestation of, a response to, or even a catalyst for long-term processes of social differentiation and integration. The validating process is becoming more institutionalized, so continual process of incentive alignment through vote escrowed governance allows us to boost the number of interactions between demand and supply side agents while multiplying the number of holders on-chain.  Every contributor plays a crucial role in the evolution of Cascadia’s governance model. Feedback, innovative ideas, and active involvement are all essential in shaping and improving Cascadia’s governance structure.
