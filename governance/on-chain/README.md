@@ -45,17 +45,17 @@ The voting period spans 14 days, and a quorum is achieved when at least 40% of t
 
 **Criteria for Approving Governance Proposals**&#x20;
 
-Four factors determine the outcome of a governance proposal.
+Two factors determine the outcome of a governance proposal.
 
-1. A quorum requires at least 40% of the network's total voting power (based on bCC balances) to participate;
-2. Over 50% of participating voting power must support a Yes vote by the end of the 14-day voting period; and
+1. A quorum requires at least 40% of the network's total voting power (based on bCC balances) to participate.
+2. Over 50% of participating voting power must support a Yes vote by the end of the 2-day voting period.
 3. The same criteria apply to submit and determine the outcome of all proposal types.
 
 
 
 **Establishing Quorum**&#x20;
 
-Voting power, whether supporting Yes, No, or Abstain, contributes to the quorum.  A quorum is necessary for a governance proposal to be approved.
+Voting power, whether supporting Yes, No or Abstain, contributes to the quorum.  A quorum is necessary for a governance proposal to be approved.
 
 
 
@@ -80,6 +80,12 @@ Before submitting a proposal, participants should consider the potential impacts
 **Voting Period**
 
 The voting period for each proposal is set to 2 days, giving everyone ample time to review the details, deliberate, and cast their votes. During this period, bCC holders may cast their vote with the aforementioned options. Voters can change their decision any time before the voting period concludes.
+
+
+
+**Voting Threshold**
+
+The decision threshold is set at 50%. This represents the necessary level of support a proposal must achieve to be passed during a voting cycle. Specifically, more than half of the total voting power participating in the vote must cast their votes in favour of a proposal.
 
 
 
