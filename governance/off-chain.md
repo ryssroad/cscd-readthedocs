@@ -14,8 +14,6 @@ layout:
 
 # Off-Chain
 
-**Overview**
-
 Off-chain governance plays its role in building a sensible debate. It allows fluid conversations, nuanced discussions, and diverse participation. Off-chain governance in Cascadia primarily takes place in Discord.
 
 **Scope and Nature**
