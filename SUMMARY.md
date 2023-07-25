@@ -22,7 +22,6 @@
   * [On-Chain](governance/on-chain.md)
   * [VeTokenomics](governance/vetokenomics/README.md)
     * [Model](governance/vetokenomics/model.md)
-    * [Utility](governance/vetokenomics/utility.md)
 * [Network](network/README.md)
   * [ChainID & Address Prefix](network/chainid-and-address-prefix.md)
   * [Configuration](network/configuration.md)

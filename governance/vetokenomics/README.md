@@ -32,6 +32,14 @@ Aligning tokens in a veTokenomics model presents several advantages:
 2. **Governance Participation:** Aligned tokens, like bCC in Cascadia, often confer voting rights, enabling holders to participate in the on-chain governance. This democratic process allows all participants to contribute to key decisions regarding the project's future.
 3. **Flexibility:** Cascadia's alignment process isn't rigid. Users can decide the extent of their alignment based on their comfort level, aligning anything from a fraction to all of their total holdings.
 
+bCC token holders, in exchange for a share of the benefits from the ecosystem's performance, manage Cascadia’s resources.  Holding bCC grants holders the right to:
+
+* Receive network gas fees;
+* Receive token emissions;
+* Receive fees from native protocols (nProtocols);
+* Vote on gauge distribution for nProtocols and future blockchain development; and
+* Engage in participatory tokenomics activities.
+
 
 
 **What are the drawbacks?**

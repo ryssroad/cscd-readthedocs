@@ -23,6 +23,11 @@ In the vote-escrowed model:
 
 Vote-locking amplifies user incentives by providing committed community members additional influence over decisions and/or reward distribution.  Users that lock their tokens are motivated to make deliberate, involved decisions as they have committed to holding for some period of time, which in term aligns these users with the protocol's long-term health.
 
+A blockchain’s economic activity is shaped by three main groups:
+
+* Demand-side agents (such as traders, entrepreneurs, and other protocols) drive expansion of cash flows in the economy and are ultimately the target audience for which a network is originally created.
+* Supply-side participants (such as liquidity providers, builders, and validators) offer the resources required for Cascadia to run smoothly.
+
 Combining [block reward distribution](../../network/distribution/block-rewards.md) and [gas fee distribution](../../network/distribution/gas-fees.md), our bCC model appears as follows:
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
