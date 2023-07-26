@@ -46,7 +46,7 @@ This allows our teams to focus on the remediation. We will notify you when the r
 
 **Guidance**&#x20;
 
-You must **NOT**:
+You must not:
 
 * Break any applicable law or regulations
 * Access unnecessary, excessive, or significant amounts of data.
@@ -59,7 +59,7 @@ You must **NOT**:
 * Social engineer, phish, or physically attack Cascadia's staff or infrastructure.
 * Demand financial compensation in order to disclose any vulnerabilities.
 
-You **MUST**:
+You must**:**
 
 * Always comply with data protection rules and must not violate the privacy of Cascadia’s users, staff, contractors, services or systems. You must not, for example, share, redistribute or fail to properly secure data retrieved from the systems or services.
 * Securely delete all data retrieved during your research as soon as it is no longer required or within 1 month of the vulnerability being resolved, whichever occurs first (or as otherwise required by data protection law).
