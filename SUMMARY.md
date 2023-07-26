@@ -37,6 +37,7 @@
   * [Snapshot](network/snapshot.md)
 * [Security](security/README.md)
   * [Disclosure Policy](security/disclosure-policy.md)
+  * [Multisignature](security/multisignature.md)
 * [Use Cases](use-cases/README.md)
   * [Business Development and Marketing](use-cases/business-development-and-marketing.md)
   * [Decentralized Finance](use-cases/decentralized-finance.md)
