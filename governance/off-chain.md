@@ -34,6 +34,6 @@ After the idea is introduced, it becomes a subject of discussion among the commu
 
 **Proposal Evaluation and Progression**
 
-Once drafted, the proposal can be moved into the formal review phase. Here, it undergoes a more thorough examination by the community. If the proposal garners substantial community support in the off-chain discussion, it can then be moved to the on-chain environment for official voting.
+If the proposal gains community support in the off-chain discussion, it can then be moved to the on-chain system for official voting following the guidelines [here](https://cascadia.gitbook.io/gitbook/governance/drafting-a-proposal).
 
 By using off-chain governance in this manner, Cascadia ensures that the ideas and proposals introduced into the formal on-chain governance system are well-thought-out, refined, and supported by most contributors.
