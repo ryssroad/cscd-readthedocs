@@ -1,4 +1,4 @@
-# Temperature Checks
+# Temperature Check
 
 A Temperature Check (TC) is initiated to discuss a potential modification to Cascadia. The aim of a TC is to develop through community discussion into a Cascadia Improvement Proposal (CIP).
 
