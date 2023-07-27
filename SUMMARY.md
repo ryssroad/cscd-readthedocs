@@ -27,6 +27,7 @@
   * [Drafting a Proposal](governance/drafting-a-proposal.md)
   * [VeTokenomics](governance/vetokenomics/README.md)
     * [Model](governance/vetokenomics/model.md)
+  * [Temperature Checks](governance/temperature-checks.md)
 * [Network](network/README.md)
   * [ChainID & Address Prefix](network/chainid-and-address-prefix.md)
   * [Configuration](network/configuration.md)
