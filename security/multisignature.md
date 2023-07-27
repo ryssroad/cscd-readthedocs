@@ -14,7 +14,7 @@ layout:
 
 # Multisignature
 
-Cascadia assets are secured by [Safe](https://safe.cascadia.foundation/welcome).  Safe is a popular and versatile multisignature wallet that provides advanced transaction capabilities for digital assets.  It meets best practice industry security standards (Formal Verification) and requires a predefined number of users to approve transactions.  This prevents unauthorized access and unnecessary losses.  Additionally, Safe allows for decentralized gasless voting, which makes voting more inclusive.  The Cascadia Safe has been customized to meet the specific needs of the Cascadia network.
+Cascadia assets are secured by [Safe](https://safe.cascadia.foundation/welcome).  Safe is a popular and versatile multisignature wallet that provides advanced transaction capabilities and secure storage for digital assets.  It meets best practice industry security standards (Formal Verification) and requires a predefined number of users to approve transactions.  This prevents unauthorized access and unnecessary losses.  Additionally, Safe allows for decentralized gasless voting, which makes governance more inclusive.  The Cascadia Safe has been customized to meet the specific needs of the Cascadia network.
 
 
 
