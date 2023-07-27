@@ -14,7 +14,9 @@ layout:
 
 # On-Chain
 
-This guide provides an overview of Cascadia's on-chain governance system, focusing on vote-escrowed CC as the determining factor for each account's voting power. This section covers various aspects of the governance system, such as proposal submission, voting periods, quorum requirements, pass thresholds, and veto thresholds. Additionally, it clarifies the voting options available and the criteria for determining the outcome of a governance proposal.
+This guide provides an overview of Cascadia's on-chain governance system, focusing on vote-escrowed CC as the determining factor for each account's voting power. This section covers various aspects of the governance system, such as:
+
+<table><thead><tr><th width="213"></th></tr></thead><tbody><tr><td>Parameters</td></tr><tr><td>Proposal Submission</td></tr><tr><td>Voting Process</td></tr><tr><td>Quorum </td></tr></tbody></table>
 
 
 
@@ -25,20 +27,6 @@ To engage in Cascadia's on-chain governance, an account must hold bCC, a unique 
 {% hint style="info" %}
 In Cascadia, "locking" is more aptly referred to as "alignment".  This terminology better reflects the nature of the locking process within the Cascadia ecosystem.
 {% endhint %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 {% hint style="info" %}
 Cascadia's on-chain governance is designed to evolve over time. The parameters above are initial settings and may be updated as part of our evolving governance process.
