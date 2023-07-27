@@ -27,13 +27,13 @@ Cascadia assets are secured by [Safe](https://safe.cascadia.foundation/welcome).
 
 
 
-**Deployed Wallets (Cascadia)**
+**Multisignature Wallets (Cascadia)**
 
 <table data-header-hidden><thead><tr><th width="283"></th><th></th></tr></thead><tbody><tr><td>Fee Distributor</td><td>0x7F6a184734cedD31b52cffE601ce614F2a218D5A</td></tr><tr><td>nProtocol</td><td>0x3abc14Aeab2e37134A8215Aca1A9272833a3047b</td></tr><tr><td>Treasury</td><td>0xa3fE3DfdfF52eD79850623665106eBB1B0749029</td></tr></tbody></table>
 
 
 
-**Deployed Wallets (Ethereum)**
+**Multisignature Wallets (Ethereum)**
 
 <table data-header-hidden><thead><tr><th width="284"></th><th></th></tr></thead><tbody><tr><td>Escrow</td><td>0xA83fa8f1A7Ff19DFe6d7377Cfb3dAf24d5B4804E</td></tr></tbody></table>
 
