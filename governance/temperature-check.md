@@ -1,10 +1,10 @@
 # Temperature Check
 
-A Temperature Check (TC) is initiated to discuss a potential modification to Cascadia. The aim of a TC is to develop through community discussion into a Cascadia Improvement Proposal (CIP).
+A Temperature Check (TC) is initiated to discuss a potential modification to Cascadia. If the initial idea from the [off-chain](https://cascadia.gitbook.io/gitbook/governance/off-chain) discussion gains support from the contributors and the community alike, it can be crafted into a more detailed proposal. The aim of a TC is to develop through community discussion into a Cascadia Improvement Proposal (CIP).
 
 TCs are intended to provide a consistent pathway for proposing changes to Cascadia. This ensures all members can have confidence that Cascadia is evolving in line with its ecosystem and that all members have an opportunity to be heard.
 
-If the initial idea from the [off-chain](https://cascadia.gitbook.io/gitbook/governance/off-chain) discussion gains support from the contributors and the community alike, it can be crafted into a more detailed proposal. The proposal must contain specific elements such as:
+&#x20;The proposal must contain specific elements such as:
 
 1. **Author:** Who is proposing the idea?&#x20;
 2. **Title:** A clear title of the proposal.&#x20;
