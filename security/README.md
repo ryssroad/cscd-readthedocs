@@ -20,7 +20,7 @@ Ensuring the safety and security of our users is a top priority. We're committed
 
 **Regular Audits**
 
-To ensure the ongoing security and stability of our platform, Cascadia shall undergo security audits by reputable third-party providers.  These audits assess our smart contracts, codebase, and network infrastructure, ensuring that we maintain the highest security standards and address any potential vulnerabilities proactively.
+To ensure the ongoing security and stability of our platform, Cascadia undergoes security audits by reputable third-party providers.  These audits assess our smart contracts, codebase, and network infrastructure, ensuring that we maintain the highest security standards and address any potential vulnerabilities proactively.
 
 
 
