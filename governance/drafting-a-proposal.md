@@ -1,6 +1,6 @@
 # Drafting a Proposal
 
-If the initial idea gains support from the contributors and the community, it can be crafted into a detailed proposal. The proposal must contain specific components such as:
+If the initial idea from the [off-chain](https://cascadia.gitbook.io/gitbook/governance/off-chain) discussion gains support from the contributors and the community, it can be crafted into a detailed proposal. The proposal must contain specific elements such as:
 
 1. **Title:** Summarize the main idea.
 2. **Objective:** State clearly the main aim or goal of the proposal.

@@ -32,29 +32,6 @@ After the idea is introduced, it becomes a subject of discussion among the commu
 
 
 
-**Drafting a Detailed Proposal**
-
-If the idea gains traction and community support, it can be crafted into a detailed proposal. The proposal must contain specific components such as:
-
-* The proposal's purpose
-* Detailed description of the proposal
-* The potential impact on the network
-* A plan for implementation, if applicable
-
-_Example:_
-
-''Title: Reduction of Alignment Period for bCC Acquisition
-
-Purpose: To decrease the alignment period required for bCC acquisition from X days to Y days.
-
-Description: The proposal aims to reduce the current alignment period of X days to Y days, making it more efficient for users to acquire bCC and participate in governance.
-
-Impact: This change would potentially increase the number of bCC holders, thereby expanding the governance participant pool. It may also encourage more frequent participation in governance decisions.
-
-Implementation Plan: The technical team would adjust the smart contract parameters to reduce the alignment period, with thorough testing before final implementation.''
-
-
-
 **Proposal Evaluation and Progression**
 
 Once drafted, the proposal can be moved into the formal review phase. Here, it undergoes a more thorough examination by the community. If the proposal garners substantial community support in the off-chain discussion, it can then be moved to the on-chain environment for official voting.
