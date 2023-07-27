@@ -19,7 +19,7 @@
     * [Cooldown Period](governance/alignment/cooldown-period.md)
     * [Functions](governance/alignment/functions.md)
   * [Off-Chain](governance/off-chain.md)
-  * [On-Chain](governance/on-chain/README.md)
+  * [On-Chain](governance/on-chain.md)
     * [Parameters](governance/on-chain/parameters.md)
     * [Proposal Submission](governance/on-chain/proposal-submission.md)
     * [Voting Process](governance/on-chain/voting-process.md)
