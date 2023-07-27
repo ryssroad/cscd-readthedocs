@@ -25,7 +25,6 @@
     * [Voting Process](governance/on-chain/voting-process.md)
     * [Quorum](governance/on-chain/quorum.md)
   * [Temperature Check](governance/temperature-check.md)
-  * [Drafting a Proposal](governance/drafting-a-proposal.md)
   * [VeTokenomics](governance/vetokenomics/README.md)
     * [Model](governance/vetokenomics/model.md)
 * [Network](network/README.md)
