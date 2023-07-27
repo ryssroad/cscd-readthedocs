@@ -17,7 +17,7 @@ TCs are intended to provide a consistent pathway for proposing changes to Cascad
 
 _Example:_
 
-> **Author**: Jane Doe
+> **Author**: Jane Doe, Bob Tock
 >
 > \
 > **Title**: TC for Adjusting Block Rewards in Cascadia
@@ -49,18 +49,18 @@ _Example:_
 >
 > 1. Support for implementing the adjusted reward system as outlined above.
 > 2. Support for a modified version of the proposed reward system (details to be specified by the contributors during discussions).
-> 3. Rejection of the proposal, with preference for maintaining the current reward system.
+> 3. Rejection of the proposal, with a preference for maintaining the current reward system.
 >
 > \
 > **Next Steps**:
 >
-> Should this TC gain substantial support and constructive feedback, we will refine the proposal into a Cascadia Improvement Proposal (CIP) that elaborates the technical aspects and potential impacts of the changes.
+> Should this TC gain substantial support and constructive feedback, we will refine the proposal into a Cascadia Improvement Proposal (CIP) that elaborates on the technical aspects and potential impacts of the changes.
 >
 > As always, community discussion and consensus will be a pivotal part of this process. We encourage all Cascadia members to participate and voice their views to ensure that we continue to advance in the best interest of the Cascadia ecosystem.
 
+&#x20;
 
-
-**Next Steps**&#x20;
+**Future Course**
 
 Once a TC has matured through community discussion, the next step is to transform it into a Cascadia Improvement Proposal (CIP). A CIP is a detailed proposal that, if approved, results in changes to the Cascadia protocol.
 
