@@ -59,4 +59,4 @@ Implementation Plan: The technical team would adjust the smart contract paramete
 
 Once drafted, the proposal can be moved into the formal review phase. Here, it undergoes a more thorough examination by the community. If the proposal garners substantial community support in the off-chain discussion, it can then be moved to the on-chain environment for official voting.
 
-By using off-chain governance in this manner, Cascadia ensures that the ideas and proposals introduced into the formal on-chain governance system are well-thought-out, refined, and supported by a significant portion of the community. The open and transparent process of off-chain governance thus plays a crucial role in shaping the future of Cascadia.
+By using off-chain governance in this manner, Cascadia ensures that the ideas and proposals introduced into the formal on-chain governance system are well-thought-out, refined, and supported by most contributors.
