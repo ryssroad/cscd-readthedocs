@@ -14,13 +14,11 @@ layout:
 
 # Proposals
 
-Proposals are initiated to discuss a potential modification to Cascadia via a Cascadia Improvement Proposal (CIP).  Discussions are started as a \[Temperature Check], then moved to \[CIP] and vote after community feedback and discussion.  The progression from \[Temperature Check] to \[CIP] is a collaborative process.
-
-CIPs are intended to provide a consistent pathway for proposing changes to Cascadia. This ensures that all members have an opportunity to be heard.
+Proposals are initiated to propose a potential modification to Cascadia via a Cascadia Improvement Proposal (CIP).  Discussions are started as a \[Temperature Check], then moved to \[CIP] and vote, after community feedback and discussion.  The progression from \[Temperature Check] to \[CIP] is a collaborative process.  CIPs are intended to provide a consistent pathway for proposing changes to Cascadia, ensuring that all stakeholders have an opportunity to be heard.
 
 
 
-Each CIP must contain specific elements such as:
+Each CIP must contain:
 
 1. **Title:** This is the title, labelled either \[Temperature Check] or \[CIP].
 2. **Author:** Who is proposing the idea?
@@ -37,13 +35,13 @@ Each CIP must contain specific elements such as:
 
 > **Title**
 >
-> **\[**CIP-XXX] Update Voting Period
+> \[CIP-XXX] Update Voting Period
 >
 >
 >
 > **Authors**
 >
-> Contributor 1, Contributor 2
+> Richard
 >
 >
 >
