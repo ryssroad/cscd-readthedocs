@@ -16,6 +16,10 @@ layout:
 
 As an aligned CC holder, you hold governance authority in the Cascadia ecosystem. This means you have the right to vote on proposals and influence protocol development.
 
+{% hint style="info" %}
+In Cascadia, "locking" is more aptly referred to as "alignment".  This terminology better reflects the nature of the locking process within the Cascadia ecosystem.
+{% endhint %}
+
 
 
 **Step 1: Connect your Wallet.**

@@ -17,7 +17,7 @@ layout:
 Cascadia has a well-defined set of parameters that outline rules for validators, ensuring a fair and efficient system for block production and decision-making.
 
 {% hint style="info" %}
-These parameters are also described on our [validator explorer](https://validator.cascadia.foundation/parameters).
+Parameters are also listed on Cascadia's [validator explorer](https://validator.cascadia.foundation/parameters).
 {% endhint %}
 
 
