@@ -40,4 +40,4 @@ Information
 
 International
 
-<table data-header-hidden><thead><tr><th width="235"></th><th></th></tr></thead><tbody><tr><td>India</td><td><a href="https://t.me/CascadiaIN">https://t.me/CascadiaIN</a></td></tr><tr><td>Indonesia</td><td><a href="https://t.me/CascadiaID">https://t.me/CascadiaID</a></td></tr><tr><td>Russia</td><td><a href="https://t.me/CascadiaRU">https://t.me/CascadiaRU</a></td></tr><tr><td>Turkey</td><td><a href="https://t.me/CascadiaTR">https://t.me/CascadiaTR</a></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="235"></th><th></th></tr></thead><tbody><tr><td>India</td><td><a href="https://t.me/CascadiaIN">https://t.me/CascadiaIN</a></td></tr><tr><td>Indonesia</td><td><a href="https://t.me/CascadiaID">https://t.me/CascadiaID</a></td></tr><tr><td>Philippines</td><td><a href="https://t.me/CascadiaPH">https://t.me/CascadiaPH</a></td></tr><tr><td>Russia</td><td><a href="https://t.me/CascadiaRU">https://t.me/CascadiaRU</a></td></tr><tr><td>Turkey</td><td><a href="https://t.me/CascadiaTR">https://t.me/CascadiaTR</a></td></tr></tbody></table>
