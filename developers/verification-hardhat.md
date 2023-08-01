@@ -91,7 +91,7 @@ etherscan: {
   customChains: [
     {
       network: "cascadia",
-      chainId: 6102-1,
+      chainId: 6102,
       urls: {
         apiURL: "https://explorer.cascadia.foundation/api",
         browserURL: "https://explorer.cascadia.foundation",
@@ -136,7 +136,7 @@ module.exports = {
     customChains: [
       {
         network: "cascadia",
-        chainId: 6102-1,
+        chainId: 6102,
         urls: {
           apiURL: "https://explorer.cascadia.foundation/api",
           browserURL: "https://explorer.cascadia.foundation",
