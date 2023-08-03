@@ -31,12 +31,12 @@ To personalize your validator, such as changing your avatar, follow these steps:
 {% code overflow="wrap" %}
 ```javascript
 cascadiad tx staking edit-validator \
---identity="<keybase_identity>" \
+--identity=<keybase_identity> \
 --chain-id cascadia_6102-1 \
 --from <wallet_name> \
---gas "auto" \
+--gas auto \
 --gas-adjustment=1.2 \
---gas-prices="7aCC"
+--gas-prices=7aCC
 ```
 {% endcode %}
 
