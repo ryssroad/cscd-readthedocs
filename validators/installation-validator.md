@@ -14,7 +14,7 @@ layout:
 
 # Installation (Validator)
 
-Before following the steps below, first set up a node.  Instructions are available [here](../installation-node/)[.](https://cascadia.gitbook.io/gitbook/validators/install-your-node)
+Before following the steps below, first set up a node.  Instructions are available [here](installation-node/)[.](https://cascadia.gitbook.io/gitbook/validators/install-your-node)
 
 {% hint style="info" %}
 To resume typing while your node is running, press **ctrl-c**.

@@ -278,4 +278,4 @@ journalctl -u cascadiad -f
 
 Congratulations, you've successfully set up a Cascadia node!
 
-Next, we'll move on to running a [validator](../installation-validator/).
+Next, we'll move on to running a [validator](../installation-validator.md).
