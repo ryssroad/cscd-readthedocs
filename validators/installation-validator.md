@@ -101,19 +101,19 @@ To create a validator tx, run the following command:
 cascadiad tx staking create-validator \
 --from <key_name> \
 --chain-id cascadia_6102-1 \
---moniker="<validator_name>" \
+--moniker=<validator_name> \
 --commission-max-change-rate=0.01 \
 --commission-max-rate=1.0 \
 --commission-rate=0.05 \
---details="<description>" \
---security-contact="<email_address>" \
---website="<your_website>" \
+--details=<description> \
+--security-contact=<email_address> \
+--website=<your_website> \
 --pubkey $(cascadiad tendermint show-validator) \
---min-self-delegation="1" \
+--min-self-delegation=1 \
 --amount <token_delegation>aCC \
---gas "auto" \
+--gas auto \
 --gas-adjustment=1.2 \
---gas-prices="7aCC" \
+--gas-prices=7aCC \
 --broadcast-mode block
 ```
 {% endcode %}
@@ -143,19 +143,19 @@ For `gas-prices`, around 7 aCC is standard. However, you may need to adjust this
 cascadiad tx staking create-validator \
 --from yourvalidator \
 --chain-id cascadia_6102-1 \
---moniker="ubuntu" \
+--moniker=ubuntu \
 --commission-max-change-rate=0.01 \
 --commission-max-rate=1.0 \
 --commission-rate=0.05 \
---details="The World's First  Neocybernetic  Blockchain" \
---security-contact="admin@cascadia.foundation" \
---website="cascadia.foundation" \
+--details=The World's First  Neocybernetic  Blockchain \
+--security-contact=admin@cascadia.foundation \
+--website=cascadia.foundation \
 --pubkey $(cascadiad tendermint show-validator) \
---min-self-delegation="1" \
+--min-self-delegation=1 \
 --amount 1000000000000000000aCC \
---gas "auto" \
+--gas auto \
 --gas-adjustment=1.2 \
---gas-prices="7aCC" \
+--gas-prices=7aCC \
 --broadcast-mode block
 ```
 {% endcode %}
