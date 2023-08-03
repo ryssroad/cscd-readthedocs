@@ -59,7 +59,7 @@
   * [Installation (Node)](validators/installation-node/README.md)
     * [CLI Setup](validators/installation-node/cli-setup.md)
     * [Concurrent](validators/installation-node/concurrent.md)
-    * [Upgrade](validators/installation-node/upgrade.md)
+    * [Upgrade](validators/installation-node/upgrade/README.md)
       * [Binary Upgrade Guide](validators/installation-node/upgrade/binary-upgrade-guide.md)
   * [Installation (Validator)](validators/installation-validator.md)
   * [Reference](validators/reference/README.md)
