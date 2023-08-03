@@ -14,11 +14,18 @@ layout:
 
 # Denomination
 
-**CC** is Cascadia's native. It serves as the principal medium of account and an essential element of our blockchain structure. It's only function is to express governance authority.
+**CC** is our native token, used for all major transactions and interactions in Cascadia. It also plays a crucial role in the blockchain's overall structure and governance.
 
-**tCC** is Cascadia's testnet token, utilized to ensure Cascadia's robustness and reliability through various testing processes prior to mainnet operations.
+**bCC** is our governance token, obtained by those who align their CC tokens. Holders of bCC gain the right to vote on key decisions in Cascadia's network.
 
-**aCC** is the smallest denomination of Cascadia's native token.
+{% hint style="info" %}
+Our bCC contract is written in Vyper v0.2.7, hence, free from the malfunctioning reentrancy locks issue known in Vyper v0.2.15, v0.2.16, and v0.3.0. \
+For more details, see [Vyper's tweet](https://twitter.com/vyperlang/status/1685692973051498497).
+{% endhint %}
+
+**tCC** is our testnet token, utilized to ensure Cascadia's robustness and reliability through various testing processes prior to mainnet operations.
+
+**aCC** is the smallest denomination of Cascadia's native token used for micro-level transactions.
 
 {% hint style="info" %}
 Unlike the _u_ (micro) denotation, Cascadia utilizes _a_ to signify micro-level transactions, promoting increased precision and system adaptability.
