@@ -11,6 +11,7 @@
   * [System Design](cybernetics/system-design.md)
 * [Developers](developers/README.md)
   * [Addresses](developers/addresses.md)
+  * [Contracts](developers/contracts.md)
   * [Deployment](developers/contract-deployment.md)
   * [Verification (Block Explorer)](developers/verification-block-explorer.md)
   * [Verification (Hardhat)](developers/verification-hardhat.md)
