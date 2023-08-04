@@ -49,3 +49,9 @@ These branding assets are an integral part of Cascadia's visual identity that en
 **Brand Colors**
 
 <figure><img src="../.gitbook/assets/cascadia_brand_guidelines5.png" alt=""><figcaption></figcaption></figure>
+
+
+
+{% hint style="info" %}
+Additional Brand Assets can be found on [Google Drive](https://drive.google.com/drive/folders/1nxPnQgDAFwPljLZ3inV63ticRh97uW9X?usp=sharing).
+{% endhint %}
