@@ -14,7 +14,7 @@ layout:
 
 # Binary Upgrade (Manual)
 
-This guide will help you manually and automatically upgrade the `cascadiad` binary.
+This guide will help you manually upgrade the `cascadiad` binary.
 
 
 

@@ -14,6 +14,9 @@ layout:
 
 # Upgrade
 
+This guide is the standard process for upgrading the `cascadiad` binary.
+
+\
 **Step 1: Stop the `cascadiad` service.**
 
 ```javascript
