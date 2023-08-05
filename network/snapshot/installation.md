@@ -95,7 +95,7 @@ sudo journalctl -u cascadiad -f
 ```
 
 {% hint style="info" %}
-**Advanced Route:** The above solution requires you to download the compressed file, uncompress it and then delete the original file. This requires extra storage space on your server.&#x20;
+The above solution requires you to download the compressed file, uncompress it and then delete the original file. This requires extra storage space on your server.&#x20;
 {% endhint %}
 
 Run the following combo command to stream the snapshot into your database location.  This is for advanced users only:
