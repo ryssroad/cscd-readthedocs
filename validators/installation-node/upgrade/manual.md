@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# Binary Upgrade (Manual)
+# Manual
 
 This guide will help you manually upgrade the `cascadiad` binary.
 

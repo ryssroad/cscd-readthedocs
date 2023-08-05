@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# Binary Upgrade (Automated)
+# Automated
 
 This guide will help you automatically upgrade the `cascadiad` binary.
 
