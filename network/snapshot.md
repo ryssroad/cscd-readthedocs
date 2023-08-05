@@ -44,7 +44,7 @@ indexer = "null"
 
 **How To Process a Snapshot**
 
-Install lz4 if needed
+**Step 1: Install lz4 if needed.**
 
 ```
 sudo apt update
@@ -54,7 +54,7 @@ sudo snap install lz4
 
 
 
-**Download the snapshot, for example**
+**Step 2: Download the snapshot.**
 
 {% code overflow="wrap" %}
 ```
@@ -64,7 +64,7 @@ wget -O cascadia_latest.tar.lz4 https://snapshot.cascadia.foundation/snapshots/n
 
 
 
-**Stop your node**
+**Step 3: Stop your node.**
 
 ```
 sudo systemctl stop cascadiad
@@ -72,7 +72,7 @@ sudo systemctl stop cascadiad
 
 
 
-**Reset your node**&#x20;
+**Step 4: Reset your node.**
 
 ```
 cascadiad tendermint unsafe-reset-all --home $HOME/.cascadiad --keep-addr-book

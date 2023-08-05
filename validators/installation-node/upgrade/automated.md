@@ -18,7 +18,7 @@ This guide will help you automatically upgrade the `cascadiad` binary.
 
 
 
-**Step 1: Create the upgrade-info.json file**
+**Step 1: Create the upgrade-info.json file.**
 
 The upgrade-info.json file will be created in the data folder after the upgrade proposal is passed.
 
@@ -30,7 +30,7 @@ The upgrade-info.json file will be created in the data folder after the upgrade 
 
 
 
-**Step 2: Prepare for an automated upgrade**
+**Step 2: Prepare for an automated upgrade.**
 
 To automate the upgrade using cosmovisor, ensure your `cosmovisor/` directory is structured as follows:
 
@@ -49,7 +49,7 @@ cosmovisor/
 
 
 
-**Step 3: Download and extract the cascadiad binary**
+**Step 3: Download and extract the cascadiad binary.**
 
 Use the following command to download and extract the cascadiad binary to the upgrades folder:
 
@@ -65,7 +65,7 @@ wget -O - https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.
 
 
 
-**Step 4: Create the upgrade-info.json file in the upgrade folder**
+**Step 4: Create the upgrade-info.json file in the upgrade folder.**
 
 Finally, create the upgrade-info.json file in the 'upgrades/v0.1.4' folder using this command:
 
