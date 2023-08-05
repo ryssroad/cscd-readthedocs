@@ -14,9 +14,9 @@ layout:
 
 # Snapshot
 
-Cascadia takes a snapshot to ensure smooth and efficient validator service operation. Following the completion of each new snapshot, previous snapshots are removed to maximize available server space. &#x20;
+Cascadia takes a snapshot daily to ensure smooth and efficient validator service operation. Following the completion of each new snapshot, previous snapshots are removed to maximize available server space.
 
-The node snapshot has been designed with the intention to optimize validator service performance on the Cascadia chain. To ensure the snapshot size is minimized while remaining fully functional for validators, the following settings are employed to economize disk space. It is advised that node operators adopt these adjustments in their nodes as well.
+To ensure the snapshot size is minimized while remaining fully functional for validators, the following settings are employed to economize disk space.  It is advised that operators adopt these adjustments on their nodes as well.
 
 **app.toml**
 
