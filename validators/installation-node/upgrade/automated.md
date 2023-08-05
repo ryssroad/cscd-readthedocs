@@ -28,6 +28,10 @@ The upgrade-info.json file will be created in the data folder after the upgrade 
 ```
 {% endcode %}
 
+{% hint style="info" %}
+The latest `cascadiad` binary release can be found on [GitHub](https://github.com/cascadiafoundation/cascadia/releases).
+{% endhint %}
+
 
 
 **Step 2: Prepare for an automated upgrade.**

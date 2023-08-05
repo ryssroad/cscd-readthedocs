@@ -36,7 +36,7 @@ sudo systemctl stop cascadiad
 
 **Step 3: Download and replace the new binary.**
 
-Download the new v0.1.4 binary from the following link: [https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.4/cascadiad](https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.4/cascadiad) and replace the binary with this command:
+The latest `cascadiad` binary release can be found on [GitHub](https://github.com/cascadiafoundation/cascadia/releases).  Download it, and replace the binary with this command:
 
 {% code overflow="wrap" %}
 ```javascript
