@@ -40,7 +40,7 @@
   * [Peers](network/peers.md)
   * [Parameters](network/parameters.md)
   * [Snapshot](network/snapshot-1.md)
-    * [Installation Guide](network/snapshot.md)
+    * [Installation](network/snapshot/installation.md)
   * [State Sync](network/state-sync.md)
 * [Security](security/README.md)
   * [Disclosure Policy](security/disclosure-policy.md)

@@ -1,20 +1,46 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Snapshot
 
-**Process**
+Cascadia takes a snapshot to ensure smooth and efficient validator service operation. Following the completion of each new snapshot, previous snapshots are removed to maximize available server space. &#x20;
 
-A snapshot of nodes is taken daily in Cascadia to ensure smooth and efficient validator service operation. Following the completion of each new snapshot, all previous snapshots are removed to maximize available server space.
+The node snapshot has been designed with the intention to optimize validator service performance on the Cascadia chain. To ensure the snapshot size is minimized while remaining fully functional for validators, the following settings are employed to economize disk space. It is advised that node operators adopt these adjustments in their nodes as well.
 
+**app.toml**
 
+```
+# Prune Type
+pruning = "custom"
 
-**Purpose of Node Snapshot**
+# Prune Strategy
+pruning-keep-recent = "100"
+pruning-keep-every = "0"
+pruning-interval = "10"
+```
 
-The node snapshot has been designed with the intention to optimize validator service performance on the Cascadia chain. To ensure the snapshot size is minimized while remaining fully functional for validators, certain settings are employed to economize disk space. It is advised that node operators adopt these adjustments in their nodes as well.
+**config.toml**
+
+```
+indexer = "null"
+```
 
 
 
 **Limitations and Functionalities**
 
-Please note, with this efficient utilization of disk space, your node's functionalities may be limited beyond signing blocks. For instance, your node may not function as an RPC endpoint, which isn't recommended to be run on a validator node in any case.
+Please note, with this efficient utilization of disk space, your node's functionalities may be limited beyond signing blocks. For instance, your node may not function as an RPC endpoint.
 
 
 

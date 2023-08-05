@@ -20,7 +20,7 @@ This guide will help you manually upgrade the `cascadiad` binary.
 
 **Step 1: Initiate the upgrade proposal.**
 
-On the chain side, the upgrade proposal will be initiated and passed through the governance voting process. The chain will then stop at height: 1774000.
+On the chain side, the upgrade proposal will be initiated and pass through the governance voting process.
 
 
 
