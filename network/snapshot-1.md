@@ -14,7 +14,7 @@ layout:
 
 # Snapshot
 
-Cascadia takes a snapshot daily to ensure smooth and efficient validator service operation. Following the completion of each new snapshot, previous snapshots are removed to maximize available server space.
+Cascadia takes a snapshot daily to ensure smooth and efficient validator service operation. Following the completion of each new snapshot, previous snapshots are removed to maximize available server space. To process a Cascadia snapshot, check [here](https://cascadia.gitbook.io/gitbook/network/snapshot/installation).
 
 To ensure the snapshot size is minimized while remaining fully functional for validators, the following settings are employed to economize disk space.  It is advised that operators adopt these adjustments on their nodes as well.
 
