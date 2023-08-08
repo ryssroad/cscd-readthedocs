@@ -32,7 +32,7 @@ Multisignature addresses can be found [here](../security/multisignature.md).
 \
 **Alignment**
 
-<table data-header-hidden><thead><tr><th width="296">Description</th><th>Contract Address</th></tr></thead><tbody><tr><td>bCC</td><td>0xD1028648d2b3906981882F0dEB0a83A94c27d4D4</td></tr><tr><td>tCC</td><td>0x41AB824A142Df9B6548BECed54c91b3c515e61d4</td></tr><tr><td>cCC</td><td>0xB6ce89EeeBa4BC21739C8eFd4391B883de144fe8</td></tr><tr><td>FeeDistributor</td><td>0x9f67b730fFc3ba1CC81E1c7BCbD8176BaEb1d68f</td></tr><tr><td>Timelock</td><td>0x904823A5788398648158b49395bEb05E00FF05c8</td></tr><tr><td>Treasury (cCC mint)</td><td>0x08D7efF9F447d60FA2C2CC32E74986bdCEF783D6</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="296">Description</th><th>Contract Address</th></tr></thead><tbody><tr><td>bCC</td><td>0xD1028648d2b3906981882F0dEB0a83A94c27d4D4</td></tr><tr><td>tCC</td><td>0x41AB824A142Df9B6548BECed54c91b3c515e61d4</td></tr><tr><td>cCC</td><td>0xB6ce89EeeBa4BC21739C8eFd4391B883de144fe8</td></tr><tr><td>FeeDistributor</td><td>0x9f67b730fFc3ba1CC81E1c7BCbD8176BaEb1d68f</td></tr><tr><td>nProtocol</td><td>0x3abc14Aeab2e37134A8215Aca1A9272833a3047b</td></tr><tr><td>Timelock</td><td>0x904823A5788398648158b49395bEb05E00FF05c8</td></tr><tr><td>Treasury (cCC mint)</td><td>0x08D7efF9F447d60FA2C2CC32E74986bdCEF783D6</td></tr><tr><td>ve_Contract</td><td>0xB5FDEBCD3A9561caE099895276B92E5240dD43f6</td></tr></tbody></table>
 
 \
 **Exchange**
