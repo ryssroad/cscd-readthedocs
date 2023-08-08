@@ -14,9 +14,11 @@ layout:
 
 # Snapshot
 
-Cascadia takes a snapshot daily to ensure smooth and efficient validator service operation. Following the completion of each new snapshot, previous snapshots are removed to maximize available server space. To process a Cascadia snapshot, check [here](https://cascadia.gitbook.io/gitbook/network/snapshot/installation).
+We take a node snapshot every 6 hours. We then delete all the previous snapshots to free up the space on the file server.
 
-To ensure the snapshot size is minimized while remaining fully functional for validators, the following settings are employed to economize disk space.  It is advised that operators adopt these adjustments on their nodes as well.
+The snapshot is designed for node operators to run an efficient validator service on the Cascadia chain. To make the snapshot as small as possible while still viable as a validator, we use the following setting to save disk space. We suggest you make the same adjustment on your node too. Please notice that your node will have very limited functionality beyond signing blocks with efficient disk space utilization. For example, your node will not be able to serve as an RPC endpoint (which is not suggested to run on a validator node anyway).
+
+Since we periodically state-sync our snapshot nodes, you might notice that sometimes the size of our snapshot is surprisingly small.
 
 **app.toml**
 
