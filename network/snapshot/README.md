@@ -14,7 +14,11 @@ layout:
 
 # Snapshot
 
-We take a node [snapshot](https://snapshot.cascadia.foundation/) every 6 hours. We then delete all the previous snapshots to free up the space on the file server.
+{% hint style="info" %}
+The most recent Cascadia snapshot can be found [here](https://snapshot.cascadia.foundation/).
+{% endhint %}
+
+Node snapshots are taken every 6 hours. Previous snapshots are cleared to free up the space on the file server.
 
 The snapshot is designed for node operators to run an efficient validator service on the Cascadia chain. To make the snapshot as small as possible while still viable as a validator, we use the following setting to save disk space. We suggest you make the same adjustment on your node too. Please notice that your node will have very limited functionality beyond signing blocks with efficient disk space utilization. For example, your node will not be able to serve as an RPC endpoint (which is not suggested to run on a validator node anyway).
 
