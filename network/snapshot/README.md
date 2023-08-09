@@ -15,7 +15,7 @@ layout:
 # Snapshot
 
 {% hint style="info" %}
-The most recent Cascadia snapshot can be found [here](https://snapshot.cascadia.foundation/).
+Cascadia's most recent, official snapshot can be found [here](https://snapshot.cascadia.foundation/).  Additional snapshots can be found in the [Community Directory](https://www.askclu.com/index.php/Community\_Directory:\_Snapshot).
 {% endhint %}
 
 Node snapshots are taken every 6 hours. Previous snapshots are cleared to free up the space on the file server.
@@ -46,10 +46,10 @@ indexer = "null"
 
 **Limitations and Functionalities**
 
-Please note, with this efficient utilization of disk space, your node's functionalities may be limited beyond signing blocks. For instance, your node may not function as an RPC endpoint.
+Please note, with an efficient utilization of disk space, your node's functionalities may be limited beyond signing blocks.  For instance, your node may not function as a RPC endpoint.
 
 
 
 **Periodic State-Sync**
 
-The nodes used for snapshot creation undergo state sync periodically. As a result, the snapshot size might occasionally appear unusually small. This process is part of an ongoing effort to optimize performance and efficiency.
+The nodes used for snapshot creation undergo state sync periodically. As a result, the snapshot size might occasionally appear unusually small.  This process is part of an ongoing effort to optimize performance and efficiency.
