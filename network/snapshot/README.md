@@ -18,9 +18,9 @@ layout:
 Cascadia's most recent, official snapshot can be found [here](https://snapshot.cascadia.foundation/).  Additional snapshots can be found in the [Community Directory](https://www.askclu.com/index.php/Community\_Directory:\_Snapshot).
 {% endhint %}
 
-Node snapshots are taken every 6 hours. Previous snapshots are cleared to free up the space on the file server.
+Node snapshots are taken every 6 hours. Previous snapshots are cleared to free up space on the file server.
 
-The snapshot is designed for node operators to run an efficient validator service on the Cascadia chain. To make the snapshot as small as possible while still viable as a validator, we use the following setting to save disk space. We suggest you make the same adjustment on your node too.
+The snapshot is designed for node operators to run an efficient validator service on Cascadia. To make the snapshot as small as possible while still viable as a validator, the following settings are used to save disk space. It's suggested that you make the same adjustment on your node as well.
 
 **app.toml**
 
