@@ -16,7 +16,6 @@
   * [Verification](developers/verification/README.md)
     * [Block Explorer](developers/verification/block-explorer.md)
     * [Hardhat](developers/verification/hardhat.md)
-  * [Verification (Hardhat)](developers/verification-hardhat.md)
 * [Governance](governance/README.md)
   * [Alignment](governance/alignment/README.md)
     * [Cooldown Period](governance/alignment/cooldown-period.md)
