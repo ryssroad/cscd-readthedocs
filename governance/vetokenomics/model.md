@@ -30,6 +30,6 @@ A blockchain’s economic activity is shaped by three main groups:
 
 Combining [block reward distribution](../../network/distribution/block-rewards.md) and [gas fee distribution](../../network/distribution/gas-fees.md), our bCC model appears as follows:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 In practice, based on both feedback received from stakeholders (nProtocols, Validators, and bCC holders) and [automated system feedback](../../cybernetics/system-design.md), Cascadia will be able to adjust distribution of both block rewards or gas fees dynamically to align with environmental factors. This is the core value proposition of cybernetics.

@@ -16,7 +16,7 @@ layout:
 
 Cascadia’s native token (CC) is used to pay for transactions and emitted as block rewards to validators.  CC can be locked into a vote-escrow contract in return for bCC.  On the Cascadia blockchain, gas rewards are initially split and distributed evenly by 1/3 between 3 parties: nProtocols, Validators, and bCC lockers that hold the vote-escrowed token (Figure 2).
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 Cascadia has designed a new cooldown lock type, create cooldown lock, to return a portion of gas fees to select addresses, even if an address has not yet created a ve-lock. This adapted form allows `lock_bot` to establish a lock for other whitelisted addresses, enabling set incentives, per the specifications below:
 

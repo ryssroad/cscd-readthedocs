@@ -16,7 +16,7 @@ layout:
 
 Cascadia divides validator incentives (block rewards) among validators, bCC holders, and nProtocols in three equal shares (Figure 1).  This token design choice not only impacts the platform’s users and what they can accomplish within it, but also the underlying functioning of the blockchain itself and the economic incentives that drive the evolution of our ecosystem.
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 Block Reward Distribution is accomplished by creating a hook, as per the specifications below, which is called whenever a new EVM transaction occurs. `PostTXProcessing` is a wrapper for calling the EVM `PostTxProcessing` hook.
 

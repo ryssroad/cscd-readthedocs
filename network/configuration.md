@@ -26,7 +26,7 @@ Then select **"Networks"** in the Settings menu.
 
 Then select **''Add Network''.**
 
-![](<../.gitbook/assets/Step2 (1).png>)
+![](../.gitbook/assets/Step2.png)
 
 
 

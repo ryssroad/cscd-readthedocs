@@ -16,7 +16,7 @@ layout:
 
 **Step 1: Visit the** [**Faucet Page**](https://www.cascadia.foundation/faucet) **to request testnet tokens.**
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 
 

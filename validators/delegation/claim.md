@@ -16,13 +16,13 @@ layout:
 
 **Step 1: Navigate to** [**https://validator.cascadia.foundation/validators**](https://validator.cascadia.foundation/validators) **and connect your wallet.**
 
-<figure><img src="../../.gitbook/assets/Redelegate2 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Redelegate2 (4).png" alt=""><figcaption></figcaption></figure>
 
 
 
 **Step 2: Click the “Manage” button of the validator to whom you have delegated.**
 
-<figure><img src="../../.gitbook/assets/Redelegate3 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Redelegate3 (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

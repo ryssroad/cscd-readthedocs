@@ -16,8 +16,6 @@ layout:
 
 These are the steps for verifying smart contracts via [Hardhat](https://hardhat.org/). Hardhat is a comprehensive development environment that facilitates contract compilation, deployment, and authentication.
 
-
-
 **Step 1: Install Hardhat.**
 
 {% hint style="info" %}
@@ -39,8 +37,6 @@ yarn instructions:
 yarn add --dev hardhat
 ```
 {% endcode %}
-
-
 
 **Step 2:** Install the [Hardhat plugin](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan) (requires v3.0.0+). Use either the `npm` or `yarn` commands:
 
@@ -77,8 +73,6 @@ For TypeScript, add the following line to `hardhat.config.ts`:
 import "@nomiclabs/hardhat-etherscan";
 ```
 {% endcode %}
-
-
 
 **Step 4: Add Cascadia to `hardhat.config.js`.**
 
@@ -148,8 +142,6 @@ module.exports = {
 ```
 {% endcode %}
 
-
-
 **Step 5: Check if Cascadia is successfully supported:**
 
 {% code overflow="wrap" %}
@@ -157,8 +149,6 @@ module.exports = {
 npx hardhat verify --list-networks
 ```
 {% endcode %}
-
-
 
 **Step 6: To verify the contract, constructor arguments can be included with the verify task.**
 
@@ -176,8 +166,6 @@ npx hardhat verify –network Cascadia 0x856C336cD8eBDCE7B5Bb3F2DEB1bf3160B17688
 ```
 {% endcode %}
 
-
-
 **Step 7: Contract verification can be confirmed via the console:**
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>

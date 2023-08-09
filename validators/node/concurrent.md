@@ -32,7 +32,7 @@ The output will display a list of ports used by the nodes. By default, Cosmos no
 
 You will receive a similar output, displaying a clear example of two nodes installed on the server, using different ports to avoid conflicts with each other. Here is an example of how that looks:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 
 
