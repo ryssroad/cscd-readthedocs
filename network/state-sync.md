@@ -28,10 +28,14 @@ cascadiad tendermint unsafe-reset-all --home $HOME/.cascadiad --keep-addr-book
 
 **Step 2: Get and configure state sync.**
 
+It would be best to get an active RPC endpoint and its peer. Also, it would be better to know the frequency of the snapshot to adapt the following row with a correct value `SYNC_BLOCK_HEIGHT=$(($LATEST_HEIGHT - 300))`, otherwise, state-sync will be failed.
+
+Below is an example of one of the working validator's peerå
+
 {% code overflow="wrap" %}
 ```
-STATE_SYNC_RPC=http://23.88.5.169:22657
-STATE_SYNC_PEER=5126c2904cf4d9ed9b2c6cd203fccbe3983229da@23.88.5.169:22656
+STATE_SYNC_RPC=https://cascadia.rpc.liveraven.net:443
+STATE_SYNC_PEER=5126c2904cf4d9ed9b2c6cd203fccbe3983229da@cascadia.rpc.liveraven:22656å
 LATEST_HEIGHT=$(curl -s $STATE_SYNC_RPC/block | jq -r .result.block.header.height)
 SYNC_BLOCK_HEIGHT=$(($LATEST_HEIGHT - 300))
 SYNC_BLOCK_HASH=$(curl -s "$STATE_SYNC_RPC/block?height=$SYNC_BLOCK_HEIGHT" | jq -r .result.block_id.hash)
