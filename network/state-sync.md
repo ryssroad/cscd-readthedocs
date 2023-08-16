@@ -1,4 +1,4 @@
-åå---
+---
 layout:
   title:
     visible: true
