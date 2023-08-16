@@ -59,9 +59,7 @@ Use the following command to download and extract the cascadiad binary to the up
 
 {% code overflow="wrap" %}
 ```javascript
-mkdir [your cosmovisor path]/cosmovisor/upgrades
-mkdir [your cosmovisor path]/cosmovisor/upgrades/upgrades
-mkdir [your cosmovisor path]/cosmovisor/upgrades/upgrades/v0.1.4
+mkdir -p [your cosmovisor path]/cosmovisor/upgrades/v0.1.4
 
 wget -O - https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.4/cascadiad-v0.1.4-linux-amd64.tar.gz | tar -xzvf - -C [your cosmovisor path]/cosmovisor/upgrades/v0.1.4 
 ```
