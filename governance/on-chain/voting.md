@@ -22,7 +22,7 @@ Every bCC holder holding a minimum amount of bCC tokens has the ability to submi
 
 **How to Submit a Proposal**
 
-A minimum of 6102 bCC tokens are necessary to submit a proposal. Proposals should provide a specific voting period, details on the proposed changes, potential impact, and other related information. See [here](https://cascadia.gitbook.io/gitbook/governance/drafting-a-proposal).
+A minimum of 6102 bCC tokens are necessary to submit a proposal. Proposals should provide a specific voting period, details on the proposed changes, potential impact, and other related information. See[ here](https://cascadia.gitbook.io/gitbook/governance/proposals).
 
 
 
