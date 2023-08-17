@@ -14,6 +14,12 @@ layout:
 
 # Functions
 
+{% hint style="info" %}
+Cascadia's bCC contract is written in Vyper 0.2.7, which is unaffected by malfunctioning reentrancy locks.  Be aware that Vyper versions 0.2.15, 0.2.16, and 0.3.0 are susceptible to malfunctioning reentrancy locks. For more information, refer to [this tweet](https://twitter.com/vyperlang/status/1685692973051498497) from Vyper.
+{% endhint %}
+
+
+
 **Structs**
 
 The contract code begins by defining two structs: `Point` and `LockedBalance`. In the context of a smart contract, a struct is a composite data type that encapsulates a set of related variables under a single reference, allowing for more organized data management.
