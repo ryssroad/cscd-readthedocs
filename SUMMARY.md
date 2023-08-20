@@ -42,6 +42,7 @@
   * [Snapshot](network/snapshot/README.md)
     * [Installation](network/snapshot/installation.md)
   * [State Sync](network/state-sync.md)
+  * [Staking Metrics](network/staking-metrics.md)
 * [Security](security/README.md)
   * [Disclosure Policy](security/disclosure-policy.md)
   * [Multisignature](security/multisignature.md)
