@@ -15,6 +15,8 @@
   * [Verification](developers/verification/README.md)
     * [Block Explorer](developers/verification/block-explorer.md)
     * [Hardhat](developers/verification/hardhat.md)
+* [CosmWasm](cosmwasm/README.md)
+  * [Page 1](cosmwasm/page-1.md)
 * [Governance](governance/README.md)
   * [Alignment](governance/alignment/README.md)
     * [Cooldown Period](governance/alignment/cooldown-period.md)
