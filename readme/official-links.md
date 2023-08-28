@@ -16,7 +16,7 @@ layout:
 
 Applications
 
-<table data-header-hidden><thead><tr><th width="222"></th><th></th></tr></thead><tbody><tr><td>Alignment</td><td><a href="http://align.cascadia.foundation/">http://align.cascadia.foundation/</a></td></tr><tr><td>Block Explorer</td><td><a href="https://explorer.cascadia.foundation/">https://explorer.cascadia.foundation</a></td></tr><tr><td>Faucet</td><td><a href="https://www.cascadia.foundation/faucet">https://www.cascadia.foundation/faucet</a></td></tr><tr><td>Validator Explorer</td><td><a href="https://validator.cascadia.foundation/">https://validator.cascadia.foundation</a></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="222"></th><th></th></tr></thead><tbody><tr><td>Alignment</td><td><a href="http://align.cascadia.foundation/">http://align.cascadia.foundation</a></td></tr><tr><td>Block Explorer</td><td><a href="https://explorer.cascadia.foundation/">https://explorer.cascadia.foundation</a></td></tr><tr><td>Coswmwasm</td><td><a href="https://cosmwasm.cascadia.foundation/">https://cosmwasm.cascadia.foundation</a></td></tr><tr><td>Faucet</td><td><a href="https://www.cascadia.foundation/faucet">https://www.cascadia.foundation/faucet</a></td></tr><tr><td>Validator Explorer</td><td><a href="https://validator.cascadia.foundation/">https://validator.cascadia.foundation</a></td></tr></tbody></table>
 
 
 
