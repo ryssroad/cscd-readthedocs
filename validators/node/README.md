@@ -82,7 +82,7 @@ source ~/.profile
 
 {% code overflow="wrap" %}
 ```javascript
-curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.4/cascadiad -o cascadiad
+curl -L https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.5/cascadiad -o cascadiad
 ```
 {% endcode %}
 

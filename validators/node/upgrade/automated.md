@@ -16,23 +16,19 @@ layout:
 
 This guide will help you set up automated `cascadiad` binary upgrades.
 
-
-
 **Step 1: Create the upgrade-info.json file.**
 
 The upgrade-info.json file will be created in the data folder after the upgrade proposal is passed.
 
 {% code overflow="wrap" %}
 ```javascript
-{"name":"v0.1.4","time":"0001-01-01T00:00:00Z","height":1774000,"info":"{\"binaries\":{\"linux/amd64\":\"https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.4/cascadiad-v0.1.4-linux-amd64.tar.gz\"}"}
+{"name":"v0.1.5","time":"0001-01-01T00:00:00Z","height":1774000,"info":"{\"binaries\":{\"linux/amd64\":\"https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.4/cascadiad-v0.1.5-linux-amd64.tar.gz\"}"}
 ```
 {% endcode %}
 
 {% hint style="info" %}
 The latest `cascadiad` binary release can be found on [GitHub](https://github.com/cascadiafoundation/cascadia/releases).
 {% endhint %}
-
-
 
 **Step 2: Prepare for an automated upgrade.**
 
@@ -51,8 +47,6 @@ cosmovisor/
         └── upgrade-info.json
 ```
 
-
-
 **Step 3: Download and extract the cascadiad binary.**
 
 Use the following command to download and extract the cascadiad binary to the upgrades folder:
@@ -64,8 +58,6 @@ mkdir -p [your cosmovisor path]/cosmovisor/upgrades/v0.1.4
 wget -O - https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.4/cascadiad-v0.1.4-linux-amd64.tar.gz | tar -xzvf - -C [your cosmovisor path]/cosmovisor/upgrades/v0.1.4 
 ```
 {% endcode %}
-
-
 
 **Step 4: Create the upgrade-info.json file in the upgrade folder.**
 
