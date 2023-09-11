@@ -14,6 +14,8 @@ layout:
 
 # Welcome to Cascadia
 
+Cascadia is a platform built to understand and incentivize positive consumer behavior.
+
 Amazon’s first principle is Customer Obsession, which states that leaders start with the customer and work backwards. Working backwards is a mental model that keeps customers at the center of everything Amazon does, ensuring that they’re not building technology for its own sake.
 
 At Cascadia, we embrace the concept of working backwards. By understanding the context and background behind each individual’s needs — what drives them, what motivates them — we’re better able to craft products that will serve our users.
