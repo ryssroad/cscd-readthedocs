@@ -35,4 +35,4 @@ ABCI 1.0 brings methods like “prepareProposal” and “processProposal” for
 
 To buffer the protocol you need to migrate from `gogo/proto` to `cosmos/gogoproto`
 
-Developers should regenerate proto files using the [Cosmos SDK Team's docker image](https://github.com/cosmos/cosmos-sdk/pkgs/container/proto-builder).
+Developers should regenerate proto files using the Cosmos SDK Team's docker [image](https://github.com/cosmos/cosmos-sdk/pkgs/container/proto-builder).
