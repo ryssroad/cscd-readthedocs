@@ -1,4 +1,4 @@
-# Download & Optimize
+# Optimization
 
 Before progressing, ensure you've completed the first steps. It's important to have either the Node.js REPL or the `wasmd` Go CLI pre-configured.
 
