@@ -37,6 +37,8 @@
     * [Set your Environment](network/cosmwasm/set-your-environment.md)
     * [Download & Optimize](network/cosmwasm/download-and-optimize.md)
     * [Deployment](network/cosmwasm/deployment.md)
+    * [Multi-Chain Contracts](network/cosmwasm/multi-chain-contracts/README.md)
+      * [The Actor Model](network/cosmwasm/multi-chain-contracts/the-actor-model.md)
   * [Denomination](network/denomination.md)
   * [Distribution](network/distribution/README.md)
     * [Block Rewards](network/distribution/block-rewards.md)
