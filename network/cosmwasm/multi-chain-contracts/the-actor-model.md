@@ -1,6 +1,6 @@
 # The Actor Model
 
-The CosmWasm actor model serves as a foundational design pattern. Each actor has its own isolated internal state and communicates with others solely through messages, avoiding direct calls. Cascadia adopts this model for its smart contracts. Key insights from this approach include:
+The CosmWasm actor model serves as a foundational design pattern. Each actor has its own isolated internal state and communicates with others solely through messages, avoiding direct calls. Key insights from this approach include:
 
 
 
