@@ -26,6 +26,8 @@
       * [Guide](developers/cascadia-tools/cw20-base-contract/guide.md)
     * [C721 Base Contract](developers/cascadia-tools/c721-base-contract/README.md)
       * [Guide](developers/cascadia-tools/c721-base-contract/guide.md)
+    * [Sign and Verify](developers/cascadia-tools/sign-and-verify/README.md)
+      * [Guide](developers/cascadia-tools/sign-and-verify/guide.md)
   * [Deployment](developers/contract-deployment.md)
   * [Verification](developers/verification/README.md)
     * [Block Explorer](developers/verification/block-explorer.md)
