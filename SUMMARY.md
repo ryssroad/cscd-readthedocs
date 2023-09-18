@@ -28,6 +28,8 @@
       * [Guide](developers/cascadia-tools/c721-base-contract/guide.md)
     * [Sign and Verify](developers/cascadia-tools/sign-and-verify/README.md)
       * [Guide](developers/cascadia-tools/sign-and-verify/guide.md)
+    * [Upload Contract](developers/cascadia-tools/upload-contract/README.md)
+      * [Create a WASM File](developers/cascadia-tools/upload-contract/create-a-wasm-file.md)
   * [Deployment](developers/contract-deployment.md)
   * [Verification](developers/verification/README.md)
     * [Block Explorer](developers/verification/block-explorer.md)

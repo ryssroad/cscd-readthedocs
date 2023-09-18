@@ -1,6 +1,6 @@
 # Guide
 
-**Step 1: Initialization**
+**Step 1: Instantiate**
 
 You need to determine if you want the contract admin rights to be alterable post-creation.
 
@@ -12,17 +12,15 @@ You can designate multiple admin addresses by using the provided add (+) functio
 
 
 
-**Step 2: Contract Queries**
+**Step 2: Query**
 
-From the Cascadia dashboard, it's feasible to obtain data from any CW1 contract. Also, all queries mandate the CW1 contract address as a foundational input.
-
-Queries:
+From the Cascadia dashboard, it's feasible to obtain data from any CW1 contract. Also, all queries mandate the CW1 contract address as a foundational input:
 
 <table data-header-hidden><thead><tr><th width="158.33333333333331">Functionality</th><th width="357">Description</th><th>Required Input</th></tr></thead><tbody><tr><td>Allowance</td><td>The limit set by the admin for another address concerning sending, transferring, or redelegating.</td><td>Spender address</td></tr><tr><td>All Allowances</td><td>Overview of all set limits by the admin.</td><td>-</td></tr><tr><td>Permissions</td><td>A record of rights assigned by the admin to a specific address.</td><td>Address under scrutiny</td></tr><tr><td>All Permissions</td><td>A comprehensive list showcasing all addresses alongside their respective permissions.</td><td>-</td></tr><tr><td>Can Execute</td><td>Verifies an address's capability to run a specific message.</td><td>Refer to Execute segment</td></tr></tbody></table>
 
 
 
-**Step 3: Execution Commands**
+**Step 3: Execute**&#x20;
 
 You can find a list of possible messages below.
 

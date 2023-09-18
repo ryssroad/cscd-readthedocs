@@ -4,7 +4,7 @@ The following process shows how to create CW20 tokens, detailing steps to create
 
 
 
-**Create a CW20 Token**
+**Create**
 
 **Step 1: Token Details**
 
