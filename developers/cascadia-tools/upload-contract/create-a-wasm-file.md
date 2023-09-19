@@ -59,5 +59,3 @@ WASM files that aren't optimized can become excessively large. This can lead to 
 * Navigate to the Contract Upload section on Cascadia.
 * Select your generated WASM file.
 * Click on "Upload Contract."
-
-\
