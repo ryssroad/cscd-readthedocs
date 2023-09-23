@@ -1,6 +1,6 @@
 # CW1 Subkeys Contract
 
-CW1 is a protocol for proxy contracts within the Cascadia ecosystem. It enables one central contract to secure assets or privileges, further disbursing rights to secondary contracts.
+CW1 is a protocol for proxy contracts. It enables one central contract to secure assets or privileges, further disbursing rights to secondary contracts.
 
 A typical scenario involves multiple addresses collaboratively leveraging an account. A primary address might deposit assets, subsequently assigning allowances to sub-accounts. These sub-accounts can:
 
