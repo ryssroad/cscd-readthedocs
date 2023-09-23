@@ -1,6 +1,6 @@
 # CosmWasm
 
-CosmWasm bridges the world of smart contracts and leverages WebAssembly (Wasm) to offer a modular and adaptable environment for developers.
+CosmWasm bridges the world of smart contracts and leverages WebAssembly (Wasm) to offer a modular and adaptable environment for developers. Visit [https://cosmwasm.cascadia.foundation/](https://cosmwasm.cascadia.foundation/).
 
 Some of the main features that distinguish it:
 

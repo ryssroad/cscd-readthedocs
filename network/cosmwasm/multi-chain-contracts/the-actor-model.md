@@ -1,8 +1,10 @@
 # The Actor Model
 
-The CosmWasm actor model serves as a foundational design pattern. Each actor has its own isolated internal state and communicates with others solely through messages, avoiding direct calls. Key insights from this approach include:
+The CosmWasm actor model serves as a foundational design pattern. Each actor has its own isolated internal state and communicates with others solely through messages, avoiding direct calls.&#x20;
 
 
+
+Key insights from this approach include:
 
 **Loose Coupling:** Actors are coupled mainly by the data format of the messages they exchange, akin to the boundary protocols in REST or RPC. This promotes scalability and interoperability.
 
