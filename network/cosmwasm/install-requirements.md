@@ -32,9 +32,11 @@ rustup target add wasm32-unknown-unknown
 
 **Installing Rust (for Windows 10):**
 
-* Obtain `rustup-init.exe` from rustup.rs or rust-lang.org.
-* If needed, download [Visual C++ Build Tools 2019](https://visualstudio.microsoft.com/visual-cpp-build-tools/). Ensure "Windows 10 SDK" and ''English language pack'' are selected.
-* Run the setup for Rust and then install the wasm32 target similarly to the Linux & Mac setup.
+Obtain `rustup-init.exe` from rustup.rs or rust-lang.org.
+
+If needed, download [Visual C++ Build Tools 2019](https://visualstudio.microsoft.com/visual-cpp-build-tools/). Ensure "Windows 10 SDK" and ''English language pack'' are selected.
+
+Run the setup for Rust and then install the wasm32 target similarly to the Linux & Mac setup.
 
 
 

@@ -7,9 +7,9 @@ This section serves as a primer to the foundational concepts of CosmWasm Smart C
 * Managing smart contract functions using the CLI
 * Tweaking an existing contract
 
-**Scope**\
+\
 The intentional design of the following guide is to provide a seamless start, keeping the intricacies of development for subsequent sections.
 
 {% hint style="info" %}
-After Cascadia's testnet is up, there will be more sample guides.
+There will be sample guides after the release of Cascadia's testnet.
 {% endhint %}
