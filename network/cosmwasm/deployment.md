@@ -104,5 +104,3 @@ Define default fees, create an instance using the code id, and get the contract 
 **Contract Interaction in CosmJS:**
 
 Register a name and transfer ownership to another address.
-
-\
