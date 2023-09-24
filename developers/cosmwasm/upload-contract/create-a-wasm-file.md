@@ -34,8 +34,9 @@ cw-contract/
 
 **Step 3: Create the WASM File**
 
-* **Unoptimized Version**: Use the command `cargo wasm`.
-* **Optimized Version**: If you have Docker installed, utilize the following:
+Unoptimized Version: Use the command `cargo wasm`.
+
+Optimized Version: If you have Docker installed, utilize the following:
 
 {% code overflow="wrap" %}
 ```
@@ -56,6 +57,8 @@ WASM files that aren't optimized can become excessively large. This can lead to 
 
 **Step 4: Upload the WASM File**
 
-* Navigate to the Contract Upload section on Cascadia.
-* Select your generated WASM file.
-* Click on "Upload Contract."
+Navigate to the Contract Upload section on Cascadia.
+
+Select your generated WASM file.
+
+Click on the "Upload Contract" button.
