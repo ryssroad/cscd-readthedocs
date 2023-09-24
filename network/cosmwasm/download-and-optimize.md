@@ -70,5 +70,3 @@ docker run --rm -v ${pwd}:/code `
 {% endcode %}
 
 After optimization, the resultant binary is located under the `artifacts` directory and will be approximately 138 kB in size.
-
-\
