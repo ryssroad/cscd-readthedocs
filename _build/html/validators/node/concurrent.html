@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Concurrent &#8212; cscd-rtd  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=039e1c02" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="concurrent">
+<h1>Concurrent<a class="headerlink" href="#concurrent" title="Link to this heading">¶</a></h1>
+<p>This guide explains how to install a Cascadia node on a server that already has a node installed.  By changing default ports, it’s possible to run two nodes without conflict.</p>
+<p><strong>Step 1: Check ports used by the existing node.</strong></p>
+<p>Run the following command:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">ss</span><span class="w"> </span><span class="o">-</span><span class="nx">ntulp</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p>The output will display a list of ports used by the nodes. By default, Cosmos nodes use the following ports: <code class="docutils literal notranslate"><span class="pre">26656</span></code>, <code class="docutils literal notranslate"><span class="pre">26657</span></code>, <code class="docutils literal notranslate"><span class="pre">6060</span></code>, <code class="docutils literal notranslate"><span class="pre">26658</span></code>, <code class="docutils literal notranslate"><span class="pre">26660</span></code>, <code class="docutils literal notranslate"><span class="pre">9090</span></code>, and <code class="docutils literal notranslate"><span class="pre">9091</span></code>.</p>
+<p>You will receive a similar output, displaying a clear example of two nodes installed on the server, using different ports to avoid conflicts with each other. Here is an example of how that looks:</p>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<p><strong>Step 2: Change default ports.</strong></p>
+<p>To avoid conflicts, change the default ports used by the new Cascadia node.  Here are the recommended port changes:</p>
+<p><code class="docutils literal notranslate"><span class="pre">config.toml</span></code>: Change <code class="docutils literal notranslate"><span class="pre">26658</span></code> to <code class="docutils literal notranslate"><span class="pre">36658</span></code>, <code class="docutils literal notranslate"><span class="pre">26657</span></code> to <code class="docutils literal notranslate"><span class="pre">36657</span></code>, <code class="docutils literal notranslate"><span class="pre">6060</span></code> to <code class="docutils literal notranslate"><span class="pre">6061</span></code>, <code class="docutils literal notranslate"><span class="pre">26656</span></code> to <code class="docutils literal notranslate"><span class="pre">36656</span></code>, and <code class="docutils literal notranslate"><span class="pre">26660</span></code> to <code class="docutils literal notranslate"><span class="pre">36660</span></code>.</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">sed</span><span class="w"> </span><span class="o">-</span><span class="nx">i</span><span class="p">.</span><span class="nx">bak</span><span class="w"> </span><span class="o">-</span><span class="nx">e</span><span class="w"> </span><span class="s2">&quot;s%^proxy_app = \&quot;tcp://127.0.0.1:26658\&quot;%proxy_app = \&quot;tcp://127.0.0.1:36658\&quot;%; s%^laddr = \&quot;tcp://127.0.0.1:26657\&quot;%laddr = \&quot;tcp://127.0.0.1:36657\&quot;%; s%^pprof_laddr = \&quot;localhost:6060\&quot;%pprof_laddr = \&quot;localhost:6061\&quot;%; s%^laddr = \&quot;tcp://0.0.0.0:26656\&quot;%laddr = \&quot;tcp://0.0.0.0:36656\&quot;%; s%^prometheus_listen_addr = \&quot;:26660\&quot;%prometheus_listen_addr = \&quot;:36660\&quot;%&quot;</span><span class="w"> </span><span class="nx">$HOME</span><span class="o">/</span><span class="p">.</span><span class="nx">cascadiad</span><span class="o">/</span><span class="nx">config</span><span class="o">/</span><span class="nx">config</span><span class="p">.</span><span class="nx">toml</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><code class="docutils literal notranslate"><span class="pre">app.toml</span></code>: Change <code class="docutils literal notranslate"><span class="pre">9090</span></code> to <code class="docutils literal notranslate"><span class="pre">9190</span></code>, <code class="docutils literal notranslate"><span class="pre">9091</span></code> to <code class="docutils literal notranslate"><span class="pre">9191</span></code>, and <code class="docutils literal notranslate"><span class="pre">1317</span></code> to <code class="docutils literal notranslate"><span class="pre">1327</span></code>.</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">sed</span><span class="w"> </span><span class="o">-</span><span class="nx">i</span><span class="p">.</span><span class="nx">bak</span><span class="w"> </span><span class="o">-</span><span class="nx">e</span><span class="w"> </span><span class="s2">&quot;s%^address = \&quot;0.0.0.0:9090\&quot;%address = \&quot;0.0.0.0:9190\&quot;%; s%^address = \&quot;0.0.0.0:9091\&quot;%address = \&quot;0.0.0.0:9191\&quot;%; s%^address = \&quot;tcp://0.0.0.0:1317\&quot;%address = \&quot;tcp://0.0.0.0:1327\&quot;%&quot;</span><span class="w"> </span><span class="nx">$HOME</span><span class="o">/</span><span class="p">.</span><span class="nx">cascadiad</span><span class="o">/</span><span class="nx">config</span><span class="o">/</span><span class="nx">app</span><span class="p">.</span><span class="nx">toml</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><code class="docutils literal notranslate"><span class="pre">client.toml</span></code>: Change <code class="docutils literal notranslate"><span class="pre">26657</span></code> to <code class="docutils literal notranslate"><span class="pre">36657</span></code>.</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">sed</span><span class="w"> </span><span class="o">-</span><span class="nx">i</span><span class="p">.</span><span class="nx">bak</span><span class="w"> </span><span class="o">-</span><span class="nx">e</span><span class="w"> </span><span class="s2">&quot;s%^node = \&quot;tcp://localhost:26657\&quot;%node = \&quot;tcp://localhost:36657\&quot;%&quot;</span><span class="w"> </span><span class="nx">$HOME</span><span class="o">/</span><span class="p">.</span><span class="nx">cascadiad</span><span class="o">/</span><span class="nx">config</span><span class="o">/</span><span class="nx">client</span><span class="p">.</span><span class="nx">toml</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Step 3: Update <code class="docutils literal notranslate"><span class="pre">external_address</span></code> in config.toml.</strong></p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">external_address</span><span class="o">=</span><span class="nx">$</span><span class="p">(</span><span class="nx">wget</span><span class="w"> </span><span class="o">-</span><span class="nx">qO</span><span class="o">-</span><span class="w"> </span><span class="nx">eth0</span><span class="p">.</span><span class="nx">me</span><span class="p">)</span>
+<span class="nx">sed</span><span class="w"> </span><span class="o">-</span><span class="nx">i</span><span class="p">.</span><span class="nx">bak</span><span class="w"> </span><span class="o">-</span><span class="nx">e</span><span class="w"> </span><span class="s2">&quot;s/^external_address *=.*/external_address = \&quot;$external_address:36656\&quot;/&quot;</span><span class="w"> </span><span class="nx">$HOME</span><span class="o">/</span><span class="p">.</span><span class="nx">cascadiad</span><span class="o">/</span><span class="nx">config</span><span class="o">/</span><span class="nx">config</span><span class="p">.</span><span class="nx">toml</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Step 4: Restart your Cascadia node.</strong></p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>systemctl<span class="w"> </span>restart<span class="w"> </span>cascadiad<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>journalctl<span class="w"> </span>-u<span class="w"> </span>cascadiad<span class="w"> </span>-f<span class="w"> </span>-o<span class="w"> </span>cat
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">cscd-rtd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, roadz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../../_sources/validators/node/concurrent.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

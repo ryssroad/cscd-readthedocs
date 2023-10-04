@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Installation &#8212; cscd-rtd  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=039e1c02" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h1>
+<p>Before following the steps below, first set up a node.  Instructions are available <a class="reference internal" href="#node/"><span class="xref myst">here</span></a><a class="reference external" href="https://cascadia.gitbook.io/gitbook/validators/install-your-node">.</a></p>
+<p>{% hint style=”info” %}
+To resume typing while your node is running, press <strong>ctrl-c</strong>.
+{% endhint %}</p>
+<p><strong>Step 1: Verify that your node is fully synced.</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cascadiad</span> <span class="n">status</span>
+</pre></div>
+</div>
+<p>If <code class="docutils literal notranslate"><span class="pre">catching_up</span></code> returns <code class="docutils literal notranslate"><span class="pre">false</span></code>, your node is fully synced.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">catching_up</span></code> returns <code class="docutils literal notranslate"><span class="pre">true</span></code>, your node is still catching up.</p>
+<p>{% hint style=”info” %}
+Wait until your node has fully synced (<code class="docutils literal notranslate"><span class="pre">catching_up</span></code> returns <code class="docutils literal notranslate"><span class="pre">false</span></code>) before proceeding.  This may take some time–grab some coffee!
+{% endhint %}</p>
+<p><strong>Step 2: Generate and store your validator’s address and keys.</strong></p>
+<p>Run the following command to create a new validator key pair:</p>
+<pre class="language-javascript"><code class="lang-javascript"><strong>cascadiad keys add &#x3C;key_name>
+</strong></code></pre>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">&lt;key_name&gt;</span></code> with a name for your validator’s key.</p>
+<p><br />
+<strong>For example:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cascadiad</span> <span class="n">keys</span> <span class="n">add</span> <span class="n">yourvalidator</span>
+</pre></div>
+</div>
+<p>This command will prompt you to generate a keyring passphrase and generate a new validator key pair, which consists of a <strong>Cascadia wallet address, a public key, and a mnemonic phrase.</strong> Keep the keyring passphrase and mnemonic phrase secret and securely stored. The public key will be used to identify your validator on the Cascadia network.</p>
+<p>{% hint style=”info” %}
+To access your account, use the <code class="docutils literal notranslate"><span class="pre">cascadiad</span> <span class="pre">keys</span> <span class="pre">add</span> <span class="pre">&lt;key_name&gt;</span> <span class="pre">--recover</span></code> command.  Enter your keyring passphrase and mnemonic when prompted, and make sure to override the existing name ‘’test.’’
+{% endhint %}</p>
+<p><strong>Step 3: Convert your Cascadia address to an EVM address.</strong></p>
+<p>After creating a public key, run the following command to convert your Cascadia wallet address from Step 2 to an EVM address:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">cascadiad</span><span class="w"> </span><span class="nx">address</span><span class="o">-</span><span class="nx">converter</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">your_wallet_address</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">&lt;your_wallet_address&gt;</span></code> with your Cascadia wallet address from Step 2.</p>
+<p><strong>Step 4: Fund your validator’s EVM address.</strong></p>
+<p>Transfer CC tokens to your validator’s EVM address or utilize the <a class="reference external" href="https://www.cascadia.foundation/faucet">faucet</a>.  </p>
+<p>{% hint style=”info” %}
+Enter your converted EVM address from Step 3 into the faucet. A properly formatted EVM address will begin with “0x” followed by a series of alphanumeric characters, such as “0x2e…4B9T”.
+{% endhint %}</p>
+<p><strong>Step 5: Confirm receipt of CC tokens.</strong></p>
+<p>Confirm that you have received CC tokens by entering your EVM address from Step 4 into Cascadia’s <a class="reference external" href="https://explorer.cascadia.foundation/">block explorer</a>.</p>
+<p><strong>Step 6: Create your initial validator funding tx.</strong></p>
+<p>To create a validator tx, run the following command:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">cascadiad</span><span class="w"> </span><span class="nx">tx</span><span class="w"> </span><span class="nx">staking</span><span class="w"> </span><span class="nx">create</span><span class="o">-</span><span class="nx">validator</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="kr">from</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">key_name</span><span class="o">&gt;</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">chain</span><span class="o">-</span><span class="nx">id</span><span class="w"> </span><span class="nx">cascadia_6102</span><span class="o">-</span><span class="mf">1</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">moniker</span><span class="o">=&lt;</span><span class="nx">validator_name</span><span class="o">&gt;</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">commission</span><span class="o">-</span><span class="nx">max</span><span class="o">-</span><span class="nx">change</span><span class="o">-</span><span class="nx">rate</span><span class="o">=</span><span class="mf">0.01</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">commission</span><span class="o">-</span><span class="nx">max</span><span class="o">-</span><span class="nx">rate</span><span class="o">=</span><span class="mf">1.0</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">commission</span><span class="o">-</span><span class="nx">rate</span><span class="o">=</span><span class="mf">0.05</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">details</span><span class="o">=&lt;</span><span class="nx">description</span><span class="o">&gt;</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">security</span><span class="o">-</span><span class="nx">contact</span><span class="o">=&lt;</span><span class="nx">email_address</span><span class="o">&gt;</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">website</span><span class="o">=&lt;</span><span class="nx">your_website</span><span class="o">&gt;</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">pubkey</span><span class="w"> </span><span class="nx">$</span><span class="p">(</span><span class="nx">cascadiad</span><span class="w"> </span><span class="nx">tendermint</span><span class="w"> </span><span class="nx">show</span><span class="o">-</span><span class="nx">validator</span><span class="p">)</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">min</span><span class="o">-</span><span class="nx">self</span><span class="o">-</span><span class="nx">delegation</span><span class="o">=</span><span class="mf">1</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">amount</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">token_delegation</span><span class="o">&gt;</span><span class="nx">aCC</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">gas</span><span class="w"> </span><span class="nx">auto</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">gas</span><span class="o">-</span><span class="nx">adjustment</span><span class="o">=</span><span class="mf">1.2</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">gas</span><span class="o">-</span><span class="nx">prices</span><span class="o">=</span><span class="mf">7</span><span class="nx">aCC</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">broadcast</span><span class="o">-</span><span class="nx">mode</span><span class="w"> </span><span class="nx">block</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Fill in these parameters:</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;key_name&gt;</span></code>: The name you inputted in Step 2.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;validator_name&gt;</span></code>: The name you want to give your validator.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;description&gt;</span></code>: Details about your validator node.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;email_address&gt;</span></code>: Your email address.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;your_website&gt;</span></code>: The URL of your website, if available.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;token_delegation&gt;</span></code>: The number of tokens you want to delegate. This is denominated in aCC, which is equivalent to 1e18 CC, i.e. 1 CC = 1,000,000,000,000,000,000 aCC.</p>
+<p>{% hint style=”info” %}
+For <code class="docutils literal notranslate"><span class="pre">gas-prices</span></code>, around 7 aCC is standard. However, you may need to adjust this amount if the tx is unsuccessful.
+{% endhint %}</p>
+<p><strong>For example:</strong></p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">cascadiad</span><span class="w"> </span><span class="nx">tx</span><span class="w"> </span><span class="nx">staking</span><span class="w"> </span><span class="nx">create</span><span class="o">-</span><span class="nx">validator</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="kr">from</span><span class="w"> </span><span class="nx">yourvalidator</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">chain</span><span class="o">-</span><span class="nx">id</span><span class="w"> </span><span class="nx">cascadia_6102</span><span class="o">-</span><span class="mf">1</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">moniker</span><span class="o">=</span><span class="nx">ubuntu</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">commission</span><span class="o">-</span><span class="nx">max</span><span class="o">-</span><span class="nx">change</span><span class="o">-</span><span class="nx">rate</span><span class="o">=</span><span class="mf">0.01</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">commission</span><span class="o">-</span><span class="nx">max</span><span class="o">-</span><span class="nx">rate</span><span class="o">=</span><span class="mf">1.0</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">commission</span><span class="o">-</span><span class="nx">rate</span><span class="o">=</span><span class="mf">0.05</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">details</span><span class="o">=</span><span class="nx">The</span><span class="w"> </span><span class="nx">World</span><span class="err">&#39;</span><span class="nx">s</span><span class="w"> </span><span class="nx">First</span><span class="w">  </span><span class="nx">Neocybernetic</span><span class="w">  </span><span class="nx">Blockchain</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">security</span><span class="o">-</span><span class="nx">contact</span><span class="o">=</span><span class="nx">admin</span><span class="err">@</span><span class="nx">cascadia</span><span class="p">.</span><span class="nx">foundation</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">website</span><span class="o">=</span><span class="nx">cascadia</span><span class="p">.</span><span class="nx">foundation</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">pubkey</span><span class="w"> </span><span class="nx">$</span><span class="p">(</span><span class="nx">cascadiad</span><span class="w"> </span><span class="nx">tendermint</span><span class="w"> </span><span class="nx">show</span><span class="o">-</span><span class="nx">validator</span><span class="p">)</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">min</span><span class="o">-</span><span class="nx">self</span><span class="o">-</span><span class="nx">delegation</span><span class="o">=</span><span class="mf">1</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">amount</span><span class="w"> </span><span class="mf">1000000000000000000</span><span class="nx">aCC</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">gas</span><span class="w"> </span><span class="nx">auto</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">gas</span><span class="o">-</span><span class="nx">adjustment</span><span class="o">=</span><span class="mf">1.2</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">gas</span><span class="o">-</span><span class="nx">prices</span><span class="o">=</span><span class="mf">7</span><span class="nx">aCC</span><span class="w"> </span><span class="o">\</span>
+<span class="o">--</span><span class="nx">broadcast</span><span class="o">-</span><span class="nx">mode</span><span class="w"> </span><span class="nx">block</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p>Enter the passphrase you created in step 2, then confirm the transaction.</p>
+<p>{% hint style=”info” %}
+Verify your validator’s status by checking your address on Cascadia’s <a class="reference external" href="https://validator.cascadia.foundation/validators">validator explorer</a>.
+{% endhint %}</p>
+<p>Congratulations, you’re successfully running a Cascadia validator!</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">cscd-rtd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, roadz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/validators/installation.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

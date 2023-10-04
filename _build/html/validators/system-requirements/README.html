@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>System Requirements &#8212; cscd-rtd  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=039e1c02" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="system-requirements">
+<h1>System Requirements<a class="headerlink" href="#system-requirements" title="Link to this heading">¶</a></h1>
+<p>Validators are encouraged to use a reputable cloud provider or set up a secure physical operation with limited access to key management.  Prepare your data center location with good connectivity, backup storage, redundant power, and multiple networking boxes.</p>
+<p>In Cascadia’s early development stages, we expect initial network requirements to be low.  As the network expands, more bandwidth, CPU, and memory may be needed.</p>
+<p><strong>Supported OS</strong></p>
+<p>Cascadia Network supports the following architectures for macOS, Windows, and Linux:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">darwin</span><span class="o">/</span><span class="nx">arm64</span>
+<span class="nx">darwin</span><span class="o">/</span><span class="nx">x86_64</span>
+<span class="nx">linux</span><span class="o">/</span><span class="nx">arm64</span>
+<span class="nx">linux</span><span class="o">/</span><span class="nx">amd64</span>
+<span class="nx">windows</span><span class="o">/</span><span class="nx">x86_64</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Minimum System Requirements</strong></p>
+<p>To run validator nodes on Cascadia, we suggest the following:</p>
+<ul class="simple">
+<li><p>2 x dedicated/physical CPUs with<code class="docutils literal notranslate"><span class="pre">SSE4.1</span></code> and <code class="docutils literal notranslate"><span class="pre">SSE4.2</span></code> flags (verify using <a class="reference external" href="https://manpages.ubuntu.com/manpages/trusty/man1/lscpu.1.html">lscpu</a>)</p></li>
+<li><p>8 GB RAM</p></li>
+<li><p>200 GB SSD</p></li>
+<li><p>100 Mbit/s always-on internet connection with 4 TB/month data plan</p></li>
+<li><p>Linux OS <strong>(Ubuntu 20.04 or the latest version is recommended)</strong></p></li>
+</ul>
+<p>{% hint style=”info” %}
+It’s important to anticipate potential growth in server requirements and plan for necessary upgrades.
+{% endhint %}</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">cscd-rtd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, roadz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../../_sources/validators/system-requirements/README.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

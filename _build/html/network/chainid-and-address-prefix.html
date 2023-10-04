@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ChainID &amp; Address Prefix &#8212; cscd-rtd  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=039e1c02" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="chainid-address-prefix">
+<h1>ChainID &amp; Address Prefix<a class="headerlink" href="#chainid-address-prefix" title="Link to this heading">¶</a></h1>
+<p>ChainID is a number that identifies a specific blockchain. This number is used to ensure that transactions are processed on the correct blockchain, and not confused with transactions on another with a similar format. ChainID also prevents replay attacks, where a transaction is broadcast on multiple blockchains to trick users into accepting the same transaction on different chains.</p>
+<p>Address format is used to identify unique users within a blockchain network.</p>
+<p><strong>Cascadia’s ChainID</strong></p>
+<p>Cascadia uses several Chain IDs. Choose the correct ChainID when executing Cascadia in your local environment. <br />
+<br />
+The ChainID for Cascadia’s devnet is <code class="docutils literal notranslate"><span class="pre">cascadia_6102-1</span></code>.</p>
+<p><strong>Address Prefix</strong></p>
+<p>BIP-0173 introduces a new format for segregated witness output addresses. With regard to the respective network type, Cascadia has many address prefixes, including:</p>
+<table data-header-hidden><thead><tr><th width="308.3333333333333"></th><th></th></tr></thead><tbody><tr><td>Testnet</td><td><code>cascadia</code></td></tr></tbody></table>
+<p>Cascadia employs the Bech32 address format. Bech32 encoding offers reliable data integrity checks. The human-readable component offers contextual cues, helping UI designers clear error messages.</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">cscd-rtd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, roadz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/network/chainid-and-address-prefix.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

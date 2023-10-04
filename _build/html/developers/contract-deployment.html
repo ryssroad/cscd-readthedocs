@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Deployment &#8212; cscd-rtd  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=039e1c02" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="deployment">
+<h1>Deployment<a class="headerlink" href="#deployment" title="Link to this heading">¶</a></h1>
+<section id="step-1-install-hardhat">
+<h2>Step 1: Install Hardhat.<a class="headerlink" href="#step-1-install-hardhat" title="Link to this heading">¶</a></h2>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">npm</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="o">-</span><span class="nx">g</span><span class="w"> </span><span class="nx">hardhat</span>
+</pre></div>
+</div>
+<p><strong>Step 2: Create <code class="docutils literal notranslate"><span class="pre">Example</span></code> smart contract project.</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">mkdir</span><span class="w"> </span><span class="nx">example</span><span class="o">-</span><span class="nx">project</span>
+<span class="nx">cd</span><span class="w"> </span><span class="nx">example</span><span class="o">-</span><span class="nx">project</span>
+<span class="nx">npx</span><span class="w"> </span><span class="nx">hardhat</span><span class="w"> </span><span class="nx">init</span>
+</pre></div>
+</div>
+<p><strong>Step 3: Make <code class="docutils literal notranslate"><span class="pre">.env</span></code> and input your private key.</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">PRIVATE_KEY</span><span class="o">=&lt;</span><span class="nx">your_private_key</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p><strong>Step 4: Install <code class="docutils literal notranslate"><span class="pre">dotenv</span></code> module.</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">npm</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">dotenv</span>
+</pre></div>
+</div>
+<p><strong>Step 5: Import environmental variables to <code class="docutils literal notranslate"><span class="pre">hardhat.config.js</span></code>.</strong></p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;dotenv&#39;</span><span class="p">).</span><span class="nx">config</span><span class="p">()</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">private_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PRIVATE_KEY</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Step 6: Establish endpoint settings.</strong></p>
+<p>By default, the script will be using your local host <code class="docutils literal notranslate"><span class="pre">&quot;127.0.0.1&quot;</span></code> - If you are not running a localhost, you may leverage the public endpoint <code class="docutils literal notranslate"><span class="pre">https://testnet.cascadia.foundation/</span></code> by making changes to <code class="docutils literal notranslate"><span class="pre">networks</span></code> in <code class="docutils literal notranslate"><span class="pre">hardhat-config.js</span></code>, for example:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">networks</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">cascadia</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://testnet.cascadia.foundation&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">accounts</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">private_key</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p>The total result code in hardhat.config.js is the following:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;dotenv&#39;</span><span class="p">).</span><span class="nx">config</span><span class="p">()</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">private_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PRIVATE_KEY</span>
+<span class="cm">/** @type import(&#39;hardhat/config&#39;).HardhatUserConfig */</span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">solidity</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;0.8.17&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">networks</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">cascadia</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://testnet.cascadia.foundation&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">accounts</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">private_key</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Step 7: Deploy Contract.</strong></p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">npx</span><span class="w"> </span><span class="nx">hardhat</span><span class="w"> </span><span class="nx">run</span><span class="w"> </span><span class="o">-</span><span class="nx">netork</span><span class="w"> </span><span class="nx">cascadia</span><span class="w"> </span><span class="nx">scripts</span><span class="o">/</span><span class="nx">deploy</span><span class="p">.</span><span class="nx">js</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Step 8: Obtain contract address from console.</strong></p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="o">~</span><span class="err">/deploy-doc$ npx hardhat run --network cascadia scripts/deploy.js</span>
+<span class="nx">Lock</span><span class="w"> </span><span class="kd">with</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="nx">CC</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">unlock</span><span class="w"> </span><span class="nx">timestamp</span><span class="w"> </span><span class="mf">1706489110</span><span class="nx">deployed</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="mh">0xA32C3d322b9e35071c42D03237176D53e15D464</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Step 9: Confirm successful deployment on Cascadia’s</strong> <a class="reference external" href="https://explorer.cascadia.foundation"><strong>block explorer</strong></a><strong>.</strong></p>
+<p>Type your deployed contract address into the block explorer search bar or <a class="reference external" href="https://explorer.cascadia.foundation/address/%3Cyour_contract_deployed_address">https://explorer.cascadia.foundation/address/&lt;your_contract_deployed_address&gt;</a> to confirm successful deployment.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">cscd-rtd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, roadz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/developers/contract-deployment.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
