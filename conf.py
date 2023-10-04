@@ -14,10 +14,10 @@ author = 'roadz'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['myst_parser']
-source_suffix = {
+source_suffix = {[
     '.md',
     '.rst'
-
+    ]
 }
 
 templates_path = ['_templates']
