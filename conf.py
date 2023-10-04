@@ -6,8 +6,6 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-import myst_parser
-
 project = 'cscd-rtd'
 copyright = '2023, roadz'
 author = 'roadz'
