@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Optimization &#8212; cscd-rtd  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=039e1c02" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="optimization">
+<h1>Optimization<a class="headerlink" href="#optimization" title="Link to this heading">¶</a></h1>
+<p>Before progressing, ensure you’ve completed the first steps. It’s important to have either the Node.js REPL or the <code class="docutils literal notranslate"><span class="pre">wasmd</span></code> Go CLI pre-configured.</p>
+<p><strong>Step 1: Obtaining and Compiling the Contract Code</strong></p>
+<p>Get the <a class="reference external" href="https://github.com/InterWasm/cw-contracts"><code class="docutils literal notranslate"><span class="pre">cw-contracts</span></code></a> repository first. Then:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-plaintext notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/InterWasm/cw-contracts
+cd cw-contracts
+git checkout main
+cd contracts/nameservice
+rustup default stable
+cargo wasm
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p>To trim it down, you can run:</p>
+<div class="highlight-plaintext notranslate"><div class="highlight"><pre><span></span>RUSTFLAGS=&#39;-C link-arg=-s&#39; cargo wasm
+</pre></div>
+</div>
+<p>This command yields a much compact version, roughly 165kB in size. This file or another optimized version will eventually get uploaded to the blockchain.</p>
+<p><strong>Step 2: Running Unit Tests</strong></p>
+<p>Unit tests ensure the contract operates as expected:</p>
+<div class="highlight-plaintext notranslate"><div class="highlight"><pre><span></span>RUST_BACKTRACE=1 cargo unit-test
+</pre></div>
+</div>
+<p><strong>Step 3: Optimizing for Deployment</strong></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">rust-optimizer</span></code> is the tool for this task and it allows third parties to validate the legitimacy of the contract.</p>
+<p>{% hint style=”info” %}
+The <code class="docutils literal notranslate"><span class="pre">rust-optimizer</span></code> requires Docker.
+{% endhint %}</p>
+<p>On Linux and Mac, execute:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-plaintext notranslate"><div class="highlight"><pre><span></span>docker run --rm -v &quot;$(pwd)&quot;:/code \
+  --mount type=volume,source=&quot;$(basename &quot;$(pwd)&quot;)_cache&quot;,target=/code/target \
+  --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \
+  cosmwasm/rust-optimizer:0.12.11
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p>For Windows:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-plaintext notranslate"><div class="highlight"><pre><span></span>docker run --rm -v ${pwd}:/code `
+ --mount type=volume,source=&quot;$(&quot;$(Split-Path -Path $pwd -Leaf)&quot;)_cache&quot;,target=/code/target `
+ --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry `
+ cosmwasm/rust-optimizer:0.12.11
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p>After optimization, the resultant binary is located under the <code class="docutils literal notranslate"><span class="pre">artifacts</span></code> directory and will be approximately 138 kB in size.</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">cscd-rtd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, roadz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../../_sources/network/cosmwasm/download-and-optimize.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cooldown Period &#8212; cscd-rtd  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=039e1c02" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="cooldown-period">
+<h1>Cooldown Period<a class="headerlink" href="#cooldown-period" title="Link to this heading">¶</a></h1>
+<p><strong>Voting Mechanism and Rewards Distribution</strong></p>
+<p>The smart contract introduces a voting mechanism, where each user’s aCC balance plays a pivotal role. The quantity of rewards a user receives correlates directly with their aCC balance. After the cooldown period, a user’s aCC balance is nullified, ending further rewards.</p>
+<p>it’s important to note that a user’s voting power decreases over time. In addition, users need to re-align their stakes if they want to restore their initial voting power.</p>
+<p>The contract operates around the “lock” mechanism, described by the amount of aligned CC and the duration until the lock’s expiration.</p>
+<p><strong>Cooldown and Re-Align</strong></p>
+<p>The contract includes a cooldown function that adjusts the align duration from infinite to 365 days. The re-align function can reset the align duration back to infinite. Users can increase their amount anytime, regardless of their status.</p>
+<p>A withdrawal or a re-align can be initiated at any point, providing flexibility in asset management. The balance adjustment occurs upon the cooldown activation.</p>
+<p><strong>Contract Modifications</strong></p>
+<p>The contract now defines a minimum and maximum align time of one year, eliminates non-cooldown aligns, and revises all test scenarios. There is a max limit of four years.</p>
+<p><strong>Checkpointing</strong></p>
+<p>To ensure the accuracy of ve-balances, Cascadia implements checkpointing, which calculates slope and bias via locked tokens and lock duration. To this end, a custom integration for new cooldown lock types has been created where the balance remains the same until the cooldown is triggered, as per the specifications below:</p>
+<figure><img src="https://lh5.googleusercontent.com/1-ZXf6FJlw1-oMcDqXrC3UCgmW6v_IdDah6PDFZbUFEzC-Dqbrvduu1dqW8w-Afo1sSA8tea3KLjubhLLVgKyMivihwA1hjOKyIc1f5PW3bulBSszD1Wg7q7VxIwji-3T-lBd54pFqpMr--XCPoAtqU" alt=""><figcaption></figcaption></figure>
+<p><strong>Balance Calculations</strong></p>
+<p>{% code overflow=”wrap” fullWidth=”false” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nx">Amount</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">CC</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">MAXTIME</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(((</span><span class="nx">Current</span><span class="w"> </span><span class="nx">Time</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">Cooldown</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">WEEK</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">WEEK</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">Current</span><span class="w"> </span><span class="nx">Time</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><code class="docutils literal notranslate"><span class="pre">MAXTIME</span></code> is a constant variable for maintaining the integrity of balance calculations.</p>
+<p><strong>Withdrawal and Rewards Accrual</strong></p>
+<p>An extra transaction is needed for fund withdrawal post-cooldown. Rewards accrue for users who have triggered cooldown but haven’t withdrawn funds. Rewards stop when the cooldown time and aCC balance reach zero.</p>
+<p><strong>Token Distribution</strong></p>
+<p>The contract uses a fee distributor to allocate tokens to aCC holders proportionally to their holdings. The contract does not intrinsically produce any yield.</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">cscd-rtd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, roadz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../../_sources/governance/alignment/cooldown-period.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

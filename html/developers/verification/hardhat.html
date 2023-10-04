@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hardhat &#8212; cscd-rtd  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=039e1c02" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="hardhat">
+<h1>Hardhat<a class="headerlink" href="#hardhat" title="Link to this heading">¶</a></h1>
+<p>These are the steps for verifying smart contracts via <a class="reference external" href="https://hardhat.org/">Hardhat</a>. Hardhat is a comprehensive development environment that facilitates contract compilation, deployment, and authentication.</p>
+<p><strong>Step 1: Install Hardhat.</strong></p>
+<p>{% hint style=”info” %}
+If creating a new npm project from scratch, navigate to an empty directory and execute the command <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">init</span></code>. Follow the instructions provided, and it is recommended to use npm 7 or a later version. Once the project is ready, use either the <code class="docutils literal notranslate"><span class="pre">npm</span></code> or <code class="docutils literal notranslate"><span class="pre">yarn</span></code> command below.
+{% endhint %}</p>
+<p>npm instructions:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">npm</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="o">--</span><span class="nx">save</span><span class="o">-</span><span class="nx">dev</span><span class="w"> </span><span class="nx">hardhat</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p>yarn instructions:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">yarn</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="o">--</span><span class="nx">dev</span><span class="w"> </span><span class="nx">hardhat</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Step 2:</strong> Install the <a class="reference external" href="https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan">Hardhat plugin</a> (requires v3.0.0+). Use either the <code class="docutils literal notranslate"><span class="pre">npm</span></code> or <code class="docutils literal notranslate"><span class="pre">yarn</span></code> commands:</p>
+<p>npm instructions:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">npm</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="o">--</span><span class="nx">save</span><span class="o">-</span><span class="nx">dev</span><span class="w"> </span><span class="err">@</span><span class="nx">nomiclabs</span><span class="o">/</span><span class="nx">hardhat</span><span class="o">-</span><span class="nx">etherscan</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p>yarn instructions:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">yarn</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="o">--</span><span class="nx">dev</span><span class="w"> </span><span class="err">@</span><span class="nx">nomiclabs</span><span class="o">/</span><span class="nx">hardhat</span><span class="o">-</span><span class="nx">etherscan</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<section id="step-3-for-hardhat-config-js-add-the-following-statement">
+<h2><strong>Step 3: For <code class="docutils literal notranslate"><span class="pre">hardhat.config.js</span></code>, add the following statement:</strong><a class="headerlink" href="#step-3-for-hardhat-config-js-add-the-following-statement" title="Link to this heading">¶</a></h2>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;@nomiclabs/hardhat-etherscan&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p>For TypeScript, add the following line to <code class="docutils literal notranslate"><span class="pre">hardhat.config.ts</span></code>:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="s2">&quot;@nomiclabs/hardhat-etherscan&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Step 4: Add Cascadia to <code class="docutils literal notranslate"><span class="pre">hardhat.config.js</span></code>.</strong></p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">etherscan</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">apiKey</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">cascadia</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;abc&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">customChains</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">network</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;cascadia&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">chainId</span><span class="o">:</span><span class="w"> </span><span class="mf">6102</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">urls</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">apiURL</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://explorer.cascadia.foundation/api&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">browserURL</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://explorer.cascadia.foundation&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><code class="docutils literal notranslate"><span class="pre">apiKey</span></code>: Refers to the unique API key associated with the block explorer account.</p>
+<p><code class="docutils literal notranslate"><span class="pre">network</span></code>: Specifies the name of the network, which must match the name of the apiKey.</p>
+<p><code class="docutils literal notranslate"><span class="pre">browserURL</span></code>: Indicates the URL for accessing the block explorer interface.</p>
+<p><code class="docutils literal notranslate"><span class="pre">chainID</span></code>: Identifies the unique identifier for the network chain being accessed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">apiURL</span></code>: Specifies the URL used for accessing the block explorer’s API service.</p>
+<p>The entire code should appear as follows:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;@nomicfoundation/hardhat-toolbox&quot;</span><span class="p">);</span>
+<span class="nx">require</span><span class="p">(</span><span class="s2">&quot;@nomiclabs/hardhat-etherscan&quot;</span><span class="p">);</span>
+<span class="nx">require</span><span class="p">(</span><span class="s1">&#39;dotenv&#39;</span><span class="p">).</span><span class="nx">config</span><span class="p">()</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">private_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PRIVATE_KEY</span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">solidity</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;0.8.17&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">networks</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">cascadia</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://testnet.cascadia.foundation&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">accounts</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">private_key</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">etherscan</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">apiKey</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">cascadia</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;abc&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">customChains</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">network</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;cascadia&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">chainId</span><span class="o">:</span><span class="w"> </span><span class="mf">6102</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">urls</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">apiURL</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://explorer.cascadia.foundation/api&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">browserURL</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://explorer.cascadia.foundation&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Step 5: Check if Cascadia is successfully supported:</strong></p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">npx</span><span class="w"> </span><span class="nx">hardhat</span><span class="w"> </span><span class="nx">verify</span><span class="w"> </span><span class="o">--</span><span class="nx">list</span><span class="o">-</span><span class="nx">networks</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Step 6: To verify the contract, constructor arguments can be included with the verify task.</strong></p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">npx</span><span class="w"> </span><span class="nx">hardhat</span><span class="w"> </span><span class="nx">verify</span><span class="w"> </span><span class="o">--</span><span class="nx">network</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">network_name</span><span class="o">&gt;</span><span class="w"> </span><span class="nx">DEPLOYED_CONTRACT_ADDRESS</span><span class="w"> </span><span class="err">“</span><span class="nx">Constructor</span><span class="w"> </span><span class="nx">argument</span><span class="w"> </span><span class="mf">1</span><span class="err">”</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>For example:</strong></p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">npx</span><span class="w"> </span><span class="nx">hardhat</span><span class="w"> </span><span class="nx">verify</span><span class="w"> </span><span class="err">–</span><span class="nx">network</span><span class="w"> </span><span class="nx">Cascadia</span><span class="w"> </span><span class="mh">0x856C336cD8eBDCE7B5Bb3F2DEB1bf3160B176880</span><span class="w"> </span><span class="mf">31536000</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Step 7: Contract verification can be confirmed via the console:</strong></p>
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">cscd-rtd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, roadz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../../_sources/developers/verification/hardhat.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

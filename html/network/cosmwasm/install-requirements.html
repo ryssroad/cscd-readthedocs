@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Install Requirements &#8212; cscd-rtd  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=039e1c02" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="install-requirements">
+<h1>Install Requirements<a class="headerlink" href="#install-requirements" title="Link to this heading">¶</a></h1>
+<p><strong>Step 1: Setting Up Your Development Environment</strong></p>
+<p><strong>Install Golang</strong></p>
+<p>Required for <code class="docutils literal notranslate"><span class="pre">wasmd</span></code>. Install Go from its <a class="reference external" href="https://github.com/golang/go/wiki#working-with-go">official documentation</a>. Ensure you have Go version v1.18+.</p>
+<p><strong>Install Rust</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">rustup</span></code> is used to manage dependencies and seamlessly switch between different versions of <code class="docutils literal notranslate"><span class="pre">cargo</span></code> and <code class="docutils literal notranslate"><span class="pre">rustc</span></code>, both crucial for Rust development.\</p>
+<p><strong>Step 2:  Installing Rust (for Linux &amp; Mac):</strong></p>
+<p>Begin with <code class="docutils literal notranslate"><span class="pre">rustup</span></code> installation.</p>
+<p>Set up wasm32 target with the following commands:</p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rustup</span> <span class="n">default</span> <span class="n">stable</span>
+<span class="n">cargo</span> <span class="n">version</span>
+<span class="n">rustup</span> <span class="n">update</span> <span class="n">stable</span>
+<span class="n">rustup</span> <span class="n">target</span> <span class="n">add</span> <span class="n">wasm32</span><span class="o">-</span><span class="n">unknown</span><span class="o">-</span><span class="n">unknown</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Installing Rust (for Windows 10):</strong></p>
+<p>Obtain <code class="docutils literal notranslate"><span class="pre">rustup-init.exe</span></code> from rustup.rs or rust-lang.org.</p>
+<p>If needed, download <a class="reference external" href="https://visualstudio.microsoft.com/visual-cpp-build-tools/">Visual C++ Build Tools 2019</a>. Ensure “Windows 10 SDK” and ‘’English language pack’’ are selected.</p>
+<p>Run the setup for Rust and then install the wasm32 target similarly to the Linux &amp; Mac setup.</p>
+<p><strong>Step 3: Install <code class="docutils literal notranslate"><span class="pre">wasmd</span></code></strong></p>
+<p>{% code overflow=”wrap” %}</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">CosmWasm</span><span class="o">/</span><span class="n">wasmd</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="n">wasmd</span>
+<span class="n">git</span> <span class="n">fetch</span> <span class="o">--</span><span class="n">tags</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">v0</span><span class="mf">.27.0</span>  <span class="c1"># Replace with stable version if needed.</span>
+<span class="n">make</span> <span class="n">install</span>
+</pre></div>
+</div>
+<p>{% endcode %}</p>
+<p><strong>Step 4: Install the Command-Line Tools:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">jq</span> <span class="n">curl</span>
+</pre></div>
+</div>
+<p><strong>Step 5: Choose your IDE</strong></p>
+<p>An Integrated Development Environment (IDE) is needed. Here are two options:</p>
+<p><strong>VSCode:</strong> Equipped with Rust Language Server (RLS) capabilities. Combine it with the rust-analyzer extension for optimal Rust code support.</p>
+<p><strong>IntelliJ IDEA Community Edition:</strong> Comes with the IntelliJ Rust plugin, providing swift inline language feature support. Particularly useful for developers familiar with IntelliJ products.</p>
+<section id="step-6-enhance-development">
+<h2><strong>Step 6: Enhance Development</strong><a class="headerlink" href="#step-6-enhance-development" title="Link to this heading">¶</a></h2>
+<p>A toolset to boost the lifespan of CosmWasm smart contracts. It consists of three repositories:</p>
+<p><a class="reference external" href="https://github.com/oraichain/cosmwasm-gitpod"><strong>CosmWasm Gitpod</strong></a></p>
+<p>Provides a ready-to-use development environment, integrating Rust, VS Code browser, crucial extensions, and Keplr wallet compatibility.</p>
+<p><a class="reference external" href="https://github.com/oraichain/cw-vscode"><strong>CosmWasm IDE extension</strong></a></p>
+<p>A VS Code extension simplifying the building &amp; deployment of CosmWasm smart contracts.</p>
+<p><a class="reference external" href="https://github.com/oraichain/cw-ide-webview"><strong>CosmWasm IDE extension webview</strong></a></p>
+<p>A React application facilitating Keplr wallet interactions and enabling custom network additions.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">cscd-rtd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, roadz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../../_sources/network/cosmwasm/install-requirements.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Snapshot &#8212; cscd-rtd  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=039e1c02" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="snapshot">
+<h1>Snapshot<a class="headerlink" href="#snapshot" title="Link to this heading">¶</a></h1>
+<p>We take a node <a class="reference external" href="https://snapshot.cascadia.foundation/">snapshot</a> every 6 hours. We then delete all the previous snapshots to free up the space on the file server.</p>
+<p>The snapshot is designed for node operators to run an efficient validator service on the Cascadia chain. To make the snapshot as small as possible while still viable as a validator, we use the following setting to save disk space. We suggest you make the same adjustment on your node too. Please notice that your node will have very limited functionality beyond signing blocks with efficient disk space utilization. For example, your node will not be able to serve as an RPC endpoint (which is not suggested to run on a validator node anyway).</p>
+<p>Since we periodically state-sync our snapshot nodes, you might notice that sometimes the size of our snapshot is surprisingly small.</p>
+<p><strong>app.toml</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Prune Type</span>
+<span class="n">pruning</span> <span class="o">=</span> <span class="s2">&quot;custom&quot;</span>
+
+<span class="c1"># Prune Strategy</span>
+<span class="n">pruning</span><span class="o">-</span><span class="n">keep</span><span class="o">-</span><span class="n">recent</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>
+<span class="n">pruning</span><span class="o">-</span><span class="n">keep</span><span class="o">-</span><span class="n">every</span> <span class="o">=</span> <span class="s2">&quot;0&quot;</span>
+<span class="n">pruning</span><span class="o">-</span><span class="n">interval</span> <span class="o">=</span> <span class="s2">&quot;10&quot;</span>
+</pre></div>
+</div>
+<p><strong>config.toml</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">indexer</span> <span class="o">=</span> <span class="s2">&quot;null&quot;</span>
+</pre></div>
+</div>
+<p><strong>Limitations and Functionalities</strong></p>
+<p>Please note, with this efficient utilization of disk space, your node’s functionalities may be limited beyond signing blocks. For instance, your node may not function as an RPC endpoint.</p>
+<p><strong>Periodic State-Sync</strong></p>
+<p>The nodes used for snapshot creation undergo state sync periodically. As a result, the snapshot size might occasionally appear unusually small. This process is part of an ongoing effort to optimize performance and efficiency.</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">cscd-rtd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, roadz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/network/snapshot-1.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
